@@ -3,7 +3,7 @@
   "account": "sinashiry",
   "profile_url": "https://github.com/sinashiry",
   "source_url": "https://api.github.com/users/sinashiry/repos",
-  "fetched_at": "2026-10-11T20:20:26Z",
+  "fetched_at": "2026-10-11T22:05:00Z",
   "repository_count": 10,
   "repositories": [
     {
@@ -11,18 +11,43 @@
       "name": "sinashiry.github.io",
       "url": "https://github.com/sinashiry/sinashiry.github.io",
       "description": "Source of sina-shiri.com — Sina Shiri's engineering V and portfolio (Astro, GitHub Pages)",
-      "primary_language": null,
-      "languages": [],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "bytes": 220770
+        },
+        {
+          "name": "Astro",
+          "bytes": 98671
+        },
+        {
+          "name": "TypeScript",
+          "bytes": 70811
+        },
+        {
+          "name": "CSS",
+          "bytes": 18527
+        },
+        {
+          "name": "TeX",
+          "bytes": 14413
+        },
+        {
+          "name": "Python",
+          "bytes": 1632
+        }
+      ],
       "languages_complete": true,
-      "languages_checked_at": "2026-10-11T20:20:26Z",
+      "languages_checked_at": "2026-10-11T22:05:00Z",
       "topics": [],
       "stars": 0,
       "forks": 0,
       "fork": false,
       "archived": false,
       "disabled": false,
-      "updated_at": "2026-10-11T19:55:28Z",
-      "pushed_at": "2026-10-11T19:55:28Z",
+      "updated_at": "2026-10-11T22:02:34Z",
+      "pushed_at": "2026-10-11T22:02:28Z",
       "license": null
     },
     {
