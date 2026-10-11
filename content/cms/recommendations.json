@@ -1,0 +1,24 @@
+{
+  "title": "Recommendations & collaboration",
+  "intro": "Recommendations are published with the author’s permission and attributed to their professional role.",
+  "invitation": "If we have worked together, I would welcome a short note about our shared project, my contribution and your permission to publish it.",
+  "action": "Share a recommendation",
+  "entries": [
+    {
+      "relationship": "Teammate",
+      "approved": "no"
+    },
+    {
+      "relationship": "Professor",
+      "approved": "no"
+    },
+    {
+      "relationship": "Company leader",
+      "approved": "no"
+    },
+    {
+      "relationship": "Coworker",
+      "approved": "no"
+    }
+  ]
+}

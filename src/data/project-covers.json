@@ -1,0 +1,82 @@
+{
+  "industrial-alarm-monitoring": {
+    "src": "/assets/project-covers/industrial-alarm-monitoring-960.webp",
+    "srcset": "/assets/project-covers/industrial-alarm-monitoring-480.webp 480w, /assets/project-covers/industrial-alarm-monitoring-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of alarm input connectors, an embedded controller and an operator status display.",
+    "concept": true
+  },
+  "fire-smoke-vision": {
+    "src": "/assets/project-covers/fire-smoke-vision-960.webp",
+    "srcset": "/assets/project-covers/fire-smoke-vision-480.webp 480w, /assets/project-covers/fire-smoke-vision-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of a camera, embedded vision controller and a display identifying a small flame and smoke region.",
+    "concept": true
+  },
+  "embedded-qr-scanner": {
+    "src": "/assets/project-covers/embedded-qr-scanner-960.webp",
+    "srcset": "/assets/project-covers/embedded-qr-scanner-480.webp 480w, /assets/project-covers/embedded-qr-scanner-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of a camera-equipped QR terminal, a manufacturing tag and local record server.",
+    "concept": true
+  },
+  "rfid-attendance": {
+    "src": "/assets/project-covers/rfid-attendance-960.webp",
+    "srcset": "/assets/project-covers/rfid-attendance-480.webp 480w, /assets/project-covers/rfid-attendance-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of an RFID card reader, local attendance clock and USB record export.",
+    "concept": true
+  },
+  "networked-polling": {
+    "src": "/assets/project-covers/networked-polling-960.webp",
+    "srcset": "/assets/project-covers/networked-polling-480.webp 480w, /assets/project-covers/networked-polling-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of five input terminals connected to a server and an abstract reporting display.",
+    "concept": true
+  },
+  "zynq-object-detection": {
+    "src": "/assets/project-covers/zynq-object-detection-960.webp",
+    "srcset": "/assets/project-covers/zynq-object-detection-480.webp 480w, /assets/project-covers/zynq-object-detection-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of a camera-to-FPGA vision pipeline and an outlined object on a display.",
+    "concept": true
+  },
+  "aerial-object-tracking": {
+    "src": "/assets/project-covers/aerial-object-tracking-960.webp",
+    "srcset": "/assets/project-covers/aerial-object-tracking-480.webp 480w, /assets/project-covers/aerial-object-tracking-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of desktop software tracking a car in prerecorded overhead road footage.",
+    "concept": true
+  },
+  "industrial-data-graph": {
+    "src": "/assets/project-covers/industrial-data-graph-960.webp",
+    "srcset": "/assets/project-covers/industrial-data-graph-480.webp 480w, /assets/project-covers/industrial-data-graph-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of sensor modules connected to a controller with a graphical display.",
+    "concept": true
+  },
+  "food-reservation-system": {
+    "src": "/assets/project-covers/food-reservation-system-960.webp",
+    "srcset": "/assets/project-covers/food-reservation-system-480.webp 480w, /assets/project-covers/food-reservation-system-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of an RFID meal-reservation terminal with four abstract status panels.",
+    "concept": true
+  },
+  "two-line-caller-id": {
+    "src": "/assets/project-covers/two-line-caller-id-960.webp",
+    "srcset": "/assets/project-covers/two-line-caller-id-480.webp 480w, /assets/project-covers/two-line-caller-id-960.webp 960w",
+    "width": 960,
+    "height": 640,
+    "alt": "Concept illustration of two telephone inputs connected to a desktop caller-event and call-log interface.",
+    "concept": true
+  }
+}

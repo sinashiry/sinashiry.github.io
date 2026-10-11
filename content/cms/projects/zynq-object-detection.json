@@ -1,0 +1,128 @@
+{
+  "slug": "zynq-object-detection",
+  "title": "Object Detection & Tracking on Zynq",
+  "year": "Undergraduate project",
+  "summary": "An embedded-vision study taking object detection from MATLAB and OpenCV prototypes to an HLS core integrated on a Zynq platform.",
+  "problem": "Explore an implementation path for image processing that combines programmable logic with software-controlled interfaces.",
+  "approach": [
+    "Developed the algorithm in MATLAB and C++/OpenCV.",
+    "Created a processing core through the HLS workflow.",
+    "Integrated the design with Vivado and Xilinx SDK on the Zynq board."
+  ],
+  "outcome": "An embedded-vision implementation workflow with a system concept diagram and original algorithm and comparison demonstrations.",
+  "technologies": [
+    "Zynq",
+    "HLS",
+    "Embedded vision"
+  ],
+  "role": "Undergraduate embedded-vision research and implementation",
+  "software": [
+    "MATLAB & C++ algorithm development",
+    "Vivado HLS, Vivado & Xilinx SDK"
+  ],
+  "hardware": [
+    "Zynq XC7Z010CLG400-1 / ZYBO",
+    "Camera/video interface",
+    "Display",
+    "Host connection",
+    "Spartan-6 and Raspberry Pi as platforms considered"
+  ],
+  "sections": [
+    {
+      "title": "A vision algorithm on an embedded platform",
+      "body": [
+        "My undergraduate work explored object detection and tracking on a Zynq-based platform. The project connects image-processing software with the tools needed to build and integrate programmable logic."
+      ]
+    },
+    {
+      "title": "From software to an HLS core",
+      "body": [
+        "The development path began with MATLAB, continued with a C++/OpenCV implementation and then moved into HLS. Vivado and Xilinx SDK were used to transfer the design into the board-level workflow."
+      ]
+    },
+    {
+      "title": "Finding a target colour",
+      "body": [
+        "For the colour-based detection step, pixels in an incoming frame are compared with a selected colour range and matching locations are marked. The frame-search demonstration makes this operation visible."
+      ]
+    },
+    {
+      "title": "The board-level system",
+      "body": [
+        "The concept diagram connects the camera/video path, ZYBO board, display and host interface. The platform uses a Zynq XC7Z010CLG400-1; the research also considered Spartan-6 and Raspberry Pi implementation options."
+      ]
+    },
+    {
+      "title": "Different implementations, one question",
+      "body": [
+        "The comparison recording presents the timing of three implementations side by side. Additional Sobel-filter and frame-search demonstrations show related parts of the vision-development process. The public source repository contains MATLAB, OpenCV, HLS, SDK and Vivado materials alongside the Persian report."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Camera/frame input",
+      "description": "Video frames enter the embedded-vision path."
+    },
+    {
+      "label": "Target-colour logic",
+      "description": "Pixel values are compared with a chosen colour range."
+    },
+    {
+      "label": "Software prototypes",
+      "description": "MATLAB and C++/OpenCV versions establish the algorithmic workflow."
+    },
+    {
+      "label": "HLS core",
+      "description": "The processing logic is expressed through the HLS development flow."
+    },
+    {
+      "label": "Zynq integration",
+      "description": "Vivado and Xilinx SDK connect the core with the board-level design."
+    },
+    {
+      "label": "Visual output",
+      "description": "The display shows the processed frame and marked target."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/zynq-object-detection/main-concept.png",
+      "alt": "Original ZYBO system concept: camera/video input, FPGA board, display and host link.",
+      "caption": "Original ZYBO system concept: camera/video input, FPGA board, display and host link."
+    },
+    {
+      "src": "/assets/projects/zynq-object-detection/detection-and-tracking-of-moving-objects.png",
+      "alt": "Original Object Detection & Tracking on Zynq project banner.",
+      "caption": "Original Object Detection & Tracking on Zynq project banner."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/zynq-object-detection/Test-Sobel-Filter_.mp4",
+      "title": "Sobel filter demonstration",
+      "caption": "Sobel-filter demonstration from the embedded-vision archive. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/zynq-object-detection/frame-search.mp4",
+      "title": "Target-colour frame search",
+      "caption": "Frame-search illustration of target-colour detection. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/zynq-object-detection/timing.mp4",
+      "title": "Implementation timing comparison",
+      "caption": "Side-by-side timing comparison of three implementations. Silent demonstration."
+    }
+  ],
+  "strength": "An algorithm carried from software into Zynq.",
+  "highlights": [
+    "MATLAB & C++ algorithm prototypes",
+    "HLS core & board integration",
+    "Three-implementation timing demonstration"
+  ],
+  "contribution": "My undergraduate work carried the vision algorithm from MATLAB prototypes through C++/OpenCV to an HLS core and Zynq board-integration workflow.",
+  "result": "An embedded-vision implementation workflow with a system concept diagram and original algorithm and comparison demonstrations.",
+  "decisionNotes": "The development sequence used MATLAB, C++/OpenCV and HLS before board integration with Vivado and Xilinx SDK. Colour-range comparisons expose a simple frame-search operation alongside the Sobel-filter demonstration.",
+  "validationNotes": "A recording compares three implementations; separate recordings show Sobel filtering and target-colour frame search. Hardware, workload and measurement conditions are not fully documented here, so the recording is not presented as a reproducible speedup benchmark.",
+  "referenceUrl": "https://github.com/sinashiry/Object-Detection-And-Tracking"
+}

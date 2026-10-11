@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "name": "Azerbaijani",
+      "level": "Native"
+    },
+    {
+      "name": "Persian",
+      "level": "Bilingual proficiency"
+    },
+    {
+      "name": "English",
+      "level": "Professional proficiency"
+    },
+    {
+      "name": "Turkish",
+      "level": "Full professional proficiency"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "industrial-data-graph",
+  "title": "Industrial DataGraph",
+  "year": "Undergraduate project",
+  "summary": "A microcontroller-based sensor display that collects measurements from slave units and presents numerical values and live charts on a graphical LCD.",
+  "problem": "Make distributed industrial sensor readings available through a compact local display with configurable visual and numerical views.",
+  "approach": [
+    "Collected sensor measurements through slave units and digital industrial connections.",
+    "Processed received data on an ATmega32-based master.",
+    "Built graphical and numerical views with physical navigation buttons."
+  ],
+  "outcome": "A sensor-acquisition and display prototype with schematics, PCB work and multiple documented LCD interface states.",
+  "technologies": [
+    "AVR",
+    "Sensor acquisition",
+    "PCB development"
+  ],
+  "role": "Embedded application and electronics development",
+  "software": [
+    "AVR firmware development",
+    "Schematic & PCB design"
+  ],
+  "hardware": [
+    "ATmega32A",
+    "ATmega8A",
+    "240 × 128 graphical LCD",
+    "Single-layer PCB",
+    "Physical navigation buttons"
+  ],
+  "sections": [
+    {
+      "title": "From sensors to a local display",
+      "body": [
+        "Sensor-connected slave units measure the required parameters and can perform initial processing. Data travels through digital connections and industrial ports to a master unit, where it is processed and displayed."
+      ]
+    },
+    {
+      "title": "An AVR master with two display modes",
+      "body": [
+        "An ATmega32-based master receives the measurements and presents them on a 240 × 128 graphical LCD. Operators can switch between charts and numerical values."
+      ]
+    },
+    {
+      "title": "An interface built around physical controls",
+      "body": [
+        "Buttons on the PCB navigate the main menu and settings. The interface includes a temperature chart, chart configuration and a warning view, shown in the original project photographs."
+      ]
+    },
+    {
+      "title": "Electronics and development tools",
+      "body": [
+        "The project uses ATmega32A and ATmega8A microcontrollers, a single-layer PCB and a graphical LCD. Development used BASCOM AVR and Protel 99SE, bringing firmware, display logic and board work into one system."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Industrial sensors",
+      "description": "Sensors supply the parameters to be measured."
+    },
+    {
+      "label": "Slave units",
+      "description": "Local acquisition and optional preprocessing happen near the sensors."
+    },
+    {
+      "label": "Digital connection",
+      "description": "Measurements travel to the master through digital industrial connections."
+    },
+    {
+      "label": "AVR master",
+      "description": "The ATmega32-based device processes incoming data."
+    },
+    {
+      "label": "Graphical LCD",
+      "description": "A 240 × 128 display shows numerical values and charts."
+    },
+    {
+      "label": "Operator controls",
+      "description": "PCB-mounted buttons navigate views and settings."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/industrial-data-graph/schematic.jpg",
+      "alt": "Industrial DataGraph circuit schematic.",
+      "caption": "Industrial DataGraph circuit schematic."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-08.jpg",
+      "alt": "Industrial DataGraph — Chart.",
+      "caption": "Industrial DataGraph — Chart."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-21.jpg",
+      "alt": "Industrial DataGraph — Main Menu of Device.",
+      "caption": "Industrial DataGraph — Main Menu of Device."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-35.jpg",
+      "alt": "Industrial DataGraph — Graphical View Of Temperature.",
+      "caption": "Industrial DataGraph — Graphical View Of Temperature."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-24-rotated.jpg",
+      "alt": "Industrial DataGraph — About Us.",
+      "caption": "Industrial DataGraph — About Us."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-32.jpg",
+      "alt": "Industrial DataGraph — Chart Settings.",
+      "caption": "Industrial DataGraph — Chart Settings."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-23-58.jpg",
+      "alt": "Industrial DataGraph — Warning Mode.",
+      "caption": "Industrial DataGraph — Warning Mode."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/datagraph-pcb.jpg",
+      "alt": "Single-layer PCB for the DataGraph display and controls.",
+      "caption": "Single-layer PCB for the DataGraph display and controls."
+    },
+    {
+      "src": "/assets/projects/industrial-data-graph/industrial-data-graph.png",
+      "alt": "Original Industrial DataGraph project banner.",
+      "caption": "Original Industrial DataGraph project banner."
+    }
+  ],
+  "strength": "Distributed sensor data on a compact display.",
+  "highlights": [
+    "Sensor/slave/master architecture",
+    "240 × 128 LCD charts & values",
+    "Firmware, schematic & PCB development"
+  ],
+  "contribution": "My work covered embedded application and electronics development, including AVR display logic, schematic and PCB work for the sensor/slave/master prototype.",
+  "result": "A sensor-acquisition and display prototype with schematics, PCB work and multiple documented LCD interface states.",
+  "decisionNotes": "Sensor-connected slave units send measurements through digital connections to an ATmega32-based master. The 240 × 128 graphical LCD provides chart and numerical views, while physical PCB-mounted buttons navigate menus and settings.",
+  "validationNotes": "The original schematic, single-layer PCB view and LCD photographs show the chart, temperature, menu, settings and warning states. These document the electronics and interface; no sensor-calibration, sampling-rate or measurement-accuracy study is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Industrial-Datagraph"
+}

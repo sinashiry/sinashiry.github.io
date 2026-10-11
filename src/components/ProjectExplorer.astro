@@ -1,0 +1,209 @@
+---
+import '../styles/project-explorer.css';
+import Text from './Text.astro';
+import previews from '../data/media-thumbnails.json';
+import dimensions from '../data/project-image-dimensions.json';
+const imageSize = (src:string) => dimensions[src as keyof typeof dimensions] || {width:1200,height:800};
+const imagePreview = (src:string) => previews[src as keyof typeof previews];
+const imageSrcset = (src:string) => { const thumb=imagePreview(src); const size=imageSize(src); return thumb && thumb.width < size.width ? `${thumb.src} ${thumb.width}w, ${src} ${size.width}w` : undefined; };
+
+interface GalleryImage {
+  src: string;
+  alt: string;
+  caption: string;
+}
+interface TechnicalSection {
+  title: string;
+  body: string[];
+}
+interface SystemBlock {
+  label: string;
+  description: string;
+}
+interface ProjectVideo {
+  src: string;
+  poster?: string;
+  title: string;
+  caption: string;
+}
+interface Props {
+  slug: string;
+  title: string;
+  galleries: GalleryImage[];
+  sections: TechnicalSection[];
+  system?: SystemBlock[];
+  basePath?: string;
+  videos?: ProjectVideo[];
+}
+
+const { slug, title, galleries = [], sections = [], system = [], basePath, videos = [] } = Astro.props;
+const id = `explorer-${slug.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+---
+
+<div class="project-explorer" data-project-explorer id={id}>
+  {galleries.length > 0 && (
+    <section class="explorer-gallery" aria-labelledby={`${id}-gallery-title`}>
+      <div class="explorer-heading">
+        <div>
+          <span class="explorer-label">A closer look</span>
+          <h2 id={`${id}-gallery-title`}>Inside the project</h2>
+        </div>
+        <p class="explorer-gallery-count" data-explorer-count aria-live="polite" aria-atomic="true">
+          {galleries.length} {galleries.length === 1 ? 'image' : 'images'}
+        </p>
+      </div>
+
+      <div class="explorer-gallery-stage">
+        {galleries.map((item, index) => (
+          <figure class="explorer-figure" id={`${id}-image-${index}`} data-explorer-figure>
+            <a class="explorer-image-link" href={item.src} data-explorer-open>
+              <img src={item.src} srcset={imageSrcset(item.src)} sizes="(max-width: 760px) 92vw, 70vw" alt={item.alt} data-cv-alt={basePath ? `${basePath}.galleries.${index}.alt` : undefined} width={imageSize(item.src).width} height={imageSize(item.src).height} loading="lazy" decoding="async" />
+              <span class="explorer-link-hint">Enlarge image</span>
+              <span class="explorer-enlarge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5" /></svg>
+                Enlarge
+              </span>
+            </a>
+            <figcaption>{basePath ? <Text field={`${basePath}.galleries.${index}.caption`} /> : item.caption}</figcaption>
+          </figure>
+        ))}
+        {galleries.length > 1 && (
+          <div class="explorer-gallery-controls" data-explorer-controls hidden>
+            <button type="button" data-explorer-previous aria-label="Previous project image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+            </button>
+            <button type="button" data-explorer-next aria-label="Next project image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+            </button>
+          </div>
+        )}
+      </div>
+
+      {galleries.length > 1 && (
+        <nav class="explorer-thumbnails" aria-label="Project image gallery">
+          {galleries.map((item, index) => (
+            <a class="explorer-thumbnail" href={`#${id}-image-${index}`} data-explorer-thumbnail aria-controls={`${id}-image-${index}`}>
+              <img src={imagePreview(item.src)?.src || item.src} alt="" width="160" height="100" loading="lazy" decoding="async" />
+              <span class="explorer-link-hint">View image {String(index + 1).padStart(2, '0')}: {basePath ? <Text field={`${basePath}.galleries.${index}.${item.caption ? 'caption' : 'alt'}`} /> : item.caption || item.alt}</span>
+              <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            </a>
+          ))}
+        </nav>
+      )}
+
+      <dialog class="explorer-lightbox" data-explorer-lightbox aria-labelledby={`${id}-lightbox-title`}>
+        <div class="explorer-lightbox-top">
+          <h3 id={`${id}-lightbox-title`}>{basePath ? <Text field={`${basePath}.title`} /> : title}</h3>
+          <form method="dialog">
+            <button class="explorer-lightbox-close" type="submit" autofocus aria-label="Close enlarged image">
+              <span>Close</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+            </button>
+          </form>
+        </div>
+        <img class="explorer-lightbox-image" data-explorer-lightbox-image src={galleries[0].src} alt={galleries[0].alt} data-cv-alt={basePath ? `${basePath}.galleries.0.alt` : undefined} width="1200" height="800" loading="lazy" />
+        <div class="explorer-lightbox-bottom">
+          <p data-explorer-lightbox-caption>{basePath ? <Text field={`${basePath}.galleries.0.caption`} /> : galleries[0].caption}</p>
+          {galleries.length > 1 && (
+            <div class="explorer-lightbox-controls">
+              <button type="button" data-explorer-lightbox-previous aria-label="Previous enlarged image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+              </button>
+              <span data-explorer-lightbox-count aria-live="polite" aria-atomic="true">1 / {galleries.length}</span>
+              <button type="button" data-explorer-lightbox-next aria-label="Next enlarged image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+              </button>
+            </div>
+          )}
+        </div>
+      </dialog>
+    </section>
+  )}
+
+  {videos.length > 0 && (
+    <section class="explorer-videos" aria-labelledby={`${id}-videos-title`}>
+      <div class="explorer-heading">
+        <div>
+          <span class="explorer-label">Project footage</span>
+          <h2 id={`${id}-videos-title`}>See it in action</h2>
+        </div>
+      </div>
+      <div class="explorer-video-grid">
+        {videos.map((video, index) => (
+          <figure class="explorer-video">
+            <video src={video.src} poster={video.poster || undefined} controls playsinline preload="none" aria-labelledby={`${id}-video-${index}-title`} aria-describedby={`${id}-video-${index}-caption`}>
+              <p>Your browser cannot play this video. <a href={video.src}>Open the project video</a>.</p>
+            </video>
+            <figcaption>
+              <h3 id={`${id}-video-${index}-title`}>{basePath ? <Text field={`${basePath}.videos.${index}.title`} /> : video.title}</h3>
+              <p id={`${id}-video-${index}-caption`}>{basePath ? <Text field={`${basePath}.videos.${index}.caption`} /> : video.caption}</p>
+              <a class="explorer-video-source" href={video.src}>Open video <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {system.length > 0 && (
+    <section class="explorer-system" aria-labelledby={`${id}-system-title`}>
+      <div class="explorer-heading">
+        <div>
+          <span class="explorer-label">System view</span>
+          <h2 id={`${id}-system-title`}>How the system works</h2>
+        </div>
+        <p class="explorer-hint" data-explorer-system-hint hidden>Select a block to explore its role.</p>
+      </div>
+      <nav class="explorer-system-blocks" aria-label="Project system components">
+        {system.map((block, index) => (
+          <a class="explorer-system-block" href={`#${id}-system-${index}`} data-explorer-system-link aria-controls={`${id}-system-${index}`}>
+            <span class="explorer-block-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <span>{basePath ? <Text field={`${basePath}.system.${index}.label`} /> : block.label}</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+          </a>
+        ))}
+      </nav>
+      {system.length > 1 && (
+        <div class="explorer-walkthrough" data-explorer-walkthrough-controls hidden>
+          <p>A guided illustration of the system components.</p>
+          <button type="button" data-explorer-walkthrough aria-pressed="false">Play walkthrough</button>
+        </div>
+      )}
+      <div class="explorer-system-descriptions" data-explorer-system-descriptions>
+        {system.map((block, index) => (
+          <article class="explorer-system-description" id={`${id}-system-${index}`} data-explorer-system-panel aria-labelledby={`${id}-system-label-${index}`}>
+            <h3 id={`${id}-system-label-${index}`}>{basePath ? <Text field={`${basePath}.system.${index}.label`} /> : block.label}</h3>
+            <p>{basePath ? <Text field={`${basePath}.system.${index}.description`} /> : block.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {sections.length > 0 && (
+    <section class="explorer-details" aria-labelledby={`${id}-details-title`}>
+      <div class="explorer-heading">
+        <div>
+          <span class="explorer-label">Technical notes</span>
+          <h2 id={`${id}-details-title`}>The detail behind the build</h2>
+        </div>
+      </div>
+      <div class="explorer-accordions">
+        {sections.map((section, index) => (
+          <details class="explorer-detail" open>
+            <summary>
+              <span class="explorer-detail-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+              <span>{basePath ? <Text field={`${basePath}.sections.${index}.title`} /> : section.title}</span>
+              <span class="explorer-detail-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="explorer-detail-body">{section.body.map((paragraph, paragraphIndex) => <p>{basePath ? <Text field={`${basePath}.sections.${index}.body.${paragraphIndex}`} /> : paragraph}</p>)}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )}
+</div>
+
+<script>
+  import '../scripts/project-explorer';
+</script>

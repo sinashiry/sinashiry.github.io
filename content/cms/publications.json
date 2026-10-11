@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "Full Reference of Raspberry Pi — Second Edition",
+      "type": "Technical book",
+      "year": "2018",
+      "authors": "S. Shiri and H. Aalamshahi",
+      "publisher": "Elmiran, Tabriz, Iran",
+      "language": "Persian",
+      "description": "A Persian-language Raspberry Pi reference, co-authored with H. Aalamshahi."
+    },
+    {
+      "title": "Full Reference of Raspberry Pi — Volumes 1 & 2",
+      "type": "Technical books",
+      "year": "2017",
+      "authors": "S. Shiri and H. Aalamshahi",
+      "publisher": "Elmiran / Ebadi, Tabriz, Iran",
+      "language": "Persian",
+      "description": "Two volumes introducing Raspberry Pi concepts and practical use in Persian."
+    }
+  ]
+}

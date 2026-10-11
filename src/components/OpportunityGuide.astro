@@ -1,0 +1,45 @@
+---
+import Text from './Text.astro';
+import '../styles/opportunity-guide.css';
+
+interface Props { id?: string }
+const { id = 'opportunity-guide' } = Astro.props;
+---
+
+<section class="opportunity-guide" id={id} data-opportunity-guide aria-labelledby={`${id}-title`}>
+  <header class="opportunity-guide-header">
+    <div><span class="eyebrow">A QUICK GUIDE</span><h2 id={`${id}-title`}>Find the experience that fits.</h2></div>
+    <div class="opportunity-tabs" data-opportunity-tabs hidden role="tablist" aria-label="Explore experience by opportunity">
+      <button type="button" id={`${id}-engineering-tab`} role="tab" aria-controls={`${id}-engineering`} aria-selected="true" tabindex="0" data-opportunity-tab="engineering">Engineering teams</button>
+      <button type="button" id={`${id}-academic-tab`} role="tab" aria-controls={`${id}-academic`} aria-selected="false" tabindex="-1" data-opportunity-tab="academic">Master’s programmes</button>
+    </div>
+  </header>
+
+  <section class="opportunity-panel" id={`${id}-engineering`} data-opportunity-panel="engineering" aria-labelledby={`${id}-engineering-heading`}>
+    <div class="opportunity-panel-header">
+      <h3 id={`${id}-engineering-heading`}>For engineering teams</h3>
+      <a class="opportunity-download" href="/downloads/Sina_Shiri_Engineering_CV.pdf" download>Engineering CV <span>PDF <span aria-hidden="true">↓</span></span></a>
+    </div>
+    <ul class="opportunity-evidence">
+      <li><a href="/projects/industrial-alarm-monitoring/"><span class="opportunity-evidence-title">Industrial monitoring <span aria-hidden="true">↗</span></span><p>Python desktop interfaces connecting alarm inputs, local records and network access.</p><span class="opportunity-evidence-link">Explore the monitoring system</span></a></li>
+      <li><a href="/projects/embedded-qr-scanner/"><span class="opportunity-evidence-title">Embedded integration <span aria-hidden="true">↗</span></span><p>Camera input, QR recognition and a local interface brought together on Raspberry Pi.</p><span class="opportunity-evidence-link">Explore the QR scanner</span></a></li>
+      <li><a href="/projects/rfid-attendance/"><span class="opportunity-evidence-title">Connected applications <span aria-hidden="true">↗</span></span><p>An attendance application connecting RFID hardware with Python software and stored records.</p><span class="opportunity-evidence-link">Explore the attendance system</span></a></li>
+    </ul>
+  </section>
+
+  <section class="opportunity-panel" id={`${id}-academic`} data-opportunity-panel="academic" aria-labelledby={`${id}-academic-heading`}>
+    <div class="opportunity-panel-header">
+      <h3 id={`${id}-academic-heading`}>For master’s programmes</h3>
+      <a class="opportunity-download" href="/downloads/Sina_Shiri_Masters_CV.pdf" download>Academic CV <span>PDF <span aria-hidden="true">↓</span></span></a>
+    </div>
+    <ul class="opportunity-evidence">
+      <li><a href="/projects/zynq-object-detection/"><span class="opportunity-evidence-title">Embedded vision study <span aria-hidden="true">↗</span></span><p>B.Sc. GPA <strong><Text field="education.0.gpa" /></strong>. Undergraduate object detection and tracking work on Zynq.</p><span class="opportunity-evidence-link">Explore the undergraduate project</span></a></li>
+      <li><a href="/research/"><span class="opportunity-evidence-title">Technical writing <span aria-hidden="true">↗</span></span><p>Co-authored Persian-language Raspberry Pi reference books for learners and practitioners.</p><span class="opportunity-evidence-link">Read about the books</span></a></li>
+      <li><a href="/research/"><span class="opportunity-evidence-title">Research direction <span aria-hidden="true">↗</span></span><p>Current freelance work in hardware security research, building on Python and embedded engineering.</p><span class="opportunity-evidence-link">Explore research interests</span></a></li>
+    </ul>
+  </section>
+</section>
+
+<script>
+  import '../scripts/opportunity-guide';
+</script>

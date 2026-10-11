@@ -1,0 +1,3854 @@
+{
+  "version": 1,
+  "maxBytes": 262144,
+  "anchors": [
+    "slug",
+    "src",
+    "location",
+    "type"
+  ],
+  "split": {
+    "projects": "slug"
+  },
+  "editable": {
+    "profile.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.eyebrow": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "profile.email": {
+      "type": "email",
+      "maxLength": 254,
+      "required": true
+    },
+    "profile.location": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.availability": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.researchInterests.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.researchInterests.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.researchInterests.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.researchInterests.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.headlineStart": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.headlineMiddle": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.headlineEnd": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.heroIntro": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "profile.currentFocus": {
+      "maxLength": 500,
+      "required": true
+    },
+    "profile.github": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": true,
+      "allowEmpty": false
+    },
+    "profile.linkedin": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": true,
+      "allowEmpty": false
+    },
+    "experience.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.0.organization": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.0.period": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.0.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "experience.1.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.1.organization": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.1.period": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.1.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "experience.1.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.1.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.2.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.2.organization": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.2.period": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.2.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "experience.2.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "experience.2.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.0.degree": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.0.institution": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.0.period": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.0.gpa": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.0.thesis": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "education.1.degree": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.1.institution": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.1.period": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.1.gpa": {
+      "maxLength": 500,
+      "required": true
+    },
+    "education.1.thesis": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "publications.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.0.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.0.authors": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.0.publisher": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.0.language": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "publications.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.1.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.1.authors": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.1.publisher": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.1.language": {
+      "maxLength": 500,
+      "required": true
+    },
+    "publications.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "skillGroups.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.0.skills.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.0.skills.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.0.skills.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.1.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.1.skills.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.1.skills.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.1.skills.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.2.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.2.skills.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.2.skills.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.2.skills.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.3.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.3.skills.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.3.skills.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "skillGroups.3.skills.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.0.level": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.1.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.1.level": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.2.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.2.level": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.3.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "languages.3.level": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.collaborators.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.collaborators.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.collaborators.1.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.collaborators.1.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.hardware.5": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.1.body.1": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.1.body.2": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.1.body.3": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.2.body.1": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.2.body.2": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.2.body.3": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.sections.4.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.sections.4.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.system.5.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.system.5.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.0.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.3.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.4.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.5.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.6.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.6.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.7.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.7.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.8.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.8.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.9.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.9.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.10.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.10.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.11.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.11.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.12.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.12.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.13.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.13.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.14.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.14.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.15.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.15.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.16.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.16.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.17.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.17.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.18.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.18.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.19.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.19.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.20.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.galleries.20.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.videos.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.0.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.0.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.0.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.0.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.0.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.0.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.hardware.5": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.2.body.1": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.2.body.2": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.2.body.3": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.2.body.4": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.sections.4.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.sections.4.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.system.5.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.system.5.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.1.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.3.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.4.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.5.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.6.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.6.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.7.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.7.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.8.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.8.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.9.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.9.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.10.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.10.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.11.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.11.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.12.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.12.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.13.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.13.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.14.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.14.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.15.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.15.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.16.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.16.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.17.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.17.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.18.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.18.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.19.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.19.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.20.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.20.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.21.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.21.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.22.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.22.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.23.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.23.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.24.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.24.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.25.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.25.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.26.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.26.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.27.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.27.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.28.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.28.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.29.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.29.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.30.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.30.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.31.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.31.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.32.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.32.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.33.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.33.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.34.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.34.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.35.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.35.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.36.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.36.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.37.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.37.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.38.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.38.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.39.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.galleries.39.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.videos.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.1.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.1.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.1.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.1.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.1.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.1.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.year": {
+      "maxLength": 500,
+      "required": false
+    },
+    "projects.2.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.collaborators.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.collaborators.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.1.body.1": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.1.body.2": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.1.body.3": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.2.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.3.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.4.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.5.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.6.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.6.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.7.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.7.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.8.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.8.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.9.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.9.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.10.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.10.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.11.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.11.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.12.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.galleries.12.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.2.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.2.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.2.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.2.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.2.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.2.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.2.body.1": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.2.body.2": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.2.body.3": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.2.body.4": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.3.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.3.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.3.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.3.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.3.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.3.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.3.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.4.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.year": {
+      "maxLength": 500,
+      "required": false
+    },
+    "projects.4.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.collaborators.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.collaborators.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.4.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.3.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.4.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.5.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.6.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.6.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.7.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.7.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.8.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.galleries.8.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.videos.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.4.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.4.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.4.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.4.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.4.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.4.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.5.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.sections.4.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.sections.4.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.system.5.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.system.5.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.5.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.videos.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.5.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.5.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.5.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.5.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.5.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.5.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.6.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.collaborators.0.name": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.collaborators.0.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.6.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.4.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.5.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.videos.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.6.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.6.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.6.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.6.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.6.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.6.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.7.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.hardware.4": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.system.5.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.system.5.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.7.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.3.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.3.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.4.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.4.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.5.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.5.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.6.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.6.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.7.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.7.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.8.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.galleries.8.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.7.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.7.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.7.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.7.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.7.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.7.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.8.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.hardware.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.hardware.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.8.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.galleries.1.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.galleries.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.galleries.2.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.galleries.2.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.videos.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.videos.1.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.8.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.8.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.8.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.8.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.8.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.8.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "projects.9.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.problem": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.approach.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.approach.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.approach.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.outcome": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.technologies.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.technologies.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.technologies.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.role": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.software.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.software.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.hardware.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.hardware.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.sections.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.sections.0.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.sections.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.sections.1.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.sections.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.sections.2.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.sections.3.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.sections.3.body.0": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.system.0.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.system.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.system.1.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.system.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.system.2.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.system.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.system.3.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.system.3.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.system.4.label": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.system.4.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "projects.9.galleries.0.alt": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.galleries.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.videos.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.videos.0.caption": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.strength": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.highlights.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.highlights.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.highlights.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "projects.9.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.9.result": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.9.decisionNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.9.validationNotes": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.9.measuredOutcome": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "projects.9.referenceUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "research.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "research.points.0": {
+      "maxLength": 500,
+      "required": true
+    },
+    "research.points.1": {
+      "maxLength": 500,
+      "required": true
+    },
+    "research.points.2": {
+      "maxLength": 500,
+      "required": true
+    },
+    "research.points.3": {
+      "maxLength": 500,
+      "required": true
+    },
+    "contact.heading": {
+      "maxLength": 500,
+      "required": true
+    },
+    "contact.summary": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "contact.referencesNote": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.0.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.0.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.0.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "honors.1.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.1.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.1.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "honors.2.year": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.2.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "honors.2.description": {
+      "maxLength": 3000,
+      "required": true
+    },
+    "recommendations.title": {
+      "maxLength": 500,
+      "required": true
+    },
+    "recommendations.intro": {
+      "maxLength": 500,
+      "required": true
+    },
+    "recommendations.invitation": {
+      "maxLength": 500,
+      "required": true
+    },
+    "recommendations.action": {
+      "maxLength": 500,
+      "required": true
+    },
+    "recommendations.entries.0.quote": {
+      "maxLength": 1500,
+      "required": false
+    },
+    "recommendations.entries.0.name": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.status": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.relationship": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "recommendations.entries.0.context": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.organization": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.date": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.0.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "recommendations.entries.1.quote": {
+      "maxLength": 1500,
+      "required": false
+    },
+    "recommendations.entries.1.name": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.status": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.relationship": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "recommendations.entries.1.context": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.organization": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.date": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.1.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "recommendations.entries.2.quote": {
+      "maxLength": 1500,
+      "required": false
+    },
+    "recommendations.entries.2.name": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.status": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.relationship": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "recommendations.entries.2.context": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.organization": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.date": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.2.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "recommendations.entries.3.quote": {
+      "maxLength": 1500,
+      "required": false
+    },
+    "recommendations.entries.3.name": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.status": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.relationship": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "recommendations.entries.3.context": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.organization": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.date": {
+      "maxLength": 200,
+      "required": false
+    },
+    "recommendations.entries.3.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.0.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.0.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.1.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.1.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.2.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.2.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.3.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.3.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.4.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.4.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.5.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.5.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.6.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.6.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.profiles.7.label": {
+      "maxLength": 80,
+      "required": false
+    },
+    "academic.profiles.7.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.0.name": {
+      "maxLength": 160,
+      "required": false
+    },
+    "academic.references.0.status": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.0.relationship": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.0.email": {
+      "type": "email",
+      "maxLength": 254,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.0.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.0.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "academic.references.1.name": {
+      "maxLength": 160,
+      "required": false
+    },
+    "academic.references.1.status": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.1.relationship": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.1.email": {
+      "type": "email",
+      "maxLength": 254,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.1.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.1.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "academic.references.2.name": {
+      "maxLength": 160,
+      "required": false
+    },
+    "academic.references.2.status": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.2.relationship": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.2.email": {
+      "type": "email",
+      "maxLength": 254,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.2.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.2.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "academic.references.3.name": {
+      "maxLength": 160,
+      "required": false
+    },
+    "academic.references.3.status": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.3.relationship": {
+      "maxLength": 240,
+      "required": false
+    },
+    "academic.references.3.email": {
+      "type": "email",
+      "maxLength": 254,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.3.url": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "academic.references.3.approved": {
+      "type": "approval",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "maxLength": 3,
+      "required": true
+    },
+    "currentWork.researchDetails.question": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "currentWork.researchDetails.motivation": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "currentWork.researchDetails.contribution": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "currentWork.researchDetails.method": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "currentWork.researchDetails.platforms": {
+      "maxLength": 3000,
+      "required": false
+    },
+    "currentWork.researchDetails.results": {
+      "maxLength": 500,
+      "required": false
+    },
+    "currentWork.researchDetails.status": {
+      "maxLength": 500,
+      "required": true
+    },
+    "currentWork.researchDetails.artifactUrl": {
+      "type": "url",
+      "maxLength": 2048,
+      "required": false,
+      "allowEmpty": true
+    },
+    "currentWork.researchDetails.collaborators": {
+      "maxLength": 3000,
+      "required": false
+    }
+  }
+}

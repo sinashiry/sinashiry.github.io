@@ -1,0 +1,42 @@
+{
+  "profiles": [
+    {
+      "label": "Google Scholar"
+    },
+    {
+      "label": "ORCID"
+    },
+    {
+      "label": "ResearchGate"
+    },
+    {
+      "label": "Semantic Scholar"
+    },
+    {
+      "label": "OpenReview"
+    },
+    {
+      "label": "DBLP"
+    },
+    {
+      "label": "Academia.edu"
+    },
+    {
+      "label": "Academic website"
+    }
+  ],
+  "references": [
+    {
+      "approved": "no"
+    },
+    {
+      "approved": "no"
+    },
+    {
+      "approved": "no"
+    },
+    {
+      "approved": "no"
+    }
+  ]
+}

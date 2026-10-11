@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+% Standalone CV: compile with pdfLaTeX. No external images, fonts or data files.
+% Content source: supplied CV/project inventory and owner's October 2026 update.
+% Honors checked against original award/participation certificates in October 2026.
+% IstaSanat employment 2017--Present confirmed by owner in October 2026; graduation ranks omitted.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=19mm,right=19mm,top=17mm,bottom=18mm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\definecolor{ink}{HTML}{172F3A}
+\definecolor{accent}{HTML}{096D73}
+\definecolor{muted}{HTML}{4B5560}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdfauthor={Sina Shiri},pdfsubject={Curriculum vitae},pdfkeywords={Python, Embedded Systems, Raspberry Pi, Computer Vision, Sina Shiri}}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\headheight}{13.6pt}
+\setlist[itemize]{leftmargin=13pt,itemsep=2pt,topsep=3pt,parsep=0pt,label=\textbullet}
+\titleformat{\section}{\large\bfseries\color{ink}}{}{0pt}{}[\vspace{2pt}{\color{accent}\titlerule}]
+\titlespacing*{\section}{0pt}{12pt}{7pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Sina Shiri}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage\ / 2}
+\raggedright
+\emergencystretch=2em
+\newcommand{\entry}[2]{\textbf{#1}\hfill{\small\color{muted}#2}\par}
+\newcommand{\tech}[1]{{\small\color{muted}#1}\par}
+\newcommand{\header}[1]{%
+  {\fontsize{29}{32}\selectfont\bfseries\color{ink}Sina Shiri}\par
+  \vspace{2pt}{\large\color{accent}#1}\par
+  \vspace{5pt}{\small Tabriz, Iran\enspace|\enspace\href{mailto:info@sina-shiri.com}{info@sina-shiri.com}\enspace|\enspace\href{https://sina-shiri.com/}{sina-shiri.com}}\par
+  \vspace{3pt}{\small\href{https://github.com/sinashiry}{GitHub: sinashiry}\enspace|\enspace\href{https://sina-shiri.com/research/}{Research and academic profile}}\par
+  \vspace{6pt}{\color{ink}\hrule height 0.8pt}\vspace{4pt}}
+\begin{document}
+\hypersetup{pdftitle={Sina Shiri - Masters Application CV}}
+\header{Electrical Engineering Graduate | Embedded Systems \& Research}
+
+\section*{Academic profile}
+Electrical engineering graduate seeking master's study in embedded computing and hardware/software systems. Built a practical research foundation through a Zynq-focused undergraduate thesis, C++/Python vision prototypes and technical book authorship. Combines industrial development at IstaSanat with current independent work in hardware security research.
+
+\section*{Research interests}
+Embedded computing; hardware/software integration; computer vision on embedded platforms; intelligent sensing; hardware-security research.
+
+\section*{Education}
+\entry{B.Sc. Electrical Engineering - Electronic Technology}{2013--2016}
+\textbf{Mohajer Technical University of Isfahan}, Isfahan, Iran\\
+GPA: \textbf{18.65/20} (original grading scale).\\
+\textit{Thesis:} ``Detecting and Tracking Special Moving Objects in Public Environments on the ZYNQ platform.''
+
+\entry{Associate Degree in Electrical Engineering}{2011--2013}
+\textbf{Tabriz Technical and Vocational University}, Tabriz, Iran\\
+GPA: \textbf{17.85/20} (original grading scale).\\
+\textit{Thesis:} ``Data Graph of Industrial Sensors in Noisy Environments without Distance Limit.''
+
+\section*{Technical books}
+\begin{itemize}
+  \item \textbf{S. Shiri} and H. Aalamshahi. \textit{Full Reference of Raspberry Pi}, second edition. Elmiran, Tabriz, Iran, 2018. Persian-language technical book.
+  \item \textbf{S. Shiri} and H. Aalamshahi. \textit{Full Reference of Raspberry Pi}, Volumes 1 and 2. Elmiran / Ebadi, Tabriz, Iran, 2017. Persian-language technical books.
+\end{itemize}
+
+\section*{Selected research and development}
+\entry{Undergraduate thesis: vision on Zynq}{B.Sc. research project}
+\tech{Algorithm prototyping, C++/MATLAB, Vivado HLS, Zynq}
+Explored object detection and tracking from algorithm prototypes through an HLS and Zynq implementation workflow. Archived demonstrations show Sobel filtering, target-colour search and an implementation timing comparison.
+
+\newpage
+\entry{Aerial Object Detection \& Tracking}{Computer-vision prototype}
+\tech{C++, OpenCV, target selection and image processing}
+Developed desktop prototypes for vehicle-region detection and selected-target tracking in recorded footage. Demonstrations show adjustable processing controls and target-selection modes.\par
+
+\entry{Fire \& Smoke Detection}{Computer-vision / ML prototype}
+\tech{Computer vision, neural-network prototyping, embedded camera integration}
+\begin{itemize}
+  \item Explored image-processing and neural-network approaches to visual fire and smoke detection.
+  \item Worked on dataset preparation, camera integration and a monitoring interface with event handling and status display.
+\end{itemize}
+
+\entry{Industrial Alarm Monitoring System}{Embedded-system integration}
+\tech{Python, Raspberry Pi, industrial monitoring, system integration}
+\begin{itemize}
+  \item Developed monitoring software for 40 alarm inputs, integrating custom electronics with operator interfaces and database-backed event records.
+  \item Implemented standalone and local-network workflows with configurable input modes, labels and controls.
+\end{itemize}
+
+\section*{Professional experience}
+\entry{Python Programmer \& Hardware Designer}{2017--Present}
+\textit{IstaSanat Engineering Company}\\
+Developed industrial control and monitoring software and integrated hardware, user interfaces and event logging.
+
+\entry{Freelance Python Developer \& Hardware Designer}{Current}
+Currently working independently in hardware security research. Earlier freelance projects include caller-identification and attendance applications, hardware integration and Raspberry Pi technical writing.
+
+\section*{Research and engineering methods}
+\textbf{Programming:} Python and C++; operator interfaces, client/server applications and data workflows.\\
+\textbf{Embedded and vision:} Hardware/software integration, embedded Linux, device communication, object detection and tracking.\\
+\textbf{Hardware and design:} PCB development; MATLAB, Altium Designer; experience with Zynq, Vivado, Verilog and VHDL.
+
+\section*{Honors \& distinctions}
+\begin{itemize}
+  \item \textbf{2016 -- AUTCUP, third place:} Tele-Operated Deminer, team Red 2; Amirkabir University of Technology, Tehran.
+  \item \textbf{2016 -- AUTCUP, MAV participation:} Aras Robotics team; documented by the competition certificate.
+  \item \textbf{2009--2010 -- Provincial electronics recognition:} Recognised in the Scientific-Practical Competition and selected for the national stage.
+\end{itemize}
+
+\section*{Languages}
+Azerbaijani: native; Persian: bilingual; Turkish: full professional proficiency; English: professional proficiency. {\small\color{muted}Levels are self-assessed.}
+\par{\small\color{muted}Academic and professional references available on request.}
+\end{document}

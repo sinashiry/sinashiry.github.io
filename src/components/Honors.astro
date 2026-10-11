@@ -1,0 +1,29 @@
+---
+import Text from './Text.astro';
+import '../styles/profile-sections.css';
+
+interface HonorEntry {
+  year: string;
+  title: string;
+  description: string;
+}
+interface Props {
+  entries?: HonorEntry[];
+  basePath?: string;
+  id?: string;
+  heading?: string | false;
+  eyebrow?: string;
+}
+const { entries = [], basePath = 'honors', id, heading = 'Honors & distinctions', eyebrow = 'MILESTONES ALONG THE WAY' } = Astro.props;
+---
+
+{entries.length > 0 && <section class="profile-section honors-section" id={id} aria-labelledby={heading && id ? `${id}-title` : undefined} aria-label={!id || !heading ? 'Honors and distinctions' : undefined}>
+  {heading && <header class="profile-section-heading"><div><span class="eyebrow">{eyebrow}</span><h2 id={id ? `${id}-title` : undefined}>{heading}</h2></div></header>}
+  <div class="profile-honors-grid">
+    {entries.map((entry, index) => <article class="profile-honor-card">
+      <div class="profile-honor-top"><span class="profile-line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v5a5 5 0 0 1-10 0V3zm0 2H3v2a4 4 0 0 0 4 4m10-6h4v2a4 4 0 0 1-4 4m-5 2v6m-4 2h8m-6-2h4" /></svg></span><span class="profile-honor-year">{basePath ? <Text field={`${basePath}.${index}.year`} /> : entry.year}</span></div>
+      <h3>{basePath ? <Text field={`${basePath}.${index}.title`} /> : entry.title}</h3>
+      <p>{basePath ? <Text field={`${basePath}.${index}.description`} /> : entry.description}</p>
+    </article>)}
+  </div>
+</section>}

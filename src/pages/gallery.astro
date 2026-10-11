@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import Text from '../components/Text.astro';
+import data from '../data/content.json';
+import thumbnailData from '../data/media-thumbnails.json';
+import '../styles/media-gallery.css';
+
+type MediaKind = 'image' | 'video' | 'concept';
+interface ProjectReference { index: number; slug: string; title: string }
+interface MediaItem {
+  kind: MediaKind;
+  src: string;
+  poster?: string;
+  alt?: string;
+  altField?: string;
+  captionField: string;
+  titleField: string;
+  projects: ProjectReference[];
+}
+const thumbnails = thumbnailData as Record<string, { src: string; width: number; height: number }>;
+const conceptSources = new Set(['/assets/projects/aerial-object-tracking/concept-cover.webp']);
+const unique = new Map<string, MediaItem>();
+function addItem(item: MediaItem) {
+  const previous = unique.get(item.src);
+  if (!previous) unique.set(item.src, item);
+  else for (const project of item.projects) {
+    if (!previous.projects.some(existing => existing.slug === project.slug)) previous.projects.push(project);
+  }
+}
+data.projects.forEach((project, projectIndex) => {
+  const reference = { index: projectIndex, slug: project.slug, title: project.title };
+  (project.galleries || []).forEach((item, index) => addItem({
+    kind: conceptSources.has(item.src) ? 'concept' : 'image', src: item.src, alt: item.alt,
+    altField: `projects.${projectIndex}.galleries.${index}.alt`,
+    captionField: `projects.${projectIndex}.galleries.${index}.caption`,
+    titleField: `projects.${projectIndex}.title`, projects: [reference],
+  }));
+  (project.videos || []).forEach((item, index) => addItem({
+    kind: 'video', src: item.src, poster: item.poster,
+    captionField: `projects.${projectIndex}.videos.${index}.caption`,
+    titleField: `projects.${projectIndex}.videos.${index}.title`, projects: [reference],
+  }));
+});
+const items = [...unique.values()];
+const totals = {
+  all: items.length,
+  image: items.filter(item => item.kind === 'image').length,
+  video: items.filter(item => item.kind === 'video').length,
+  concept: items.filter(item => item.kind === 'concept').length,
+};
+const filters = [
+  { value: 'all', label: 'All media', count: totals.all },
+  { value: 'image', label: 'Photos', count: totals.image },
+  { value: 'video', label: 'Videos', count: totals.video },
+  ...(totals.concept ? [{ value: 'concept', label: 'Concepts', count: totals.concept }] : []),
+];
+const projects = data.projects.map((project, index) => ({ ...project, index, count: items.filter(item => item.projects.some(p => p.slug === project.slug)).length })).filter(project => project.count > 0);
+const kindLabel = (kind: MediaKind) => kind === 'video' ? 'Video demonstration' : kind === 'concept' ? 'Concept illustration · AI' : 'Project image';
+---
+
+<Base title="Project Gallery — Sina Shiri" description="Explore Sina Shiri’s engineering project photographs, interfaces, diagrams and video demonstrations in one gallery." active="gallery">
+  <div class="wrap media-gallery" data-media-gallery>
+    <section class="media-gallery-intro" aria-labelledby="media-gallery-title">
+      <div><span class="eyebrow">THE PROJECT ARCHIVE</span><h1 id="media-gallery-title">The work,<br /><em>up close.</em></h1></div>
+      <div class="media-gallery-intro-copy"><p>Hardware on the bench. Interfaces on the screen. Explore the images and demonstrations behind the projects, all in one place.</p><p class="media-gallery-note">Photographs, screenshots and diagrams are grouped under Photos. AI concept illustrations are labelled separately. Videos play only when you choose.</p><a class="media-gallery-back" href="/projects/">Read the project case studies <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="media-gallery-collection" id="media-collection" aria-labelledby="media-collection-title">
+      <h2 id="media-collection-title" class="sr-only">Project images and demonstrations</h2>
+      <div class="media-gallery-toolbar" data-media-toolbar hidden>
+        <div class="media-kind-filters" role="group" aria-label="Filter media type">
+          {filters.map(filter => <button type="button" data-media-kind={filter.value} aria-pressed={filter.value === 'all'}>{filter.label} <span data-media-kind-count aria-hidden="true">{filter.count}</span></button>)}
+        </div>
+        <div class="media-project-filter"><label for="media-project">Project</label><select id="media-project" data-media-project><option value="all">All projects ({items.length})</option>{projects.map(project => <option value={project.slug}>{project.title} ({project.count})</option>)}</select></div>
+      </div>
+      <div class="media-gallery-results"><p data-media-status role="status" aria-live="polite" aria-atomic="true">{items.length} items across {projects.length} projects</p><span>Open an item for a closer look</span></div>
+      <p class="media-gallery-empty" data-media-empty hidden>No media matches these filters. <button type="button" data-media-reset>Show all media</button></p>
+
+      <ul class="media-gallery-grid">
+        {items.map((item, index) => {
+          const previewSource = item.kind === 'video' ? item.poster : item.src;
+          const thumbnail = previewSource ? thumbnails[previewSource] : undefined;
+          return <li class="media-gallery-item" data-media-item data-kind={item.kind} data-projects={item.projects.map(project => project.slug).join(' ')} data-media-index={index}>
+            <figure class="media-gallery-card">
+              <a class="media-gallery-preview" href={item.src} data-media-open data-media-video-id={item.kind === 'video' ? `media-video-${index}` : undefined} data-media-poster={item.poster || undefined} aria-describedby={`media-caption-${index}`}>
+                {previewSource ? <img src={thumbnail?.src || previewSource} width={thumbnail?.width || 480} height={thumbnail?.height || 300} loading="lazy" decoding="async" alt={item.kind === 'video' ? '' : item.alt} data-cv-alt={item.altField} /> : <span class="media-gallery-placeholder" aria-hidden="true">VIDEO</span>}
+                <span class="media-gallery-badge" data-media-label>{kindLabel(item.kind)}</span>
+                <span class="media-gallery-open-icon" aria-hidden="true">{item.kind === 'video' ? '▶' : '↗'}</span>
+                <span class="sr-only">{item.kind === 'video' ? 'Open video: ' : 'Enlarge image: '}<Text field={item.titleField} /></span>
+              </a>
+              <figcaption>
+                {item.kind === 'video' && <h3 class="media-gallery-video-title" id={`media-video-title-${index}`} data-media-title><Text field={item.titleField} /></h3>}
+                <div class="media-gallery-projects">{item.projects.map(project => <a href={`/projects/${project.slug}/`} data-media-project-name={project.slug}><Text field={`projects.${project.index}.title`} /></a>)}</div>
+                <p id={`media-caption-${index}`} data-media-caption><Text field={item.captionField} /></p>
+              </figcaption>
+            </figure>
+          </li>;
+        })}
+      </ul>
+    </section>
+
+    {/* Keep native video sources in the HTML so the page works without JavaScript.
+        Enhancement moves the same element into the dialog; no-JS links open the file. */}
+    <div data-media-video-bank hidden>
+      {items.map((item, index) => item.kind === 'video' && <video id={`media-video-${index}`} src={item.src} controls playsinline preload="none" aria-labelledby={`media-video-title-${index}`}><p>Your browser cannot play this video. <a href={item.src}>Open video</a>.</p></video>)}
+    </div>
+    <dialog class="media-gallery-dialog" data-media-dialog aria-labelledby="media-dialog-title" aria-describedby="media-dialog-caption">
+      <header class="media-dialog-header"><div><span data-media-dialog-label class="media-dialog-label">Project image</span><h2 id="media-dialog-title" data-media-dialog-title>Project gallery</h2></div><form method="dialog"><button type="submit" class="media-dialog-close" autofocus>Close <span aria-hidden="true">×</span></button></form></header>
+      <div class="media-dialog-stage" data-media-stage><img data-media-full-image alt="" hidden /></div>
+      <div class="media-dialog-footer"><div><p id="media-dialog-caption" data-media-dialog-caption></p><a data-media-dialog-project href="/projects/">View project case study <span aria-hidden="true">↗</span></a></div><div class="media-dialog-controls"><button type="button" data-media-previous aria-label="Previous media item">←</button><span data-media-position role="status" aria-live="polite" aria-atomic="true"></span><button type="button" data-media-next aria-label="Next media item">→</button></div></div>
+    </dialog>
+  </div>
+  <script>import '../scripts/media-gallery';</script>
+</Base>

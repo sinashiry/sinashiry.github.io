@@ -1,0 +1,61 @@
+/* Edge-only circuit texture: visible in the gutters, quiet beneath the content. */
+body:has(> .binary-background){isolation:isolate}
+.binary-background{
+  --binary-edge-width:24px;
+  position:fixed;inset:0;z-index:-1;width:100%;height:100vh;height:100dvh;
+  overflow:hidden;pointer-events:none!important;user-select:none;-webkit-user-select:none;
+  opacity:.3;color:#52634f;contain:strict;
+}
+.binary-background-edge{
+  position:absolute;top:96px;bottom:0;width:var(--binary-edge-width);overflow:hidden;
+  mask-image:linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+}
+.binary-background-edge--left{
+  left:0;
+  mask-image:linear-gradient(to right,#000 15%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+  -webkit-mask-image:linear-gradient(to right,#000 15%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+}
+.binary-background-edge--right{
+  right:0;
+  mask-image:linear-gradient(to left,#000 15%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+  -webkit-mask-image:linear-gradient(to left,#000 15%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 88%,transparent);
+}
+.binary-background-edge--left,.binary-background-edge--right{mask-composite:intersect;-webkit-mask-composite:source-in}
+.binary-background-circuit{position:absolute;top:0;bottom:0;left:0;width:156px;height:100%;overflow:hidden}
+.binary-background-edge--right .binary-background-circuit{left:auto;right:0;transform:scaleX(-1)}
+.binary-background-traces{stroke:currentColor;stroke-width:1;opacity:.65}
+.binary-background-traces circle{fill:var(--paper,#f3f4ee);stroke-width:.8}
+.binary-background-signal{
+  stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-dasharray:18 982;
+  opacity:.8;animation:binary-background-signal 22s linear infinite;
+}
+.binary-background-edge--right .binary-background-signal{animation-delay:-11s;animation-duration:27s}
+.binary-background-matrix{
+  position:absolute;left:8px;width:92px;display:grid;gap:3px;opacity:.65;
+  font:400 8px/1.5 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+  letter-spacing:.28em;white-space:nowrap;
+}
+.binary-background-matrix--1{top:23%}
+.binary-background-matrix--2{top:68%}
+.binary-background-edge--right .binary-background-matrix{left:auto;right:8px;text-align:right}
+.binary-background-edge--right .binary-background-matrix--1{top:36%}
+.binary-background-edge--right .binary-background-matrix--2{top:79%}
+.binary-background-matrix>span{display:block;min-height:12px;opacity:1;transition:opacity 850ms ease-in-out}
+.binary-background-matrix>span[data-changing]{opacity:0}
+.binary-background[data-paused] .binary-background-signal{animation-play-state:paused}
+.binary-background[data-paused] .binary-background-matrix>span{transition:none}
+@keyframes binary-background-signal{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@media(min-width:1250px){.binary-background{--binary-edge-width:clamp(40px,calc((100vw - 1480px)/2 - 16px),144px)}}
+@media(max-width:1050px){.binary-background{--binary-edge-width:16px}}
+@media(max-width:760px){
+  .binary-background{--binary-edge-width:12px}
+  .binary-background-edge{top:80px}
+  .binary-background-matrix{left:2px;font-size:7px;letter-spacing:.2em}
+  .binary-background-edge--right .binary-background-matrix{right:2px}
+}
+@media(prefers-reduced-motion:reduce){
+  .binary-background-signal{animation:none!important;opacity:.3;stroke-dasharray:none}
+  .binary-background-matrix>span{transition:none!important;opacity:1!important}
+}
+@media print{.binary-background{display:none!important}}

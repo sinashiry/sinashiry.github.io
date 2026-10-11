@@ -1,0 +1,25 @@
+---
+import data from '../data/content.json';
+import Text from './Text.astro';
+import '../styles/academic-profile.css';
+
+interface Props { id?: string; heading?: string | false; }
+const { id = 'academic-references', heading = 'Academic references' } = Astro.props;
+const ready = (entry: { name: string; status: string; relationship: string; approved: string }) => entry.approved === 'yes' && [entry.name, entry.status, entry.relationship].every(value => value.trim());
+const populated = data.academic.references.some(ready);
+---
+<section data-cv-group="academic-references" data-cv-group-state={populated ? 'ready' : 'empty'} class="academic-section" id={id} aria-labelledby={heading ? `${id}-title` : undefined} aria-label={!heading ? 'Academic references' : undefined}>
+  {heading && <header class="academic-section-heading"><span class="eyebrow">ACADEMIC CONNECTIONS</span><h2 id={`${id}-title`}>{heading}</h2></header>}
+  <div class="academic-reference-grid">
+    {data.academic.references.map((entry, index) => <article class="academic-reference-card" data-academic-entry="reference" data-academic-path={`academic.references.${index}`} data-academic-state={ready(entry) ? 'ready' : 'empty'}>
+      <h3><Text field={`academic.references.${index}.name`} /></h3>
+      <p class="academic-reference-status"><Text field={`academic.references.${index}.status`} /></p>
+      <p class="academic-reference-relationship"><Text field={`academic.references.${index}.relationship`} /></p>
+      <div class="academic-reference-links">
+        <a href={`mailto:${entry.email}`} data-cv-href={`academic.references.${index}.email`}><Text field={`academic.references.${index}.email`} /></a>
+        <a href={entry.url} data-cv-url={`academic.references.${index}.url`} rel="noopener noreferrer">Academic profile<span aria-hidden="true"> ↗</span></a>
+      </div>
+    </article>)}
+  </div>
+
+</section>

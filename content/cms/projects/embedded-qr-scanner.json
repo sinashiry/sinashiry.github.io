@@ -1,0 +1,175 @@
+{
+  "slug": "embedded-qr-scanner",
+  "title": "Embedded QR Scanning Appliance",
+  "summary": "A camera-based scanning appliance that connects QR codes to industrial part-information workflows.",
+  "problem": "Operators need a straightforward way to identify parts and reach their records without navigating a general-purpose computer.",
+  "approach": [
+    "Developed the Python application and PyQt scanning interface.",
+    "Integrated OpenCV, a Raspberry Pi camera and GPIO-driven device functions.",
+    "Added operator controls for scanning, camera focus and image orientation."
+  ],
+  "outcome": "A dedicated scanning workflow connecting camera input, operator controls and local-network information.",
+  "technologies": [
+    "Embedded Linux",
+    "Production workflows",
+    "Device management"
+  ],
+  "role": "Python application development and embedded integration",
+  "collaborators": [
+    {
+      "name": "Hossein Aalamshahi",
+      "role": "System design"
+    }
+  ],
+  "software": [
+    "Python terminal application",
+    "Camera scanning & server integration"
+  ],
+  "hardware": [
+    "Raspberry Pi",
+    "Pi Camera",
+    "Touchscreen",
+    "Keyboard/mouse support",
+    "Custom device enclosure"
+  ],
+  "sections": [
+    {
+      "title": "Production records at the workstation",
+      "body": [
+        "Workers scan a product document to open the matching record from a local server, then update the part build sheet as tasks are completed. The terminal connects a camera-based input to the production-information workflow."
+      ]
+    },
+    {
+      "title": "The operator journey",
+      "body": [
+        "Present the document to the camera, scan the QR code, load the relevant product page and update its information. Touch input is supported, with a keyboard and mouse available as alternatives.",
+        "Scan the product document",
+        "Retrieve its production record",
+        "Review and update the build sheet"
+      ]
+    },
+    {
+      "title": "A purpose-built device interface",
+      "body": [
+        "The Python/PyQt application provides scan controls, a main menu, troubleshooting views and camera setup. The project gallery shows these interfaces on the physical terminals and several assembled devices together."
+      ]
+    },
+    {
+      "title": "Administration over the local network",
+      "body": [
+        "A separate device-control panel provides status, settings and control commands through the network. The demonstration recordings show device development and the remote maintenance workflow."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Product document",
+      "description": "A QR code identifies the part or production record."
+    },
+    {
+      "label": "Camera and scan UI",
+      "description": "Raspberry Pi, Pi Camera and Python/PyQt provide the operator interaction."
+    },
+    {
+      "label": "Local-server lookup",
+      "description": "The scan leads to the product page and associated build sheet."
+    },
+    {
+      "label": "Task update",
+      "description": "The worker browses and edits production information using touch or peripherals."
+    },
+    {
+      "label": "Device administration",
+      "description": "A network panel provides device status, commands and settings."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/embedded-qr-scanner/All-Qr-Code-Systems.jpg",
+      "alt": "A group of assembled QR production terminals.",
+      "caption": "A group of assembled QR production terminals."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/Repair-of-system.jpg",
+      "alt": "Archived terminal troubleshooting/setup view.",
+      "caption": "Archived terminal troubleshooting/setup view."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/Repair-of-system-3.jpg",
+      "alt": "Main scanning interface on the physical terminal.",
+      "caption": "Main scanning interface on the physical terminal."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/Repair-of-system-4.jpg",
+      "alt": "Additional device troubleshooting interface.",
+      "caption": "Additional device troubleshooting interface."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/qr-code-reader-and-production-monitoring.png",
+      "alt": "Original QR Production-Terminal System project banner.",
+      "caption": "Original QR Production-Terminal System project banner."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/qr-device.jpg",
+      "alt": "Assembled QR terminal and operator screen.",
+      "caption": "Assembled QR terminal and operator screen."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/terminal-workstation.webp",
+      "alt": "QR-scanning terminal with its operator keyboard and mouse.",
+      "caption": "QR-scanning terminal with its operator keyboard and mouse."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/scan-screen.webp",
+      "alt": "QR terminal showing the scanning screen and keyboard shortcuts.",
+      "caption": "QR terminal showing the scanning screen and keyboard shortcuts."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/system-status.webp",
+      "alt": "QR terminal displaying its connection and device-status screen.",
+      "caption": "QR terminal displaying its connection and device-status screen."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/scan-demonstration.webp",
+      "alt": "QR-scanning interface shown on the assembled touchscreen terminal.",
+      "caption": "QR-scanning interface shown on the assembled touchscreen terminal."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/enclosure-assembly.webp",
+      "alt": "QR-terminal enclosure and cabling before installation.",
+      "caption": "QR-terminal enclosure and cabling before installation."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/connection-diagnostics.webp",
+      "alt": "Connection diagnostics showing network, server and input-device status.",
+      "caption": "Connection diagnostics showing network, server and input-device status."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/archive-20261007/wall-mounted-terminal.webp",
+      "alt": "Wall-mounted QR terminal with external cabling.",
+      "caption": "Wall-mounted QR terminal with external cabling."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/embedded-qr-scanner/designing.mp4",
+      "title": "Building the scanning device",
+      "caption": "Device-design and setup demonstration. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/embedded-qr-scanner/status-of-device.mp4",
+      "title": "Network status & device controls",
+      "caption": "Device status and configuration through the network panel. Silent demonstration."
+    }
+  ],
+  "strength": "A production record, opened at the point of work.",
+  "highlights": [
+    "Camera scan to production build sheet",
+    "Touch-enabled industrial terminal",
+    "Remote device status & maintenance"
+  ],
+  "contribution": "I developed the Python/PyQt terminal application and embedded integration, connecting camera scanning, operator controls and local-network production records. System design is credited to Hosein AlamShahi.",
+  "result": "A dedicated scanning workflow connecting camera input, operator controls and local-network information.",
+  "decisionNotes": "A dedicated Raspberry Pi terminal connects camera input to local production records. Touch controls support the workstation workflow, with keyboard and mouse alternatives and a separate network device-control panel.",
+  "validationNotes": "Photographs show assembled terminals and application screens. Archival recordings show device development and remote maintenance. No measured scan accuracy, throughput or deployment count is supplied."
+}

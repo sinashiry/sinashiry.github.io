@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "Python software engineering",
+      "skills": [
+        "Operator interfaces & device control",
+        "Client/server application design",
+        "Event handling & data workflows"
+      ]
+    },
+    {
+      "name": "Embedded systems",
+      "skills": [
+        "Hardware/software integration",
+        "Standalone & networked operation",
+        "Embedded Linux applications"
+      ]
+    },
+    {
+      "name": "Computer vision & FPGA",
+      "skills": [
+        "Object detection & tracking",
+        "Camera-to-application integration",
+        "Algorithm prototyping & HLS workflows"
+      ]
+    },
+    {
+      "name": "Electronics & communication",
+      "skills": [
+        "PCB & embedded-device development",
+        "Sensor acquisition & graphical displays",
+        "Technical writing & engineering documentation"
+      ]
+    }
+  ]
+}

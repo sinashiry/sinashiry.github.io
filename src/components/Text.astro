@@ -1,0 +1,6 @@
+---
+import data from '../data/content.json';
+const { field } = Astro.props;
+const value = field.split('.').reduce((v, key) => v?.[key], data);
+---
+<span data-cv={field}>{value}</span>

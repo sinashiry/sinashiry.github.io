@@ -1,0 +1,5 @@
+---
+import '../../styles/evidence.css';
+import Base from '../../layouts/Base.astro';import ProjectCard from '../../components/ProjectCard.astro';import data from '../../data/content.json';
+---
+<Base title="Engineering Projects — Sina Shiri" description="Selected Python, embedded systems, industrial monitoring, and computer vision projects by Sina Shiri." active="work"><div class="wrap"><section class="page-intro"><span class="eyebrow">SELECTED ENGINEERING WORK</span><h1>From a problem<br />to a working system.</h1><p>Ten case studies connecting software and hardware: industrial monitoring, embedded applications, computer vision and engineering prototypes.</p><p class="cover-disclosure">Project covers are conceptual illustrations. Each case study contains original project photographs, interfaces, demonstrations and contribution credits.</p><div class="actions"><a class="button secondary" href="/gallery/">Browse the full media gallery <span aria-hidden="true">↗</span></a></div></section><div class="project-grid" style="padding-bottom:75px">{data.projects.map((p,i)=><ProjectCard project={p} index={i} />)}</div></div></Base>

@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/collections.css';
+import { publishedPapers } from '../../lib/collections';
+import { escapeHtml, jsonLd, nl2br, paperGroups, paperLinks, paperSchema, papersRobots } from '../../lib/collection-rules';
+const papers = await publishedPapers();
+const groups = paperGroups(papers);
+---
+<Base title="Publications — Sina Shiri" description="Papers and academic publications by Sina Shiri, with authors, publication details and source links." active="publications" robots={papersRobots(papers.length)}>
+  <div class="wrap collections-page">
+    <header class="collection-intro"><span class="eyebrow">RESEARCH & SCHOLARLY WORK</span><h1>Publications<span>.</span></h1><p>Papers and academic work, with publication details and links to the source.</p></header>
+    <div class="collection-list">
+      {groups.length ? groups.map(group => (
+        <section class="publication-group" aria-labelledby={`papers-${group.key}`}><h2 id={`papers-${group.key}`}>{group.name}</h2><div class="publication-group-list">{group.papers.map(paper => {
+          const links = paperLinks(paper);
+          return <article class:list={['collection-card publication-card', { 'publication-featured': paper.featured }]}><div class="publication-meta"><span>{paper.type}</span><span>{paper.year}</span><span class="publication-status">{paper.status}</span>{paper.featured && <span class="publication-feature-label">Featured</span>}</div><h3>{paper.title}</h3><p class="publication-authors">{paper.authors}</p>{paper.venue && <p>{paper.venue}</p>}{paper.contribution && <p class="publication-contribution"><strong>My contribution: </strong>{paper.contribution}</p>}{paper.abstract && <details class="publication-details"><summary>Abstract</summary><p set:html={nl2br(escapeHtml(paper.abstract))}></p></details>}{paper.citation && <details class="publication-details"><summary>Citation</summary><pre class="publication-citation">{paper.citation}</pre></details>}{links.length > 0 && <div class="publication-links">{links.map((link, index) => <Fragment>{index > 0 && ' '}<a class={link.related ? 'collection-related' : undefined} href={link.href} rel={link.related ? undefined : 'noopener noreferrer'}>{link.label}</a></Fragment>)}</div>}<script type="application/ld+json" set:html={jsonLd(paperSchema(paper))}></script></article>;
+        })}</div></section>
+      )) : <div class="collection-empty"><h2>Research & technical work</h2><p>Explore the academic background, undergraduate thesis and co-authored technical books.</p><a href="/research/">Research interests & study ↗</a></div>}
+    </div>
+  </div>
+</Base>

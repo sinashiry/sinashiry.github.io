@@ -1,0 +1,114 @@
+{
+  "slug": "aerial-object-tracking",
+  "title": "Aerial Object Tracking",
+  "year": "Prototype",
+  "summary": "C++ and OpenCV prototypes exploring the detection and tracking of selected objects in aerial imagery.",
+  "problem": "Aerial imagery can support more autonomous sensing when relevant objects can be identified and tracked over time.",
+  "approach": [
+    "Explored detection and tracking of moving and selected stationary objects.",
+    "Used C++ and OpenCV to process aerial-video imagery.",
+    "Contributed to invention documentation connecting visual information with a UAV-control concept."
+  ],
+  "outcome": "Computer-vision prototypes and concept documentation forming a foundation for further embedded-vision research.",
+  "technologies": [
+    "Computer vision",
+    "Object tracking",
+    "C++"
+  ],
+  "role": "Computer-vision prototypes and concept documentation",
+  "collaborators": [
+    {
+      "name": "Hossein Niromandi",
+      "role": "Co-inventor"
+    }
+  ],
+  "software": [
+    "C++ computer-vision prototypes"
+  ],
+  "sections": [
+    {
+      "title": "Detection and tracking in aerial imagery",
+      "body": [
+        "C++/OpenCV prototypes explore moving objects and selected stationary objects in aerial video, connecting computer vision with autonomous sensing."
+      ]
+    },
+    {
+      "title": "Visual information for more autonomous decisions",
+      "body": [
+        "The project concept considers how extracted visual information could support onboard UAV decisions and reduce dependence on a human operator and continuous ground communication."
+      ]
+    },
+    {
+      "title": "A collaborative concept",
+      "body": [
+        "The invention documentation names Hossein Niromandi and Sina Shiri. The work combines image processing, electronics and machine vision in an aerial-sensing context."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Aerial imagery",
+      "description": "Video frames provide the input to the prototype."
+    },
+    {
+      "label": "Object selection/detection",
+      "description": "C++/OpenCV work identifies moving or selected stationary objects."
+    },
+    {
+      "label": "Tracking",
+      "description": "Visual information is followed over time."
+    },
+    {
+      "label": "UAV-control concept",
+      "description": "A conceptual link from extracted visual information to onboard UAV decisions."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/aerial-object-tracking/concept-cover.webp",
+      "alt": "AI-generated educational illustration of a sphere, cube and cylinder viewed from above, with object-tracking outlines and a motion trail.",
+      "caption": "Object-tracking concept illustration, generated with AI. Geometric objects explain the idea; this is not an image of the prototype."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/terrain-vehicle-tracking.mp4",
+      "title": "Vehicle tracking over desert terrain",
+      "caption": "A desktop OpenCV prototype follows a vehicle in desert footage, with a tracking box and adjustable area, threshold and morphology controls. Archival desktop recording; silent playback."
+    },
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-detection-and-tracking.mp4",
+      "title": "Highway detection and selected-target tracking",
+      "caption": "The desktop prototype switches between vehicle-region detection and following a selected vehicle in overhead highway footage. Archival desktop recording; silent playback."
+    },
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/single-vehicle-selection.mp4",
+      "title": "Selecting and following a single vehicle",
+      "caption": "A target-selection demonstration follows one car along a road, with a green tracking rectangle and adjustable image-processing controls. Archival desktop recording; silent playback."
+    },
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/traffic-region-detection.mp4",
+      "title": "Vehicle-region detection in traffic footage",
+      "caption": "Area annotations mark moving vehicle regions in a road-video demonstration, with area and threshold settings shown alongside the C++/OpenCV prototype. Archival desktop recording; silent playback."
+    },
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-region-controls.mp4",
+      "title": "Highway detection and region controls",
+      "caption": "Desktop vehicle-region detection over recorded highway footage, with red area annotations and adjustable processing controls. Archival desktop recording; silent playback."
+    },
+    {
+      "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-selected-vehicle.mp4",
+      "title": "Selecting vehicles in highway footage",
+      "caption": "Operator selection and green-box tracking of vehicles in recorded highway footage. Archival desktop prototype; silent playback."
+    }
+  ],
+  "strength": "A study of detection and tracking over time.",
+  "highlights": [
+    "Moving & selected-object prototypes",
+    "C++ vision implementation",
+    "Collaborative invention documentation"
+  ],
+  "result": "Computer-vision prototypes and concept documentation forming a foundation for further embedded-vision research.",
+  "decisionNotes": "The C++/OpenCV desktop prototypes process recorded aerial and road footage, with operator selection, region detection and adjustable area, threshold and morphology controls. The separate collaborative concept connects extracted visual information with possible onboard UAV decisions.",
+  "validationNotes": "Six archival desktop recordings show vehicle-region detection, selected-target tracking and adjustable image-processing controls over recorded footage. The cover is a labelled AI concept illustration. These artifacts demonstrate desktop prototypes; they do not establish an onboard UAV implementation, flight validation or measured tracking accuracy."
+}

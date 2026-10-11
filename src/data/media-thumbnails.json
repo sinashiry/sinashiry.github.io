@@ -1,0 +1,627 @@
+{
+  "/assets/projects/aerial-object-tracking/archive-20261007/highway-detection-and-tracking-poster.jpg": {
+    "src": "/assets/gallery-thumbs/3dcc3b61c7054574.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/archive-20261007/highway-region-controls-poster.jpg": {
+    "src": "/assets/gallery-thumbs/99ae9d57b549ff7b.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/archive-20261007/highway-selected-vehicle-poster.jpg": {
+    "src": "/assets/gallery-thumbs/fe64f5b27ae521a1.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/archive-20261007/single-vehicle-selection-poster.jpg": {
+    "src": "/assets/gallery-thumbs/670f8dcf376622f9.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/archive-20261007/terrain-vehicle-tracking-poster.jpg": {
+    "src": "/assets/gallery-thumbs/a884d3d37ba548f2.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/archive-20261007/traffic-region-detection-poster.jpg": {
+    "src": "/assets/gallery-thumbs/8ba15fe730f864dc.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/aerial-object-tracking/concept-cover.webp": {
+    "src": "/assets/gallery-thumbs/102dbb3436d385ef.webp",
+    "width": 640,
+    "height": 337
+  },
+  "/assets/projects/embedded-qr-scanner/All-Qr-Code-Systems.jpg": {
+    "src": "/assets/gallery-thumbs/577479ec872ca544.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system-3.jpg": {
+    "src": "/assets/gallery-thumbs/136e4fc471082d61.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system-4.jpg": {
+    "src": "/assets/gallery-thumbs/90f7efe8bfbcca3e.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system.jpg": {
+    "src": "/assets/gallery-thumbs/c4022d2e49b18656.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/connection-diagnostics.webp": {
+    "src": "/assets/gallery-thumbs/e0bb961d080e789d.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/enclosure-assembly.webp": {
+    "src": "/assets/gallery-thumbs/71acd1fb231ff777.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/scan-demonstration.webp": {
+    "src": "/assets/gallery-thumbs/43c48442efee5d1f.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/scan-screen.webp": {
+    "src": "/assets/gallery-thumbs/5d16223bdd585f1d.webp",
+    "width": 222,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/system-status.webp": {
+    "src": "/assets/gallery-thumbs/3f98111ce04ed9fa.webp",
+    "width": 222,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/terminal-workstation.webp": {
+    "src": "/assets/gallery-thumbs/6266ef3149930285.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/wall-mounted-terminal.webp": {
+    "src": "/assets/gallery-thumbs/a4a1395919d39d5a.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/embedded-qr-scanner/designing-poster.jpg": {
+    "src": "/assets/gallery-thumbs/2e3028ea28d1f200.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/embedded-qr-scanner/qr-code-reader-and-production-monitoring.png": {
+    "src": "/assets/gallery-thumbs/8e0330fbe4c5a0d3.webp",
+    "width": 640,
+    "height": 200
+  },
+  "/assets/projects/embedded-qr-scanner/qr-device.jpg": {
+    "src": "/assets/gallery-thumbs/8be115542dc312b8.webp",
+    "width": 640,
+    "height": 450
+  },
+  "/assets/projects/embedded-qr-scanner/status-of-device-poster.jpg": {
+    "src": "/assets/gallery-thumbs/295aedb2276de96c.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-1-poster.jpg": {
+    "src": "/assets/gallery-thumbs/03dab047af5c9be6.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-2-poster.jpg": {
+    "src": "/assets/gallery-thumbs/444de308dcb43560.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Schematic-Ver.1.png": {
+    "src": "/assets/gallery-thumbs/6cf8d216c0eb7f63.webp",
+    "width": 640,
+    "height": 233
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Front-2.jpg": {
+    "src": "/assets/gallery-thumbs/96bc7aa6a6d5141a.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Front.jpg": {
+    "src": "/assets/gallery-thumbs/61132cdaf8b975e8.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Side.jpg": {
+    "src": "/assets/gallery-thumbs/5d15ae08c4944d4c.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Bottom.jpg": {
+    "src": "/assets/gallery-thumbs/39c6562764c8f95b.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Front.jpg": {
+    "src": "/assets/gallery-thumbs/c91dd50069bcf04c.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-10.jpg": {
+    "src": "/assets/gallery-thumbs/b5b0ef4d5e18e18f.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-2.jpg": {
+    "src": "/assets/gallery-thumbs/7f970a9f9d8644f1.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-3.jpg": {
+    "src": "/assets/gallery-thumbs/56a70dea7787f0c9.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-4.jpg": {
+    "src": "/assets/gallery-thumbs/15cf5a361609d52e.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-5.jpg": {
+    "src": "/assets/gallery-thumbs/682b4468aa16bcd2.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-6.jpg": {
+    "src": "/assets/gallery-thumbs/20053098a117d4a8.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-7.jpg": {
+    "src": "/assets/gallery-thumbs/51d86fb6f7d2559a.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-8.jpg": {
+    "src": "/assets/gallery-thumbs/06346e89d37f8261.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-9.jpg": {
+    "src": "/assets/gallery-thumbs/173e300ca9a31adf.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside.jpg": {
+    "src": "/assets/gallery-thumbs/f443d240f43e6915.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-1.jpg": {
+    "src": "/assets/gallery-thumbs/9bf1f1c2b89bb743.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-2.jpg": {
+    "src": "/assets/gallery-thumbs/e5c4386b0770425c.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-3.jpg": {
+    "src": "/assets/gallery-thumbs/18a02f3eec6a7d0e.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-4.jpg": {
+    "src": "/assets/gallery-thumbs/87aa42c23a589c76.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-5.jpg": {
+    "src": "/assets/gallery-thumbs/7c4c8877205b07ab.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-6.jpg": {
+    "src": "/assets/gallery-thumbs/673f94dc83380dce.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-7.jpg": {
+    "src": "/assets/gallery-thumbs/487306d6c501bd9d.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside.jpg": {
+    "src": "/assets/gallery-thumbs/172e6f63830712b7.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/connected-enclosure.webp": {
+    "src": "/assets/gallery-thumbs/673fd96a97bbf0a0.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-cabling.webp": {
+    "src": "/assets/gallery-thumbs/0a6c43bec8d31baa.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-connectors.webp": {
+    "src": "/assets/gallery-thumbs/41676c5be38640da.webp",
+    "width": 360,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/fire-and-smoke-detector-using-image-processing.png": {
+    "src": "/assets/gallery-thumbs/5bef2c84e03c3fe5.webp",
+    "width": 640,
+    "height": 200
+  },
+  "/assets/projects/fire-smoke-vision/fire-detection-test-poster.jpg": {
+    "src": "/assets/gallery-thumbs/d9bba4f3778d157f.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-1.jpg": {
+    "src": "/assets/gallery-thumbs/ca35952f38f718f1.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-10.jpg": {
+    "src": "/assets/gallery-thumbs/d90e355b12323f6b.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-11.jpg": {
+    "src": "/assets/gallery-thumbs/f2eee5ca72db49c6.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-12.jpg": {
+    "src": "/assets/gallery-thumbs/60b929fcbcf4743b.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-13.jpg": {
+    "src": "/assets/gallery-thumbs/ad164cd4b90008e4.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-3.jpg": {
+    "src": "/assets/gallery-thumbs/7acf066a2bd7b2c7.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-9.jpg": {
+    "src": "/assets/gallery-thumbs/fcedfe38effe1fc0.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/software-1.png": {
+    "src": "/assets/gallery-thumbs/1a8065f2668e5df0.webp",
+    "width": 640,
+    "height": 316
+  },
+  "/assets/projects/fire-smoke-vision/v1-hardware-inside.jpg": {
+    "src": "/assets/gallery-thumbs/aeafa613ef3b63a5.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/video_2022-10-24_12-45-58-poster.jpg": {
+    "src": "/assets/gallery-thumbs/2cd25473a5b839b0.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-1.jpg": {
+    "src": "/assets/gallery-thumbs/efe9084c3c694587.webp",
+    "width": 390,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-2.jpg": {
+    "src": "/assets/gallery-thumbs/048cbe679429bcec.webp",
+    "width": 394,
+    "height": 480
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-3.jpg": {
+    "src": "/assets/gallery-thumbs/bda297c126bd3df5.webp",
+    "width": 639,
+    "height": 480
+  },
+  "/assets/projects/food-reservation-system/Completion-of-food-distribution.jpg": {
+    "src": "/assets/gallery-thumbs/2af36c06f128eab5.webp",
+    "width": 640,
+    "height": 384
+  },
+  "/assets/projects/food-reservation-system/Food-Reservation-System--poster.jpg": {
+    "src": "/assets/gallery-thumbs/3a6d645de62e769f.webp",
+    "width": 640,
+    "height": 480
+  },
+  "/assets/projects/food-reservation-system/archive-20261007/rfid-terminal-workflow-poster.jpg": {
+    "src": "/assets/gallery-thumbs/1e3fcb88ddcbcbc0.webp",
+    "width": 480,
+    "height": 480
+  },
+  "/assets/projects/food-reservation-system/circuit-and-card.jpg": {
+    "src": "/assets/gallery-thumbs/810dc894415212f2.webp",
+    "width": 476,
+    "height": 480
+  },
+  "/assets/projects/food-reservation-system/main-window.jpg": {
+    "src": "/assets/gallery-thumbs/bede91432c1e2348.webp",
+    "width": 640,
+    "height": 384
+  },
+  "/assets/projects/industrial-alarm-monitoring/1-poster.jpg": {
+    "src": "/assets/gallery-thumbs/0fc778fc00123459.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/2-poster.jpg": {
+    "src": "/assets/gallery-thumbs/a1b03a7b92d5ccaf.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/3-poster.jpg": {
+    "src": "/assets/gallery-thumbs/aecf783a1841303f.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/4-poster.jpg": {
+    "src": "/assets/gallery-thumbs/35b9f427e81ead43.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-1.jpg": {
+    "src": "/assets/gallery-thumbs/c964312b36afe540.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-3.jpg": {
+    "src": "/assets/gallery-thumbs/7c82484af1bbe6a7.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-5.jpg": {
+    "src": "/assets/gallery-thumbs/07e8177888918df3.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Hardware-2.jpg": {
+    "src": "/assets/gallery-thumbs/437a5b65e2dc7e90.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-1.jpg": {
+    "src": "/assets/gallery-thumbs/b9d087df314c9aeb.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-3.jpg": {
+    "src": "/assets/gallery-thumbs/b601ccb351526f83.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-5.jpg": {
+    "src": "/assets/gallery-thumbs/6e671979c75bed38.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-6.jpg": {
+    "src": "/assets/gallery-thumbs/cd0a0d0a4a6a7120.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-7.jpg": {
+    "src": "/assets/gallery-thumbs/1b8ea4eb064a3c4d.webp",
+    "width": 270,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-1.jpg": {
+    "src": "/assets/gallery-thumbs/c8d1bead700fb655.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-2.jpg": {
+    "src": "/assets/gallery-thumbs/9482185885eb58c6.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-modules.webp": {
+    "src": "/assets/gallery-thumbs/868599848c9300e3.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-overview.webp": {
+    "src": "/assets/gallery-thumbs/4b316d6a4feb0d7e.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-wiring.webp": {
+    "src": "/assets/gallery-thumbs/a83d32aa04744109.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/control-room.webp": {
+    "src": "/assets/gallery-thumbs/216f9dc390972f8c.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/input-panel.webp": {
+    "src": "/assets/gallery-thumbs/cff0882c58d7c884.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/operator-workstation.webp": {
+    "src": "/assets/gallery-thumbs/e89651173910e059.webp",
+    "width": 640,
+    "height": 295
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/status-screen.webp": {
+    "src": "/assets/gallery-thumbs/15a09675a315c4a4.webp",
+    "width": 640,
+    "height": 295
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-display.webp": {
+    "src": "/assets/gallery-thumbs/28309fbac4ee49b2.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-side.webp": {
+    "src": "/assets/gallery-thumbs/056bc2e2472013ba.webp",
+    "width": 221,
+    "height": 480
+  },
+  "/assets/projects/industrial-alarm-monitoring/standalone-and-network-based-alarm-monitoring.png": {
+    "src": "/assets/gallery-thumbs/9fbf0cb564cfc28f.webp",
+    "width": 640,
+    "height": 200
+  },
+  "/assets/projects/industrial-data-graph/datagraph-pcb.jpg": {
+    "src": "/assets/gallery-thumbs/e95cfb2f107c544d.webp",
+    "width": 640,
+    "height": 427
+  },
+  "/assets/projects/industrial-data-graph/industrial-data-graph.png": {
+    "src": "/assets/gallery-thumbs/8b45518931e7d057.webp",
+    "width": 640,
+    "height": 200
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-23-58.jpg": {
+    "src": "/assets/gallery-thumbs/42b72751f7f4939b.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-08.jpg": {
+    "src": "/assets/gallery-thumbs/2f3c65440f4a7fcc.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-21.jpg": {
+    "src": "/assets/gallery-thumbs/8051fc131a876a50.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-24-rotated.jpg": {
+    "src": "/assets/gallery-thumbs/5ca243dbdfe6eee8.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-32.jpg": {
+    "src": "/assets/gallery-thumbs/7dde9df42e5a5119.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-35.jpg": {
+    "src": "/assets/gallery-thumbs/604699f50e0f3a75.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/industrial-data-graph/schematic.jpg": {
+    "src": "/assets/gallery-thumbs/561a4ebc20244c07.webp",
+    "width": 640,
+    "height": 449
+  },
+  "/assets/projects/networked-polling/1st.png": {
+    "src": "/assets/gallery-thumbs/d84801713b730281.webp",
+    "width": 640,
+    "height": 304
+  },
+  "/assets/projects/networked-polling/2nd.png": {
+    "src": "/assets/gallery-thumbs/fca128490a60b798.webp",
+    "width": 640,
+    "height": 302
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-1.jpg": {
+    "src": "/assets/gallery-thumbs/e87ba80523b8ca08.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-2.jpg": {
+    "src": "/assets/gallery-thumbs/9753ba824780eea5.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-3.jpg": {
+    "src": "/assets/gallery-thumbs/f2cd67cdf02bfa95.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-4.jpg": {
+    "src": "/assets/gallery-thumbs/29358c57c86535e6.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-5.jpg": {
+    "src": "/assets/gallery-thumbs/9bbd4fec5d9da51e.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-6.jpg": {
+    "src": "/assets/gallery-thumbs/20e8681fd9af5b4f.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/hardware.png": {
+    "src": "/assets/gallery-thumbs/cc46a6d9050f22bb.webp",
+    "width": 640,
+    "height": 236
+  },
+  "/assets/projects/networked-polling/real-test-system-poster.jpg": {
+    "src": "/assets/gallery-thumbs/409207d0fa52bf48.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/software-of-voting-system-poster.jpg": {
+    "src": "/assets/gallery-thumbs/75ceb7711b913bdd.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/networked-polling/test-voting-system--poster.jpg": {
+    "src": "/assets/gallery-thumbs/5a17c9e0dd65e7ed.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/rfid-attendance/rollcall-shirin-asal-poster.jpg": {
+    "src": "/assets/gallery-thumbs/fc915a724461b3e1.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/two-line-caller-id/Getir-Market_-poster.jpg": {
+    "src": "/assets/gallery-thumbs/b919681c786b899a.webp",
+    "width": 640,
+    "height": 426
+  },
+  "/assets/projects/two-line-caller-id/callerid_device.png": {
+    "src": "/assets/gallery-thumbs/4a5ee9fdf331fac4.webp",
+    "width": 572,
+    "height": 480
+  },
+  "/assets/projects/zynq-object-detection/Test-Sobel-Filter_-poster.jpg": {
+    "src": "/assets/gallery-thumbs/24c7bf99a39f29bd.webp",
+    "width": 480,
+    "height": 480
+  },
+  "/assets/projects/zynq-object-detection/detection-and-tracking-of-moving-objects.png": {
+    "src": "/assets/gallery-thumbs/9ed5a8dfd644c8d4.webp",
+    "width": 640,
+    "height": 200
+  },
+  "/assets/projects/zynq-object-detection/frame-search-poster.jpg": {
+    "src": "/assets/gallery-thumbs/b09ad98f1422ed62.webp",
+    "width": 640,
+    "height": 360
+  },
+  "/assets/projects/zynq-object-detection/main-concept.png": {
+    "src": "/assets/gallery-thumbs/6e9be59313b17fd9.webp",
+    "width": 638,
+    "height": 480
+  },
+  "/assets/projects/zynq-object-detection/timing-poster.jpg": {
+    "src": "/assets/gallery-thumbs/81fb7aba2dd2e3dd.webp",
+    "width": 640,
+    "height": 360
+  }
+}

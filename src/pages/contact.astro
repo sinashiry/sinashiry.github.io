@@ -1,0 +1,6 @@
+---
+import EnquiryPaths from '../components/EnquiryPaths.astro';
+import ContactCards from '../components/ContactCards.astro';
+import Base from '../layouts/Base.astro';import Text from '../components/Text.astro';import data from '../data/content.json';
+---
+<Base title="Contact Sina Shiri — Engineering & Research Opportunities" description="Contact Sina Shiri about engineering roles, hardware-security research, master’s programmes or freelance embedded-system projects." active="contact"><div class="wrap"><section class="page-intro"><span class="eyebrow">CONTACT</span><h1><Text field="contact.heading" /></h1><p><Text field="contact.summary" /></p></section><section class="contact-write" id="write-to-sina" aria-labelledby="write-to-sina-title"><div class="contact-write-head"><div><h2 id="write-to-sina-title">Write to Sina</h2><p>Choose a topic to open a new email with the subject already filled in, or write a general message. Your email goes from your own mail app to Sina’s mailbox; this website does not collect or store messages.</p></div><a class="button" href={`mailto:${data.profile.email}`} data-cv-href="profile.email">Email Sina <span class="arrow" aria-hidden="true">↗</span></a></div><EnquiryPaths /></section><ContactCards id="contact-methods" heading={false} showIntro={false} /></div></Base>

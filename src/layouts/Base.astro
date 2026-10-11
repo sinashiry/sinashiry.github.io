@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import '../styles/refresh.css';
+import BinaryBackground from '../components/BinaryBackground.astro';
+import '../styles/dark-theme.css';
+import '../styles/portfolio.css';
+import { collectionCounts } from '../lib/collections';
+const { title = 'Sina Shiri — Python & Embedded Systems Engineer', description = 'Freelance Python and embedded systems engineer working in hardware security research. Explore industrial software, computer vision projects, and academic experience.', titleKey = '', descriptionKey = '', active = '', noindex = false, robots = '', ogType = 'website', socialImage = '/assets/sina-shiri-profile-20261007.webp', socialAlt = 'Sina Shiri', socialWidth = 640, socialHeight = 640 } = Astro.props;
+const socialUrl = new URL(socialImage, 'https://sina-shiri.com').href;
+const canonical = new URL(Astro.url.pathname, 'https://sina-shiri.com').href;
+const counts = await collectionCounts();
+---
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-cv-title={titleKey || undefined}>{title}</title><meta name="description" content={description} data-cv-content={descriptionKey || undefined} />
+    <link rel="canonical" href={canonical} /><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=trace-s-3" />
+    <meta name="theme-color" content="#0e1518" />
+    <meta property="og:title" content={title} data-cv-content={titleKey || undefined} /><meta property="og:description" content={description} data-cv-content={descriptionKey || undefined} />
+    <meta property="og:type" content={ogType} /><meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialUrl} /><meta property="og:image:width" content={String(socialWidth)} /><meta property="og:image:height" content={String(socialHeight)} /><meta property="og:image:alt" content={socialAlt} />
+    <meta name="twitter:card" content={socialWidth > socialHeight ? "summary_large_image" : "summary"} /><meta name="twitter:title" content={title} data-cv-content={titleKey || undefined} /><meta name="twitter:description" content={description} data-cv-content={descriptionKey || undefined} /><meta name="twitter:image" content={socialUrl} /><meta name="twitter:image:alt" content={socialAlt} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {robots && <meta name="robots" content={robots} data-collection-robots />}
+    <slot name="head" />
+  </head>
+  <body>
+    <BinaryBackground />
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header"><div class="wrap header-inner">
+      <a class="brand" href="/"><img class="monogram" src="/assets/sina-shiri-mark.svg?v=trace-s-3" width="46" height="46" alt="" /><span>Sina Shiri<span class="brand-sub">ENGINEER & BUILDER</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/projects/" class:list={{selected: active === 'work'}} aria-current={active === 'work' ? 'page' : undefined}>Engineering</a>
+        <a href="/research/" class:list={{selected: active === 'research'}} aria-current={active === 'research' ? 'page' : undefined}>Research</a>
+        <a href="/about/" class:list={{selected: active === 'about'}} aria-current={active === 'about' ? 'page' : undefined}>About</a>
+        <a href="/resume/" class:list={{selected: active === 'resume'}} aria-current={active === 'resume' ? 'page' : undefined}>CV</a>
+        <a class:list={["nav-contact", {selected: active === "contact"}]} href="/contact/" aria-current={active === 'contact' ? 'page' : undefined}>Contact</a>
+        <div class="nav-secondary" aria-label="Explore the archive"><a href="/code/" class:list={{selected: active === 'code'}} aria-current={active === 'code' ? 'page' : undefined}>Code</a><a href="/gallery/" class:list={{selected: active === 'gallery'}} aria-current={active === 'gallery' ? 'page' : undefined}>Gallery</a><a href="/publications/" class:list={{selected: active === 'publications'}} aria-current={active === 'publications' ? 'page' : undefined} data-collection-nav="paper" hidden={counts.paper < 1}>Publications</a><a href="/blog/" class:list={{selected: active === 'blog'}} aria-current={active === 'blog' ? 'page' : undefined} data-collection-nav="post" hidden={counts.post < 3}>Blog</a></div>
+      </nav>
+    </div></header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="/"><img class="monogram" src="/assets/sina-shiri-mark.svg?v=trace-s-3" width="34" height="34" alt="" /><span>Sina Shiri</span></a><p>Software. Hardware. A curious mind.</p><div><a href="/about/">About</a><span data-cv-group="recommendations"><a href="/#recommendations">Recommendations</a></span><a href="/privacy/">Privacy</a><span>© {new Date().getFullYear()} Sina Shiri</span><a class="back-top" href="#main" aria-label="Back to top">↑</a></div></div></footer>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <script src="../scripts/site.ts"></script>
+  </body>
+</html>

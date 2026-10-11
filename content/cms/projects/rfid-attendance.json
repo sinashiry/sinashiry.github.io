@@ -1,0 +1,100 @@
+{
+  "slug": "rfid-attendance",
+  "title": "Offline RFID Attendance",
+  "year": "2017",
+  "summary": "An embedded attendance application designed for workplaces that need local operation without a continuous network connection.",
+  "problem": "Attendance events must remain usable when internet access or a local server is unavailable.",
+  "approach": [
+    "Integrated RFID and serial workflows with a Raspberry Pi application.",
+    "Built a Tkinter interface for attendance interactions.",
+    "Designed around local timekeeping, employee updates and spreadsheet export through USB storage."
+  ],
+  "outcome": "An offline attendance workflow bringing card input, local records and removable-storage exchange together.",
+  "technologies": [
+    "Embedded systems",
+    "Offline operation",
+    "RFID integration"
+  ],
+  "role": "Python application development and hardware integration",
+  "software": [
+    "Python attendance application",
+    "Local records & USB transfer"
+  ],
+  "hardware": [
+    "Raspberry Pi",
+    "Custom PCB",
+    "RF01D RFID module",
+    "DS1307 RTC",
+    "USB storage"
+  ],
+  "sections": [
+    {
+      "title": "Attendance without a network dependency",
+      "body": [
+        "The terminal records employee check-in and check-out locally, without requiring an internet connection or local server. It was developed as a custom attendance application for a food-industry setting in Tabriz."
+      ]
+    },
+    {
+      "title": "A local source of time",
+      "body": [
+        "A DS1307 real-time-clock module synchronizes the Raspberry Pi clock when the device starts, providing the time source for attendance records."
+      ]
+    },
+    {
+      "title": "USB import and export",
+      "body": [
+        "An employee list is loaded through USB. The application records attendance events in spreadsheet files, detects inserted removable storage and transfers the event files for collection.",
+        "Import employee information",
+        "Record check-in and check-out",
+        "Detect inserted storage",
+        "Export XLS event records"
+      ]
+    },
+    {
+      "title": "Embedded interaction",
+      "body": [
+        "Python and Tkinter implement the local interface. Serial communication connects the RFID workflow, while the Raspberry Pi, RF01D reader and custom PCB form the device platform."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "RFID identification",
+      "description": "The RF01D reader supplies the employee/card interaction."
+    },
+    {
+      "label": "Attendance application",
+      "description": "Python/Tkinter handles the local workflow and check-in/check-out records."
+    },
+    {
+      "label": "Clock source",
+      "description": "A DS1307 RTC synchronizes device time at boot."
+    },
+    {
+      "label": "Local files",
+      "description": "Events are retained as spreadsheet data."
+    },
+    {
+      "label": "USB transfer",
+      "description": "Employee data is imported and event files are exported through removable storage."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/rfid-attendance/rollcall-shirin-asal.mp4",
+      "title": "Standalone attendance workflow",
+      "caption": "Standalone attendance-system test recording. Silent demonstration."
+    }
+  ],
+  "strength": "Attendance recording without a server.",
+  "highlights": [
+    "Fully local check-in & check-out",
+    "Real-time clock at device startup",
+    "USB import & export workflow"
+  ],
+  "contribution": "My work covered the Python/Tkinter attendance application and hardware integration for RFID interactions, local timekeeping and USB-based data exchange.",
+  "result": "An offline attendance workflow bringing card input, local records and removable-storage exchange together.",
+  "decisionNotes": "The Raspberry Pi application records attendance locally, uses a DS1307 RTC to set the device clock at startup, and imports employee data or exports event files through USB storage. Serial communication connects the RF01D reader to the local workflow.",
+  "validationNotes": "A standalone attendance-system test recording shows the terminal workflow, and the public repository documents local attendance records, RTC timekeeping and USB exchange. These are implementation and demonstration artifacts; no timing-accuracy, record-integrity or long-duration reliability measurement is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Standalone-Roll-Call-System"
+}

@@ -1,0 +1,11 @@
+---
+import Text from './Text.astro';
+import cardCovers from '../data/project-covers.json';
+const {project:p,index:i} = Astro.props;
+const cardCover = cardCovers[p.slug as keyof typeof cardCovers];
+---
+<a class="project-card" href={`/projects/${p.slug}/`} data-category={p.category} data-tilt data-reveal>
+  <span class="project-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
+  {cardCover ? <div class="project-image"><img src={cardCover.src} srcset={cardCover.srcset} sizes="(max-width: 760px) 92vw, (max-width: 1200px) 45vw, 44vw" alt={cardCover.alt} width={cardCover.width} height={cardCover.height} loading="lazy" decoding="async" /></div> : <div class="project-type-art" aria-hidden="true"><span>{p.category === 'Python applications' ? 'PY' : p.category === 'Computer vision' ? 'CV' : 'IO'}</span><div>{p.technologies.slice(0,3).join(' / ')}</div></div>}
+  <div class="project-body"><div class="project-meta"><span>{p.category}</span><Text field={`projects.${i}.year`} /></div><h3><Text field={`projects.${i}.title`} /></h3><p class="project-distinction"><Text field={`projects.${i}.strength`} /></p><p><Text field={`projects.${i}.summary`} /></p><p class="project-card-role"><span>My role</span> <Text field={`projects.${i}.role`} /></p><div class="tags">{p.technologies.slice(0,3).map((_,j)=><span><Text field={`projects.${i}.technologies.${j}`} /></span>)}</div><span class="card-link">Explore the project <span class="arrow" aria-hidden="true">↗</span></span></div>
+</a>

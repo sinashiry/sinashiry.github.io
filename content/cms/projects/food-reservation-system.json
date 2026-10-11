@@ -1,0 +1,117 @@
+{
+  "slug": "food-reservation-system",
+  "title": "RFID Food Reservation Terminal",
+  "year": "2016",
+  "summary": "A Raspberry Pi terminal that retrieves daily reservation data, checks RFID cards and guides the operator through meal-distribution states.",
+  "problem": "Connect a daily reservation list to the physical collection point and distinguish eligible, unreserved and repeated collection attempts.",
+  "approach": [
+    "Received the daily reservation list automatically from a server.",
+    "Used RFID cards to identify the reservation at the terminal.",
+    "Built a Tkinter interface for reservation and meal-distribution states."
+  ],
+  "outcome": "An embedded meal-reservation workflow with original hardware imagery, four interface states and a running-system demonstration.",
+  "technologies": [
+    "Embedded systems",
+    "RFID integration",
+    "Operator interfaces"
+  ],
+  "role": "Python application development and embedded integration",
+  "software": [
+    "Python terminal application",
+    "RFID integration & reservation handling"
+  ],
+  "hardware": [
+    "Raspberry Pi",
+    "RF01D reader",
+    "RFID cards",
+    "Single-layer PCB"
+  ],
+  "sections": [
+    {
+      "title": "From the daily list to the service point",
+      "body": [
+        "The terminal retrieves reservation data from a web server at a scheduled time and starts the distribution workflow during configured periods. RFID cards let users check their reservation at the Raspberry Pi device."
+      ]
+    },
+    {
+      "title": "An interface for the situations that matter",
+      "body": [
+        "The Tkinter application distinguishes a valid reservation, no reservation, an already delivered meal and the end of distribution. These states give the operator immediate context at the collection point."
+      ]
+    },
+    {
+      "title": "Connecting software and the reader",
+      "body": [
+        "Python implements the application, with serial communication for the RF01D reader and GPIO for embedded integration. The hardware comprises a Raspberry Pi, the card reader and a custom single-layer PCB."
+      ]
+    },
+    {
+      "title": "Original implementation views",
+      "body": [
+        "The project media covers the main window, the circuit and RFID card, the completion state and a recording of the system running."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Reservation server",
+      "description": "The daily reservation list is retrieved at a scheduled time."
+    },
+    {
+      "label": "RFID card",
+      "description": "The reader supplies a user/card identifier."
+    },
+    {
+      "label": "Reservation check",
+      "description": "The application checks the identifier against the loaded list and prior collection state."
+    },
+    {
+      "label": "Operator feedback",
+      "description": "Tkinter displays reserved, unreserved, delivered or completed states."
+    },
+    {
+      "label": "Distribution workflow",
+      "description": "The terminal manages the configured meal-distribution period."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/food-reservation-system/main-window.jpg",
+      "alt": "Food-reservation application main window.",
+      "caption": "Food-reservation application main window."
+    },
+    {
+      "src": "/assets/projects/food-reservation-system/circuit-and-card.jpg",
+      "alt": "Raspberry Pi circuit and RFID card.",
+      "caption": "Raspberry Pi circuit and RFID card."
+    },
+    {
+      "src": "/assets/projects/food-reservation-system/Completion-of-food-distribution.jpg",
+      "alt": "Food-distribution completion state.",
+      "caption": "Food-distribution completion state."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/food-reservation-system/Food-Reservation-System-.mp4",
+      "title": "RFID meal-distribution terminal",
+      "caption": "Food-reservation terminal demonstration. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/food-reservation-system/archive-20261007/rfid-terminal-workflow.mp4",
+      "title": "RFID terminal · complete bench workflow",
+      "caption": "A bench recording of the RFID meal-distribution terminal through several card and status changes. Personal details are masked; silent playback."
+    }
+  ],
+  "strength": "One terminal, four meal-distribution states.",
+  "highlights": [
+    "Scheduled reservation-list retrieval",
+    "RFID-based reservation checking",
+    "Valid, missing, delivered & closed states"
+  ],
+  "contribution": "My work covered Python/Tkinter application development and embedded integration for reservation checks, RFID input and operator feedback.",
+  "result": "An embedded meal-reservation workflow with original hardware imagery, four interface states and a running-system demonstration.",
+  "decisionNotes": "The terminal retrieves a daily reservation list from a server at a scheduled time and checks RF01D card identifiers against reservation and prior-collection states. Tkinter distinguishes valid, unreserved, already-delivered and completed-distribution states on the Raspberry Pi.",
+  "validationNotes": "Original interface and circuit photographs accompany a terminal demonstration and a bench recording with several card and status changes. Personal details are masked in the bench recording. These demonstrate the workflow; no throughput, deployment count or long-duration service-reliability measurement is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Food-Reservation-System"
+}

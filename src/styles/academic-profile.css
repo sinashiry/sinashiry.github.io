@@ -1,0 +1,22 @@
+.academic-section{padding:48px 0;scroll-margin-top:120px;color:var(--ink)}
+.academic-section-heading{padding-bottom:22px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.academic-section-heading .eyebrow{margin-bottom:12px}
+.academic-section-heading h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.2;letter-spacing:-.045em}
+.academic-profile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.academic-profile-card,.academic-reference-card{min-width:0;border:1px solid var(--line);border-radius:12px;background:var(--surface,var(--white))}
+.academic-profile-card a{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:88px;padding:22px;font-weight:600;color:var(--ink)}
+.academic-profile-card a:hover{background:var(--surface-raised,var(--paper));color:var(--accent,var(--blue));border-radius:12px}
+.academic-link-label{overflow-wrap:anywhere}
+.academic-reference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.academic-reference-card{padding:26px;break-inside:avoid}
+.academic-reference-card h3{font-size:1.3rem;line-height:1.35;overflow-wrap:anywhere}
+.academic-reference-status{margin-top:10px;color:var(--ink);font-size:.95rem;line-height:1.65;white-space:pre-line}
+.academic-reference-relationship{margin-top:12px;font-size:.88rem;line-height:1.7;white-space:pre-line}
+.academic-reference-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:20px;font-size:.88rem}
+.academic-reference-links a,.academic-empty-state a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere;color:var(--accent,var(--blue))}
+.academic-empty-state{padding:22px 24px;border:1px dashed var(--line);border-radius:10px;background:var(--surface,var(--white));font-size:.95rem;line-height:1.8}
+.academic-empty-state a{display:inline-block;margin-top:10px}
+[data-academic-entry][data-academic-state="empty"],[data-academic-fallback][data-academic-state="ready"],.academic-reference-links a[href=""],.academic-reference-links a[href="mailto:"]{display:none}
+@media(max-width:900px){.academic-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.academic-section{padding:34px 0}.academic-reference-grid,.academic-profile-grid{grid-template-columns:1fr}.academic-reference-card{padding:22px}.academic-profile-card a{min-height:74px}.academic-empty-state{padding:20px}}
+@media print{.academic-section{padding:18px 0}.academic-section-heading{padding-bottom:10px;margin-bottom:16px}.academic-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.academic-profile-card,.academic-reference-card,.academic-empty-state{background:white}.academic-profile-card a{min-height:0;padding:14px}.academic-reference-links a,.academic-empty-state a{color:inherit}}

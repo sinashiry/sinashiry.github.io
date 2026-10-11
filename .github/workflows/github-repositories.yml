@@ -1,0 +1,77 @@
+# Refreshes the public GitHub repository directory shown on /code/.
+# The snapshot is committed only when repository data changed, or weekly as a heartbeat
+# that keeps this schedule active. Pushes made with GITHUB_TOKEN do not start other
+# workflows, so a changed snapshot dispatches the Pages deploy explicitly.
+
+name: Refresh GitHub repository directory
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      # Pages CMS actions always send this input. It is never read.
+      payload:
+        description: Pages CMS action payload (unused)
+        required: true
+        type: string
+        default: '{}'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: github-repositories
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      # No dependencies to install: the script uses Node built-ins and the reviewed overrides module.
+      - name: Fetch and validate public repositories for sinashiry
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/sync-github.mjs
+
+      - name: Commit and push a changed snapshot
+        id: commit
+        run: |
+          file=src/data/github-repositories.json
+          if git diff --quiet -- "$file"; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'Snapshot unchanged; nothing to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit --quiet -m 'Refresh GitHub repository snapshot' -- "$file"
+          for attempt in 1 2 3 4 5; do
+            if git push --quiet origin HEAD:main; then
+              echo 'changed=true' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push attempt $attempt was rejected; rebasing onto the latest main."
+            sleep $((attempt * 5))
+            git pull --rebase --quiet origin main
+          done
+          echo '::error::The refreshed snapshot could not be pushed after 5 attempts. The next scheduled run will retry.'
+          exit 1
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"

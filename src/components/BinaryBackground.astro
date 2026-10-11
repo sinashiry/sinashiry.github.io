@@ -1,0 +1,40 @@
+---
+import '../styles/binary-background.css';
+
+// Illustrative binary and circuit traces, never visitor data or project measurements.
+const edges = [
+  { side: 'left', matrices: [['01001001', '10110010', '00101101', '11000110'], ['00110101', '10010110', '01101001', '10100110']] },
+  { side: 'right', matrices: [['10100101', '01110010', '11001001', '00110110'], ['11010010', '00101101', '10110100', '01001110']] },
+];
+const traces = [
+  'M 7 0 V 144 L 29 166 V 319 L 13 335 V 528 L 35 550 V 738 L 15 758 V 1000',
+  'M 49 0 V 89 L 69 109 V 385 L 49 405 V 593 L 77 621 V 838 L 51 864 V 1000',
+  'M 104 0 V 204 L 126 226 V 480 L 104 502 V 784 L 122 802 V 1000',
+];
+---
+
+<div class="binary-background" data-binary-background aria-hidden="true" inert>
+  {edges.map(edge => (
+    <div class:list={['binary-background-edge', `binary-background-edge--${edge.side}`]}>
+      <svg class="binary-background-circuit" viewBox="0 0 156 1000" preserveAspectRatio="none" fill="none" aria-hidden="true" focusable="false">
+        <g class="binary-background-traces">
+          {traces.map(trace => <path d={trace} vector-effect="non-scaling-stroke" />)}
+          <circle cx="29" cy="236" r="3" />
+          <circle cx="49" cy="466" r="3" />
+          <circle cx="35" cy="655" r="3" />
+          <circle cx="122" cy="892" r="3" />
+        </g>
+        <path class="binary-background-signal" d={traces[0]} pathLength="1000" vector-effect="non-scaling-stroke" />
+      </svg>
+      {edge.matrices.map((matrix, index) => (
+        <div class:list={['binary-background-matrix', `binary-background-matrix--${index + 1}`]}>
+          {matrix.map(row => <span data-binary-token>{row}</span>)}
+        </div>
+      ))}
+    </div>
+  ))}
+</div>
+
+<script>
+  import '../scripts/binary-background';
+</script>

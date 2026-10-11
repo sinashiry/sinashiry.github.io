@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "account": "sinashiry",
+  "profile_url": "https://github.com/sinashiry",
+  "source_url": "https://api.github.com/users/sinashiry/repos",
+  "fetched_at": "2026-10-11T20:20:26Z",
+  "repository_count": 10,
+  "repositories": [
+    {
+      "id": 1414720350,
+      "name": "sinashiry.github.io",
+      "url": "https://github.com/sinashiry/sinashiry.github.io",
+      "description": "Source of sina-shiri.com — Sina Shiri's engineering V and portfolio (Astro, GitHub Pages)",
+      "primary_language": null,
+      "languages": [],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-11T20:20:26Z",
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2026-10-11T19:55:28Z",
+      "pushed_at": "2026-10-11T19:55:28Z",
+      "license": null
+    },
+    {
+      "id": 555733668,
+      "name": "Fire-and-Smoke-Detector-Using-Image-Processing",
+      "url": "https://github.com/sinashiry/Fire-and-Smoke-Detector-Using-Image-Processing",
+      "description": null,
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 144846
+        },
+        {
+          "name": "JavaScript",
+          "bytes": 94900
+        },
+        {
+          "name": "CSS",
+          "bytes": 91410
+        },
+        {
+          "name": "C++",
+          "bytes": 36817
+        },
+        {
+          "name": "C",
+          "bytes": 356
+        },
+        {
+          "name": "HTML",
+          "bytes": 211
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 4,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2024-03-26T12:20:34Z",
+      "pushed_at": "2022-10-22T07:45:22Z",
+      "license": null
+    },
+    {
+      "id": 555511154,
+      "name": "Online-Voting-System",
+      "url": "https://github.com/sinashiry/Online-Voting-System",
+      "description": "A Voting System that works in Online and Standalone modes",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 133057
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 3,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2024-03-26T12:20:28Z",
+      "pushed_at": "2022-10-21T18:33:23Z",
+      "license": null
+    },
+    {
+      "id": 554452732,
+      "name": "Object-Detection-And-Tracking",
+      "url": "https://github.com/sinashiry/Object-Detection-And-Tracking",
+      "description": "High Speed Object and Tracking of Unique color Objects that it's works faster than OpenCV, Matlab and similar platforms.",
+      "primary_language": "C",
+      "languages": [
+        {
+          "name": "C",
+          "bytes": 73221
+        },
+        {
+          "name": "Tcl",
+          "bytes": 19787
+        },
+        {
+          "name": "C++",
+          "bytes": 4698
+        },
+        {
+          "name": "MATLAB",
+          "bytes": 715
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 4,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2024-03-26T12:20:26Z",
+      "pushed_at": "2022-10-27T18:51:59Z",
+      "license": null
+    },
+    {
+      "id": 555942904,
+      "name": "Chia-Block-chain-Miner",
+      "url": "https://github.com/sinashiry/Chia-Block-chain-Miner",
+      "description": "One of the XCH coin Miner ",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 2582
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-22T17:50:57Z",
+      "pushed_at": "2022-10-22T17:49:19Z",
+      "license": null
+    },
+    {
+      "id": 555321249,
+      "name": "Hypermarket-CallerID",
+      "url": "https://github.com/sinashiry/Hypermarket-CallerID",
+      "description": "Windows Based Caller-ID",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 11965
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-22T17:16:25Z",
+      "pushed_at": "2022-10-21T11:01:58Z",
+      "license": null
+    },
+    {
+      "id": 555397388,
+      "name": "Standalone-Roll-Call-System",
+      "url": "https://github.com/sinashiry/Standalone-Roll-Call-System",
+      "description": "A custom Roll-Call System",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 21829
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-22T17:16:25Z",
+      "pushed_at": "2022-10-21T13:56:41Z",
+      "license": null
+    },
+    {
+      "id": 554958676,
+      "name": "Food-Reservation-System",
+      "url": "https://github.com/sinashiry/Food-Reservation-System",
+      "description": "A project manages local reservations and handle this process by online lists",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 13562
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-22T17:16:24Z",
+      "pushed_at": "2022-10-20T17:49:07Z",
+      "license": null
+    },
+    {
+      "id": 553410627,
+      "name": "Industrial-Datagraph",
+      "url": "https://github.com/sinashiry/Industrial-Datagraph",
+      "description": "Data graph of industrial sensors in noisy environments without distance limit",
+      "primary_language": "BASIC",
+      "languages": [
+        {
+          "name": "BASIC",
+          "bytes": 20279
+        },
+        {
+          "name": "VBA",
+          "bytes": 450
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-22T17:16:23Z",
+      "pushed_at": "2022-10-18T18:48:12Z",
+      "license": null
+    },
+    {
+      "id": 176656106,
+      "name": "Raspberrypi-Book",
+      "url": "https://github.com/sinashiry/Raspberrypi-Book",
+      "description": "This repository contains all the project codes and files that are necessary to work through the Raspberry Pi Reference book from chapter 5 to chapter 9.",
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 21379
+        },
+        {
+          "name": "C++",
+          "bytes": 3325
+        },
+        {
+          "name": "HTML",
+          "bytes": 723
+        }
+      ],
+      "languages_complete": true,
+      "languages_checked_at": "2026-10-07T14:32:02Z",
+      "topics": [
+        "book",
+        "python",
+        "raspberry-pi"
+      ],
+      "stars": 1,
+      "forks": 0,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "updated_at": "2022-10-18T07:30:27Z",
+      "pushed_at": "2019-03-20T08:07:49Z",
+      "license": null
+    }
+  ]
+}

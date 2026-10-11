@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "degree": "B.Sc. in Electrical Engineering — Electronic Technology",
+      "institution": "Mohajer Technical University of Isfahan",
+      "location": "Isfahan, Iran",
+      "period": "2013–2016",
+      "gpa": "18.65 / 20",
+      "thesis": "Detecting and Tracking Special Moving Objects in Public Environments on the ZYNQ platform"
+    },
+    {
+      "degree": "Associate Degree in Electrical Engineering",
+      "institution": "Tabriz Technical and Vocational University",
+      "location": "Tabriz, Iran",
+      "period": "2011–2013",
+      "gpa": "17.85 / 20",
+      "thesis": "Data Graph of Industrial Sensors in Noisy Environments without Distance Limit"
+    }
+  ]
+}

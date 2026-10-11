@@ -1,0 +1,100 @@
+{
+  "slug": "two-line-caller-id",
+  "title": "Two-Line Caller ID",
+  "year": "2016–2017",
+  "summary": "A Windows/Python application that monitors two telephone lines, identifies incoming callers and brings their saved customer information into view.",
+  "problem": "Help an operator connect an incoming call with a customer record without manually searching a separate contact list.",
+  "approach": [
+    "Read caller numbers from a serial caller-ID device.",
+    "Stored a customer contact list with address, identifier and optional secondary number.",
+    "Displayed matching information on subsequent calls and saved incoming-call records to spreadsheets."
+  ],
+  "outcome": "A two-line caller-ID workflow combining serial hardware, a Tkinter desktop interface and call logging in spreadsheet files.",
+  "technologies": [
+    "Python",
+    "Device integration",
+    "Desktop applications"
+  ],
+  "role": "Python desktop application development",
+  "software": [
+    "Python Windows application",
+    "Serial event handling & call logging"
+  ],
+  "hardware": [
+    "Windows PC",
+    "Two-line serial caller-ID adapter"
+  ],
+  "sections": [
+    {
+      "title": "Two telephone lines, one interface",
+      "body": [
+        "The desktop application listens to a serial caller-ID device connected to two business telephone lines. When a number arrives, the application links it to the stored customer information."
+      ]
+    },
+    {
+      "title": "Turning a first call into a useful record",
+      "body": [
+        "The operator can save a new caller with an address, customer identifier and optional additional number. On a later call, the matching record is displayed so the operator has context at the start of the conversation."
+      ]
+    },
+    {
+      "title": "A call history outside the application",
+      "body": [
+        "Incoming calls are saved to spreadsheet files for later reference. Python, Tkinter, Pyserial and openpyxl provide the main desktop and data-handling workflow."
+      ]
+    },
+    {
+      "title": "The hardware boundary",
+      "body": [
+        "A Windows PC runs the application while a dedicated serial device receives caller-ID information from the telephone lines. The project media shows the adapter and a short application test."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Telephone lines",
+      "description": "Two lines provide incoming caller-ID events."
+    },
+    {
+      "label": "Serial adapter",
+      "description": "Dedicated hardware reports the incoming number to the computer."
+    },
+    {
+      "label": "Python application",
+      "description": "The application receives and matches the number."
+    },
+    {
+      "label": "Customer context",
+      "description": "Saved information appears in the Tkinter interface."
+    },
+    {
+      "label": "Call log",
+      "description": "Incoming calls are retained in spreadsheet files."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/two-line-caller-id/callerid_device.png",
+      "alt": "Serial caller-ID adapter for the two-line desktop application.",
+      "caption": "Serial caller-ID adapter for the two-line desktop application."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/two-line-caller-id/Getir-Market_.mp4",
+      "title": "Two-line caller-ID application",
+      "caption": "Two-line caller-ID application test. Silent demonstration."
+    }
+  ],
+  "strength": "Two telephone lines, one customer view.",
+  "highlights": [
+    "Serial hardware event integration",
+    "Incoming caller-to-record matching",
+    "Desktop interface & spreadsheet call history"
+  ],
+  "contribution": "My work covered Python desktop application development for serial caller-ID events, customer-record matching and spreadsheet call history.",
+  "result": "A two-line caller-ID workflow combining serial hardware, a Tkinter desktop interface and call logging in spreadsheet files.",
+  "decisionNotes": "A dedicated serial adapter receives caller-ID information from two telephone lines, while the Windows/Python application matches incoming numbers to saved customer records. The Tkinter interface presents caller details, and spreadsheet files retain incoming-call history.",
+  "validationNotes": "A photograph identifies the serial caller-ID adapter, and a short application-test recording documents the desktop workflow. These show the hardware/software interaction; no line-compatibility, call-volume or reliability measurement is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Hypermarket-CallerID"
+}

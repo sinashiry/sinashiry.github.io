@@ -1,0 +1,157 @@
+{
+  "slug": "networked-polling",
+  "title": "Networked Polling Terminals",
+  "summary": "A client/server polling system connecting Raspberry Pi terminals to a central desktop monitoring and reporting application.",
+  "problem": "Organizations need to collect responses at several locations and review their status and results in one place.",
+  "approach": [
+    "Programmed networked Raspberry Pi client and Python server components.",
+    "Built PyQt interfaces for poll setup, device status and live totals.",
+    "Added reporting workflows with filters for location, date, time and response."
+  ],
+  "outcome": "A distributed polling application with terminal interfaces, centralized data and an operator reporting workflow.",
+  "technologies": [
+    "Client/server systems",
+    "Offline synchronization",
+    "Reporting"
+  ],
+  "role": "Python client/server application development",
+  "collaborators": [
+    {
+      "name": "Hossein Aalamshahi",
+      "role": "System design"
+    }
+  ],
+  "software": [
+    "Python client/server applications",
+    "Local buffering & central SQL Server records"
+  ],
+  "hardware": [
+    "Raspberry Pi terminals",
+    "Pi Camera",
+    "Custom PCB",
+    "Local-network connection"
+  ],
+  "sections": [
+    {
+      "title": "Terminals and a central operator application",
+      "body": [
+        "Raspberry Pi polling terminals collect responses at different locations. A Windows application creates polls, selects the active poll, monitors device status and displays results."
+      ]
+    },
+    {
+      "title": "Recording through a disconnection",
+      "body": [
+        "When a terminal loses its network connection, it stores responses locally. After reconnection, queued records are synchronized with the server and transferred local records are cleared. Device time is synchronized periodically from the network/server."
+      ]
+    },
+    {
+      "title": "Making results useful",
+      "body": [
+        "The Python/PyQt application shows counts and percentages for the full system or an individual terminal, monitors incoming responses and provides reporting filters such as region, date, time and selected option."
+      ]
+    },
+    {
+      "title": "Seeing the system work",
+      "body": [
+        "The media includes a physical demonstration with five terminals, a simulated workflow and a reporting-interface demonstration. Together, they explain the relationship between the devices, central data and operator controls."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Polling terminal",
+      "description": "Raspberry Pi client collects a response at the device."
+    },
+    {
+      "label": "Local buffer",
+      "description": "SQLite stores submissions when the network is unavailable."
+    },
+    {
+      "label": "Synchronization",
+      "description": "The client transfers queued records after reconnection."
+    },
+    {
+      "label": "Central data",
+      "description": "SQL Server stores records from the connected terminals."
+    },
+    {
+      "label": "Windows application",
+      "description": "PyQt provides poll setup, device status, live totals and reporting."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/networked-polling/1st.png",
+      "alt": "1st",
+      "caption": "1st"
+    },
+    {
+      "src": "/assets/projects/networked-polling/2nd.png",
+      "alt": "2nd",
+      "caption": "2nd"
+    },
+    {
+      "src": "/assets/projects/networked-polling/hardware.png",
+      "alt": "Original system hardware overview.",
+      "caption": "Original system hardware overview."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-1.jpg",
+      "alt": "Additional terminal hardware view.",
+      "caption": "Additional terminal hardware view."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-2.jpg",
+      "alt": "Polling terminal hardware — view 2.",
+      "caption": "Polling terminal hardware — view 2."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-3.jpg",
+      "alt": "Polling terminal hardware — view 3.",
+      "caption": "Polling terminal hardware — view 3."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-4.jpg",
+      "alt": "A completed polling terminal.",
+      "caption": "A completed polling terminal."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-5.jpg",
+      "alt": "Polling terminal hardware — view 5.",
+      "caption": "Polling terminal hardware — view 5."
+    },
+    {
+      "src": "/assets/projects/networked-polling/Online-Voting-System-Device-6.jpg",
+      "alt": "Polling terminal hardware — view 6.",
+      "caption": "Polling terminal hardware — view 6."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/networked-polling/test-voting-system-.mp4",
+      "title": "Simulated polling workflow",
+      "caption": "Simulated demonstration — polling workflow. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/networked-polling/real-test-system.mp4",
+      "title": "Five-terminal test",
+      "caption": "Test with five polling terminals operating together. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/networked-polling/software-of-voting-system.mp4",
+      "title": "Desktop reporting application",
+      "caption": "Polling-system Windows reporting demonstration. Silent demonstration."
+    }
+  ],
+  "strength": "Keep recording when the network drops.",
+  "highlights": [
+    "Local buffering & reconnection sync",
+    "Central poll setup & reporting",
+    "Five-terminal physical demonstration"
+  ],
+  "contribution": "I developed the Python client/server applications for polling terminals and the central operator interface, including local response storage and synchronization after reconnection. System design is credited to Hosein AlamShahi.",
+  "result": "A distributed polling application with terminal interfaces, centralized data and an operator reporting workflow.",
+  "decisionNotes": "Terminals retain responses locally when disconnected, synchronize queued records after reconnection and clear transferred local records. The central application handles poll setup, device monitoring and reporting.",
+  "validationNotes": "The archive includes a physical five-terminal demonstration, a simulated workflow and a reporting-interface recording. These are demonstration evidence; no election-security assessment or production reliability measurement is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Online-Voting-System"
+}

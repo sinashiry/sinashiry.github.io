@@ -1,0 +1,88 @@
+# Builds the static site and deploys only the built dist/ folder to GitHub Pages.
+# Repository settings: Pages -> Source "GitHub Actions"; custom domain sina-shiri.com with "Enforce HTTPS".
+# A failed check, test or build leaves the live site unchanged.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      # Lets Pages CMS run this as an action. It is never read.
+      payload:
+        description: Pages CMS action payload (unused)
+        required: false
+        type: string
+        default: '{}'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One group per ref: main deploys stay serialised (the newest pending run wins), and a build-only run dispatched on
+# another branch can never replace, and so cancel, a pending main deploy. Workflow level, so an older build's deploy
+# cannot be queued after a newer one.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+
+      # Build tools only: no devDependencies and no package install scripts.
+      - name: Install dependencies
+        run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
+
+      - name: Check editable content and the Pages CMS configuration
+        run: npm run check
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Portfolio health summary
+        continue-on-error: true
+        run: node scripts/portfolio-health.mjs --summary content-only
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

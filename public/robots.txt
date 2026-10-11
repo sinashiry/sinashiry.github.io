@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Sitemap: https://sina-shiri.com/sitemap.xml
+Sitemap: https://sina-shiri.com/sitemap-collections.xml

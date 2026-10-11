@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "account": "sinashiry",
+  "projectPaths": [
+    "/projects/industrial-alarm-monitoring/",
+    "/projects/fire-smoke-vision/",
+    "/projects/embedded-qr-scanner/",
+    "/projects/rfid-attendance/",
+    "/projects/networked-polling/",
+    "/projects/zynq-object-detection/",
+    "/projects/aerial-object-tracking/",
+    "/projects/industrial-data-graph/",
+    "/projects/food-reservation-system/",
+    "/projects/two-line-caller-id/"
+  ],
+  "repositories": [
+    {
+      "id": 555733668,
+      "full_name": "sinashiry/Fire-and-Smoke-Detector-Using-Image-Processing",
+      "description": "Computer-vision prototype combining fire and smoke image processing with camera integration and a monitoring interface.",
+      "purpose": "Explore camera-based fire and smoke detection.",
+      "relatedProject": {
+        "path": "/projects/fire-smoke-vision/",
+        "label": "Fire & Smoke Vision Prototype"
+      }
+    },
+    {
+      "id": 555511154,
+      "full_name": "sinashiry/Online-Voting-System",
+      "description": "Raspberry Pi polling terminals and a Windows monitoring application, with local storage and synchronization to a central server.",
+      "purpose": "Collect and monitor responses from networked polling terminals.",
+      "relatedProject": {
+        "path": "/projects/networked-polling/",
+        "label": "Networked Polling Terminals"
+      }
+    },
+    {
+      "id": 554452732,
+      "full_name": "sinashiry/Object-Detection-And-Tracking",
+      "description": "Object detection and tracking study with MATLAB and OpenCV prototypes, an HLS implementation, and Zynq integration files.",
+      "purpose": "Explore an embedded-vision workflow from software prototypes to FPGA integration.",
+      "relatedProject": {
+        "path": "/projects/zynq-object-detection/",
+        "label": "Object Detection & Tracking on Zynq"
+      }
+    },
+    {
+      "id": 555942904,
+      "full_name": "sinashiry/Chia-Block-chain-Miner",
+      "description": "Historical Raspberry Pi project for a Chia mining device, including Python code and enclosure files. Retained here as part of the public repository record.",
+      "purpose": "Document a historical storage-based mining device.",
+      "relatedProject": null
+    },
+    {
+      "id": 555321249,
+      "full_name": "sinashiry/Hypermarket-CallerID",
+      "description": "Windows/Python caller-ID application that monitors two telephone lines and displays saved customer information through a serial caller-ID interface.",
+      "purpose": "Identify callers and retrieve their saved contact details.",
+      "relatedProject": {
+        "path": "/projects/two-line-caller-id/",
+        "label": "Two-Line Caller ID"
+      }
+    },
+    {
+      "id": 555397388,
+      "full_name": "sinashiry/Standalone-Roll-Call-System",
+      "description": "Offline attendance terminal with USB employee-list import and event export, plus a real-time clock for local timekeeping.",
+      "purpose": "Record workplace attendance without a continuous network connection.",
+      "relatedProject": {
+        "path": "/projects/rfid-attendance/",
+        "label": "Offline RFID Attendance"
+      }
+    },
+    {
+      "id": 554958676,
+      "full_name": "sinashiry/Food-Reservation-System",
+      "description": "Raspberry Pi reservation terminal with a Python/Tkinter interface, card checks, and scheduled retrieval of daily reservation lists.",
+      "purpose": "Check meal reservations at a local distribution terminal.",
+      "relatedProject": {
+        "path": "/projects/food-reservation-system/",
+        "label": "RFID Food Reservation Terminal"
+      }
+    },
+    {
+      "id": 553410627,
+      "full_name": "sinashiry/Industrial-Datagraph",
+      "description": "AVR-based sensor display project with BASCOM source, PCB and schematic files, and numerical and chart views of measurements.",
+      "purpose": "Collect sensor measurements and present them on a local display.",
+      "relatedProject": {
+        "path": "/projects/industrial-data-graph/",
+        "label": "Industrial DataGraph"
+      }
+    },
+    {
+      "id": 176656106,
+      "full_name": "sinashiry/Raspberrypi-Book",
+      "description": "Companion code and example files for chapters 5 to 9 of the Persian Raspberry Pi Reference book, co-authored by Hossein Aalamshahi and Sina Shiri.",
+      "purpose": "Support readers working through the book's Raspberry Pi examples.",
+      "relatedProject": null
+    },
+    {
+      "id": 1414720350,
+      "full_name": "sinashiry/sinashiry.github.io",
+      "description": "Source of this website: an Astro static site published with GitHub Pages, with content edited through Pages CMS.",
+      "purpose": "Build and publish this portfolio website.",
+      "relatedProject": null
+    }
+  ]
+}

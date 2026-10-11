@@ -1,0 +1,328 @@
+{
+  "slug": "fire-smoke-vision",
+  "title": "Fire & Smoke Vision Prototype",
+  "year": "2019",
+  "summary": "Computer-vision experiments and a monitoring interface for detecting visual signs of fire and smoke.",
+  "problem": "Camera-based monitoring needs to connect visual detection experiments with a clear interface for status, events and alarms.",
+  "approach": [
+    "Explored OpenCV image-processing methods and TensorFlow/Keras models.",
+    "Worked with image annotations and dataset-preparation tooling.",
+    "Developed monitoring components for camera status, event handling and alarms."
+  ],
+  "outcome": "A prototype workspace connecting vision experiments, embedded-camera integration and an operator-facing monitoring application.",
+  "technologies": [
+    "Computer vision",
+    "Embedded integration",
+    "Alert workflows"
+  ],
+  "role": "Software development, vision experiments and embedded integration",
+  "software": [
+    "C++ vision processing & neural-network experiments",
+    "Python desktop & web monitoring"
+  ],
+  "hardware": [
+    "Raspberry Pi",
+    "Pi Camera",
+    "Custom electronics",
+    "SIM800 GSM module",
+    "Enclosure variants",
+    "Hardware alarm outputs"
+  ],
+  "sections": [
+    {
+      "title": "A two-stage vision pipeline",
+      "body": [
+        "C++ and OpenCV identify image regions that may contain fire or smoke. A neural-network stage then examines candidate imagery. The prototype brings these detection stages together with an embedded device and an operator interface."
+      ]
+    },
+    {
+      "title": "Processing close to the camera",
+      "body": [
+        "A Raspberry Pi provides the processing unit near the camera. The hardware design brings camera input, digital I/O and network communication into a compact assembly intended for installation alongside the monitored scene."
+      ]
+    },
+    {
+      "title": "From detection to operator awareness",
+      "body": [
+        "Detection events feed several output paths: hardware I/O, SMS/GSM, a local browser view and a Windows application. The desktop interface combines live imagery, network/device status and event records.",
+        "Live camera view",
+        "Pre-alarm and alarm events",
+        "Device status and event history",
+        "Database connection settings"
+      ]
+    },
+    {
+      "title": "A browser interface for device settings",
+      "body": [
+        "A local HTTP interface exposes configuration and monitoring without a dedicated desktop installation. Its settings cover device status, emergency outputs and SMS-related functions."
+      ]
+    },
+    {
+      "title": "Hardware development and testing",
+      "body": [
+        "The project includes an enclosed prototype and a CCTV-style assembly with GSM connectivity. Internal hardware photographs, a schematic, interface screenshots and demonstration recordings show how the vision software and physical device were brought together."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Camera input",
+      "description": "Pi Camera supplies imagery close to the embedded processing unit."
+    },
+    {
+      "label": "Candidate regions",
+      "description": "C++/OpenCV methods identify image regions that may contain fire or smoke."
+    },
+    {
+      "label": "Second-stage analysis",
+      "description": "A neural-network stage evaluates candidate imagery."
+    },
+    {
+      "label": "Device event logic",
+      "description": "Python coordinates status and alarm-related events."
+    },
+    {
+      "label": "Alert channels",
+      "description": "Hardware I/O, SMS/GSM and local-network interfaces expose events."
+    },
+    {
+      "label": "Operator tools",
+      "description": "Windows/PyQt monitoring and the HTTP panel provide live imagery, status and settings."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/fire-smoke-vision/v1-hardware-inside.jpg",
+      "alt": "Enclosed prototype internal assembly — v1-hardware-inside.",
+      "caption": "Enclosed prototype internal assembly — v1-hardware-inside."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Schematic-Ver.1.png",
+      "alt": "Original device schematic illustrating the embedded components.",
+      "caption": "Original device schematic illustrating the embedded components."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/windows-test-1.jpg",
+      "alt": "Fire/smoke model experiment — view 1.",
+      "caption": "Fire/smoke model experiment — view 1."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/windows-test-2.jpg",
+      "alt": "Fire/smoke model experiment — view 2.",
+      "caption": "Fire/smoke model experiment — view 2."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/windows-test-3.jpg",
+      "alt": "Fire/smoke model experiment — view 3.",
+      "caption": "Fire/smoke model experiment — view 3."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.1-Front-2.jpg",
+      "alt": "Enclosed prototype — front 2.",
+      "caption": "Enclosed prototype — front 2."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.1-Front.jpg",
+      "alt": "Front view of the enclosed prototype; no certification is implied.",
+      "caption": "Front view of the enclosed prototype; no certification is implied."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.1-Side.jpg",
+      "alt": "Enclosed prototype — side.",
+      "caption": "Enclosed prototype — side."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-1.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-1.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-1."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-2.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-2.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-2."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-3.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-3.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-3."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-4.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-4.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-4."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-5.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-5.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-5."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-6.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-6.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-6."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-7.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside-7.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside-7."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver1-Inside.jpg",
+      "alt": "Enclosed prototype internal assembly — Ver1-Inside.",
+      "caption": "Enclosed prototype internal assembly — Ver1-Inside."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Bottom.jpg",
+      "alt": "CCTV-style prototype — bottom.",
+      "caption": "CCTV-style prototype — bottom."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Front.jpg",
+      "alt": "CCTV-style prototype — front.",
+      "caption": "CCTV-style prototype — front."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-2.jpg",
+      "alt": "CCTV-style prototype — inside 2.",
+      "caption": "CCTV-style prototype — inside 2."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-3.jpg",
+      "alt": "CCTV-style prototype — inside 3.",
+      "caption": "CCTV-style prototype — inside 3."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-4.jpg",
+      "alt": "CCTV-style prototype internals and custom electronics.",
+      "caption": "CCTV-style prototype internals and custom electronics."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-5.jpg",
+      "alt": "CCTV-style prototype — inside 5.",
+      "caption": "CCTV-style prototype — inside 5."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-6.jpg",
+      "alt": "CCTV-style prototype — inside 6.",
+      "caption": "CCTV-style prototype — inside 6."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-7.jpg",
+      "alt": "CCTV-style prototype — inside 7.",
+      "caption": "CCTV-style prototype — inside 7."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-8.jpg",
+      "alt": "CCTV-style prototype — inside 8.",
+      "caption": "CCTV-style prototype — inside 8."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-9.jpg",
+      "alt": "CCTV-style prototype — inside 9.",
+      "caption": "CCTV-style prototype — inside 9."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-10.jpg",
+      "alt": "CCTV-style prototype — inside 10.",
+      "caption": "CCTV-style prototype — inside 10."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside.jpg",
+      "alt": "CCTV-style prototype — inside.",
+      "caption": "CCTV-style prototype — inside."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/software-1.png",
+      "alt": "Annotated Windows monitoring interface: live stream, device state and event history.",
+      "caption": "Annotated Windows monitoring interface: live stream, device state and event history."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-1.jpg",
+      "alt": "Fire-detection device web control panel — screen 1.",
+      "caption": "Fire-detection device web control panel — screen 1."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-3.jpg",
+      "alt": "Archived web configuration view showing emergency-output and SMS settings.",
+      "caption": "Archived web configuration view showing emergency-output and SMS settings."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-9.jpg",
+      "alt": "Fire-detection device web control panel — screen 9.",
+      "caption": "Fire-detection device web control panel — screen 9."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-10.jpg",
+      "alt": "Fire-detection device web control panel — screen 10.",
+      "caption": "Fire-detection device web control panel — screen 10."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-11.jpg",
+      "alt": "Fire-detection device web control panel — screen 11.",
+      "caption": "Fire-detection device web control panel — screen 11."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-12.jpg",
+      "alt": "Fire-detection device web control panel — screen 12.",
+      "caption": "Fire-detection device web control panel — screen 12."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-13.jpg",
+      "alt": "Fire-detection device web control panel — screen 13.",
+      "caption": "Fire-detection device web control panel — screen 13."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/fire-and-smoke-detector-using-image-processing.png",
+      "alt": "Original Fire & Smoke Vision Prototype project banner.",
+      "caption": "Original Fire & Smoke Vision Prototype project banner."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-cabling.webp",
+      "alt": "Internal enclosure cabling and relay connections in the vision prototype.",
+      "caption": "Internal enclosure cabling and relay connections in the vision prototype."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-connectors.webp",
+      "alt": "Prototype enclosure with network and 5 V power connection openings.",
+      "caption": "Prototype enclosure with network and 5 V power connection openings."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/archive-20261007/connected-enclosure.webp",
+      "alt": "Network and power cables connected to the prototype enclosure.",
+      "caption": "Network and power cables connected to the prototype enclosure."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-2.mp4",
+      "title": "OpenCV fire test · 02",
+      "caption": "Second OpenCV fire-test recording. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-1.mp4",
+      "title": "OpenCV fire test · 01",
+      "caption": "Physical fire-test recording — OpenCV stage. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/fire-detection-test.mp4",
+      "title": "Simulated detection workflow",
+      "caption": "Simulated demonstration — fire-detection workflow. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/fire-smoke-vision/video_2022-10-24_12-45-58.mp4",
+      "title": "Indoor detection test",
+      "caption": "Indoor fire-detection test recording. Silent demonstration."
+    }
+  ],
+  "strength": "From camera input to a complete alert workflow.",
+  "highlights": [
+    "Vision & neural-network prototype",
+    "Hardware I/O, GSM & operator alerts",
+    "Embedded device, web & desktop interfaces"
+  ],
+  "contribution": "My work covered software development, computer-vision experiments and embedded integration, including monitoring components for camera status, events and alarms.",
+  "result": "A prototype workspace connecting vision experiments, embedded-camera integration and an operator-facing monitoring application.",
+  "decisionNotes": "The prototype separates C++/OpenCV candidate-region processing from a neural-network stage, then connects device events to hardware outputs, GSM/SMS and local-network monitoring. A Windows/PyQt application and an HTTP panel expose imagery, status and settings.",
+  "validationNotes": "The archive contains physical OpenCV fire-test recordings, an indoor detection test, a simulated detection workflow, a schematic, prototype photographs and monitoring-interface views. These document prototype behaviour and integration; no detection-accuracy study, false-alarm measurement or safety certification is supplied.",
+  "referenceUrl": "https://github.com/sinashiry/Fire-and-Smoke-Detector-Using-Image-Processing"
+}

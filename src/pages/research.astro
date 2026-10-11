@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import Text from '../components/Text.astro';
+import AcademicProfiles from '../components/AcademicProfiles.astro';
+import AcademicReferences from '../components/AcademicReferences.astro';
+import data from '../data/content.json';
+import imageDimensions from '../data/project-image-dimensions.json';
+const details = data.currentWork.researchDetails;
+const thesisDiagram = imageDimensions['/assets/projects/zynq-object-detection/main-concept.png'];
+const bookSchema = { '@context':'https://schema.org', '@graph':data.publications.map(book=>({ '@type':'Book', name:book.title, author:book.authors.split(' and ').map(name=>({'@type':'Person',name})), datePublished:book.year, inLanguage:'fa', publisher:{'@type':'Organization',name:book.publisher}, description:book.description })) };
+const researchFields = [{key:'question',label:'Research question'},{key:'motivation',label:'Motivation'},{key:'contribution',label:'My contribution'},{key:'method',label:'Method'},{key:'platforms',label:'Platforms & experiments'},{key:'results',label:'Results'},{key:'collaborators',label:'Collaborators'}];
+---
+<Base title="Research & Academic Profile — Sina Shiri" description="Sina Shiri’s electrical engineering education, Zynq undergraduate thesis, research interests and technical books." active="research">
+  <script slot="head" type="application/ld+json" data-cv-schema="books" set:html={JSON.stringify(bookSchema).replace(/</g,'\\u003c')} />
+  <div class="wrap">
+    <section class="page-intro">
+      <span class="eyebrow">ELECTRICAL ENGINEERING · RESEARCH & POSTGRADUATE STUDY</span>
+      <h1>Research through<br />embedded vision.</h1>
+      <p><Text field="projects.5.summary" /></p>
+      <div class="actions"><a class="button" href="/downloads/Sina_Shiri_Masters_CV.pdf" download>Download academic CV</a><a class="text-link" href="/projects/zynq-object-detection/">Thesis case study ↗</a></div>
+    </section>
+    <section class="research-proof" aria-labelledby="thesis-evidence-title"><div><span class="eyebrow">UNDERGRADUATE RESEARCH · VERIFIED ARTIFACTS</span><h2 id="thesis-evidence-title">Object detection & tracking on Zynq.</h2><p><Text field="projects.5.contribution" /></p><ol class="research-workflow" aria-label="Documented development workflow"><li>MATLAB prototype</li><li>C++ / OpenCV</li><li>HLS core</li><li>Vivado / SDK integration</li></ol><p class="research-proof-note"><Text field="projects.5.validationNotes" /></p><div class="link-row"><a href={data.projects[5].referenceUrl} data-cv-url="projects.5.referenceUrl" data-cv-visible="projects.5.referenceUrl" rel="noopener noreferrer">Code & implementation files ↗</a><a href="https://github.com/sinashiry/Object-Detection-And-Tracking/blob/main/Document%20(persian)/Final_Document.pdf" rel="noopener noreferrer">Persian thesis report ↗</a><a href="/projects/zynq-object-detection/#explorer-zynq-object-detection-videos-title">Original demonstrations ↗</a></div></div><figure><a href="/projects/zynq-object-detection/"><img src="/assets/projects/zynq-object-detection/main-concept.png" alt={data.projects[5].galleries[0].alt} data-cv-alt="projects.5.galleries.0.alt" width={thesisDiagram.width} height={thesisDiagram.height} loading="lazy" /></a><figcaption><Text field="projects.5.galleries.0.caption" /></figcaption></figure></section>
+    <section data-cv-group="current-research" data-cv-group-state={details.question.trim() && details.contribution.trim() ? 'ready' : 'empty'} class="research-current" aria-labelledby="current-research-title"><span class="eyebrow">CURRENT RESEARCH</span><h2 id="current-research-title">Hardware security</h2><p data-cv-visible="currentWork.researchDetails.status"><strong>Status: </strong><Text field="currentWork.researchDetails.status" /></p><dl>{researchFields.map(field=><div data-cv-visible={`currentWork.researchDetails.${field.key}`}><dt>{field.label}</dt><dd><Text field={`currentWork.researchDetails.${field.key}`} /></dd></div>)}</dl><p data-cv-visible="currentWork.researchDetails.artifactUrl"><a href={details.artifactUrl} data-cv-url="currentWork.researchDetails.artifactUrl" rel="noopener noreferrer">Research artifact ↗</a></p><p><a class="text-link" href="/contact/#write-to-sina">Discuss a research opportunity ↗</a></p></section>
+    <div class="content-grid">
+      <article class="prose">
+        <h2>Academic background</h2>
+        {data.education.map((_,i)=><section class="timeline-item"><span class="period"><Text field={`education.${i}.period`} /></span><h3><Text field={`education.${i}.degree`} /></h3><p><Text field={`education.${i}.institution`} /></p><p><strong>GPA: <Text field={`education.${i}.gpa`} /></strong> · original grading scale</p><p><strong>Thesis:</strong> <Text field={`education.${i}.thesis`} /></p></section>)}
+        <h2>Research interests & postgraduate direction</h2>
+        <p><Text field="research.summary" /></p>
+        <div class="tags">{data.profile.researchInterests.map((_,i)=><span><Text field={`profile.researchInterests.${i}`} /></span>)}</div>
+        <h2>Experience to build on</h2><ul>{data.research.points.map((_,i)=><li><Text field={`research.points.${i}`} /></li>)}</ul>
+      </article>
+      <aside style="padding-top:40px">
+        <section class="panel"><h2>Research through making</h2><p><a href="/projects/aerial-object-tracking/">Object tracking prototypes ↗</a></p><p><a href="/projects/fire-smoke-vision/">Fire & smoke vision ↗</a></p><p><a href="/projects/industrial-data-graph/">Industrial sensor data ↗</a></p><p><a href="/code/">Browse public source code ↗</a></p></section>
+        <section class="panel"><h2>Academic conversation</h2><p>Discuss a postgraduate programme or a research opportunity in embedded computing, hardware security or intelligent sensing.</p><a href="/contact/#write-to-sina" class="text-link">Contact Sina ↗</a></section>
+      </aside>
+    </div>
+    <AcademicProfiles />
+    <section class="section" id="technical-books"><div class="section-heading"><div><span class="eyebrow">KNOWLEDGE, SHARED</span><h2>Technical books.</h2></div><p>Persian-language Raspberry Pi references, co-authored for learners and practitioners.</p></div><div class="book-grid">{data.publications.map((b,i)=><article class="book"><img src={`/assets/${i===0?'raspberry-pi-second-edition':'raspberry-pi-vol1'}.webp`} alt={`Cover of ${b.title}`} width="265" height="340" loading="lazy" /><div><span class="eyebrow"><Text field={`publications.${i}.year`} /> · <Text field={`publications.${i}.language`} /></span><h3><Text field={`publications.${i}.title`} /></h3><p><Text field={`publications.${i}.authors`} /></p><p class="book-publisher">Publisher: <Text field={`publications.${i}.publisher`} /></p><p><Text field={`publications.${i}.description`} /></p></div></article>)}</div></section>
+    <AcademicReferences />
+  </div>
+</Base>

@@ -1,0 +1,40 @@
+# Reproducible dependencies and generated builds
+node_modules/
+dist/
+dist-*/
+.astro/
+test-results/
+playwright-report/
+coverage/
+__pycache__/
+*.pyc
+# Composed from content/ by scripts/compose-content.mjs before every dev server and build
+/src/data/content.json
+
+# Runtime state, deployment packages, credentials and visitor data
+.private/
+.env*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.sql
+*.log
+*.pem
+*.key
+*.p12
+**/owner-access.txt
+**/owner-initial-password.txt
+**/deploy-session.json
+**/config.php
+**/sessions/
+**/backups/
+# Archives, bundles and geolocation databases never belong in the source
+*.zip
+*.dat
+*.mmdb
+*.bundle
+
+# Workstation noise
+.DS_Store

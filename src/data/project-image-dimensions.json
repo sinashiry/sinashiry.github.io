@@ -1,0 +1,418 @@
+{
+  "/assets/alarm-hardware.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-2.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/control-room.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-5.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-wiring.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/status-screen.webp": {
+    "width": 1280,
+    "height": 590
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-overview.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-6.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Hardware-2.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/standalone-and-network-based-alarm-monitoring.png": {
+    "width": 1920,
+    "height": 600
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-5.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/input-panel.webp": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-3.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-modules.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-1.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-1.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-3.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-display.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-7.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-1.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-side.webp": {
+    "width": 590,
+    "height": 1280
+  },
+  "/assets/projects/industrial-alarm-monitoring/archive-20261007/operator-workstation.webp": {
+    "width": 1280,
+    "height": 590
+  },
+  "/assets/fire-hardware.webp": {
+    "width": 960,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Schematic-Ver.1.png": {
+    "width": 1433,
+    "height": 522
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-7.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-2.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-connectors.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Front.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-7.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-3.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-4.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-6.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-3.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Side.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-4.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-9.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-2.jpg": {
+    "width": 886,
+    "height": 1080
+  },
+  "/assets/projects/fire-smoke-vision/Ver.1-Front-2.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/software-1.png": {
+    "width": 1436,
+    "height": 709
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-2.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-10.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-8.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-1.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-1.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-5.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-13.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-3.jpg": {
+    "width": 772,
+    "height": 580
+  },
+  "/assets/projects/fire-smoke-vision/Ver1-Inside-6.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-9.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-12.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-5.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/windows-test-1.jpg": {
+    "width": 878,
+    "height": 1080
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-11.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Bottom.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/http-Control-Panel-10.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Front.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/connected-enclosure.webp": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/Ver.2-Inside-3.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/assets/projects/fire-smoke-vision/fire-and-smoke-detector-using-image-processing.png": {
+    "width": 1920,
+    "height": 600
+  },
+  "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-cabling.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/fire-smoke-vision/v1-hardware-inside.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/embedded-qr-scanner/qr-code-reader-and-production-monitoring.png": {
+    "width": 1920,
+    "height": 600
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/terminal-workstation.webp": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system-4.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system-3.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/scan-screen.webp": {
+    "width": 591,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/scan-demonstration.webp": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/All-Qr-Code-Systems.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/qr-device.webp": {
+    "width": 960,
+    "height": 675
+  },
+  "/assets/projects/embedded-qr-scanner/Repair-of-system.jpg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/qr-device.jpg": {
+    "width": 1024,
+    "height": 720
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/system-status.webp": {
+    "width": 591,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/connection-diagnostics.webp": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/wall-mounted-terminal.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "/assets/projects/embedded-qr-scanner/archive-20261007/enclosure-assembly.webp": {
+    "width": 720,
+    "height": 1280
+  },
+  "/assets/projects/rfid-attendance/rollcall-shirin-asal-poster.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-5.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-3.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/networked-polling/1st.png": {
+    "width": 255,
+    "height": 121
+  },
+  "/assets/projects/networked-polling/2nd.png": {
+    "width": 256,
+    "height": 121
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-4.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-6.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/voting-device.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-1.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/networked-polling/hardware.png": {
+    "width": 1462,
+    "height": 539
+  },
+  "/assets/projects/networked-polling/Online-Voting-System-Device-2.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/zynq-object-detection/detection-and-tracking-of-moving-objects.png": {
+    "width": 1920,
+    "height": 600
+  },
+  "/assets/projects/zynq-object-detection/main-concept.png": {
+    "width": 1473,
+    "height": 1109
+  },
+  "/assets/projects/aerial-object-tracking/concept-cover.webp": {
+    "width": 1728,
+    "height": 910
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-24-rotated.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-data-graph/schematic.jpg": {
+    "width": 1024,
+    "height": 719
+  },
+  "/assets/projects/industrial-data-graph/industrial-data-graph.png": {
+    "width": 1920,
+    "height": 600
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-35.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-21.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-23-58.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-data-graph/datagraph-pcb.jpg": {
+    "width": 1293,
+    "height": 863
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-08.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-32.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/projects/food-reservation-system/Completion-of-food-distribution.jpg": {
+    "width": 800,
+    "height": 480
+  },
+  "/assets/projects/food-reservation-system/main-window.jpg": {
+    "width": 1250,
+    "height": 750
+  },
+  "/assets/projects/food-reservation-system/circuit-and-card.jpg": {
+    "width": 375,
+    "height": 378
+  },
+  "/assets/projects/two-line-caller-id/callerid_device.png": {
+    "width": 566,
+    "height": 475
+  }
+}

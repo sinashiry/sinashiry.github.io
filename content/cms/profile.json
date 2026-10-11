@@ -1,0 +1,21 @@
+{
+  "name": "Sina Shiri",
+  "eyebrow": "PYTHON · EMBEDDED SYSTEMS · RESEARCH",
+  "summary": "I build Python applications that connect hardware, data and people. My work spans industrial monitoring, embedded interfaces, computer vision and automation. I currently work as a freelancer in hardware security research and am interested in engineering roles and master's opportunities in Python and embedded systems.",
+  "email": "info@sina-shiri.com",
+  "location": "Tabriz, Iran",
+  "availability": "Exploring engineering roles and master's opportunities",
+  "researchInterests": [
+    "Hardware security",
+    "Embedded systems",
+    "Computer vision for sensing and monitoring",
+    "Hardware–software integration"
+  ],
+  "headlineStart": "Sina Shiri.",
+  "headlineMiddle": "Python & embedded",
+  "headlineEnd": "systems engineer.",
+  "heroIntro": "I build software-driven embedded systems for industrial monitoring, connected devices and computer vision.",
+  "currentFocus": "Independent freelance work in hardware security research.",
+  "github": "https://github.com/sinashiry",
+  "linkedin": "https://www.linkedin.com/in/sina-shiri-50b371162/"
+}

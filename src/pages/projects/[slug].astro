@@ -1,0 +1,172 @@
+---
+import Base from '../../layouts/Base.astro';
+import Text from '../../components/Text.astro';
+import ProjectExplorer from '../../components/ProjectExplorer.astro';
+import '../../styles/case-study.css';
+import '../../styles/evidence.css';
+import data from '../../data/content.json';
+import cardCovers from '../../data/project-covers.json';
+import previews from '../../data/media-thumbnails.json';
+import imageDimensions from '../../data/project-image-dimensions.json';
+
+export function getStaticPaths() {
+  return data.projects.map((project, index) => ({ params: { slug: project.slug }, props: { project, index } }));
+}
+
+const { project: p, index: i } = Astro.props;
+const basePath = `projects.${i}`;
+const explorerId = `explorer-${p.slug.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+const galleries = Array.isArray(p.galleries) ? p.galleries : [];
+const videos = Array.isArray(p.videos) ? p.videos : [];
+const sections = Array.isArray(p.sections) ? p.sections : [];
+const system = Array.isArray(p.system) ? p.system : [];
+const technologies = Array.isArray(p.technologies) ? p.technologies : [];
+const collaborators = Array.isArray(p.collaborators) ? p.collaborators : [];
+const approach = Array.isArray(p.approach) ? p.approach : [];
+const hasContent = (value: unknown) => typeof value === 'string' ? value.trim().length > 0 : Array.isArray(value) && value.length > 0;
+const hasToolkit = technologies.length > 0 || hasContent(p.software) || hasContent(p.hardware);
+const heroImage = p.cover || (p.image ? `/assets/${p.image}.webp` : undefined);
+const heroDimensions = imageDimensions[heroImage as keyof typeof imageDimensions] || {width:1200,height:800};
+const heroPreview = previews[heroImage as keyof typeof previews];
+const heroSrcset = heroPreview && heroPreview.width < heroDimensions.width ? `${heroPreview.src} ${heroPreview.width}w, ${heroImage} ${heroDimensions.width}w` : undefined;
+const matchingGalleryIndex = galleries.findIndex(item => item.src === heroImage);
+const socialCover = cardCovers[p.slug as keyof typeof cardCovers];
+const breadcrumbs = { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{'@type':'ListItem',position:1,name:'Engineering projects',item:'https://sina-shiri.com/projects/'},{'@type':'ListItem',position:2,name:p.title,item:`https://sina-shiri.com/projects/${p.slug}/`}] };
+const heroAlt = matchingGalleryIndex >= 0 ? galleries[matchingGalleryIndex].alt : p.title;
+const nextIndex = (i + 1) % data.projects.length;
+const next = data.projects.length > 1 ? data.projects[nextIndex] : undefined;
+const firstMediaTarget = videos.length ? `${explorerId}-videos-title` : galleries.length ? `${explorerId}-gallery-title` : 'case-overview';
+---
+
+<Base title={`${p.title} — Sina Shiri`} titleKey={`${basePath}.title`} description={p.summary} descriptionKey={`${basePath}.summary`} active="work" socialImage={socialCover?.src || heroImage} socialAlt={socialCover?.alt || heroAlt} socialWidth={socialCover?.width || 1200} socialHeight={socialCover?.height || 800}>
+  <script slot="head" type="application/ld+json" data-cv-schema="breadcrumb" data-cv-project={i} set:html={JSON.stringify(breadcrumbs).replace(/</g,'\\u003c')} />
+  <article class="wrap case-study">
+    <nav class="case-breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/projects/">Selected projects</a></li>
+        <li aria-current="page"><Text field={`${basePath}.title`} /></li>
+      </ol>
+    </nav>
+
+    <header class="case-hero">
+      <div class="case-hero-copy">
+        <div class="case-kicker">
+          {p.category && <span><Text field={`${basePath}.category`} /></span>}
+          {p.year && <span><Text field={`${basePath}.year`} /></span>}
+        </div>
+        <h1><Text field={`${basePath}.title`} /></h1>
+        {p.summary && <p class="case-summary"><Text field={`${basePath}.summary`} /></p>}
+        {p.role && (
+          <div class="case-contribution">
+            <span class="case-label">My role</span>
+            <p><Text field={`${basePath}.role`} /></p>
+          </div>
+        )}
+        <div class="actions case-hero-actions">
+          <a class="button" href={`#${firstMediaTarget}`}>{videos.length ? 'Watch the project' : galleries.length ? 'Explore the gallery' : 'Explore the project'}<span class="arrow" aria-hidden="true">↘</span></a>
+          <a class="case-text-link" href="/contact/#write-to-sina">Discuss related work <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      {heroImage ? (
+        <a class="case-hero-visual" href={`#${galleries.length ? `${explorerId}-gallery-title` : 'case-overview'}`} data-tilt>
+          <div class="case-image-topline"><span>{p.visualKind === 'concept' ? 'Concept illustration' : 'Project archive'}</span><span aria-hidden="true">{String(i + 1).padStart(2, '0')} / {String(data.projects.length).padStart(2, '0')}</span></div>
+          <img src={heroImage} srcset={heroSrcset} sizes="(max-width: 760px) 92vw, 44vw" alt={heroAlt} data-cv-alt={matchingGalleryIndex >= 0 ? `${basePath}.galleries.${matchingGalleryIndex}.alt` : `${basePath}.title`} width={heroDimensions.width} height={heroDimensions.height} fetchpriority="high" decoding="async" />
+          <div class="case-image-caption">
+            <span>{matchingGalleryIndex >= 0 && galleries[matchingGalleryIndex].caption ? <Text field={`${basePath}.galleries.${matchingGalleryIndex}.caption`} /> : <Text field={`${basePath}.title`} />}</span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+      ) : (
+        <div class="case-hero-illustration" aria-hidden="true">
+          <span class="case-illustration-label">Engineering project / {String(i + 1).padStart(2, '0')}</span>
+          <div class="case-illustration-frame"><span>{String(i + 1).padStart(2, '0')}</span></div>
+          <p><Text field={`${basePath}.category`} /></p>
+        </div>
+      )}
+    </header>
+
+    <section class="case-ownership" aria-label="Role, team and delivered scope"><div><h2>My contribution</h2><p><Text field={`${basePath}.role`} /></p><p data-cv-visible={`${basePath}.contribution`}><Text field={`${basePath}.contribution`} /></p></div>{(collaborators.length > 0 || p.credit) && <div><h2>Team & credits</h2>{collaborators.length ? <ul>{collaborators.map((person,index)=><li><Text field={`${basePath}.collaborators.${index}.name`} /> — <Text field={`${basePath}.collaborators.${index}.role`} /></li>)}</ul> : p.credit ? <p><Text field={`${basePath}.credit`} /></p> : null}</div>}<div><h2>Delivered scope</h2><p data-cv-visible={`${basePath}.result`}><Text field={`${basePath}.result`} /></p></div></section>
+
+    <nav class="case-jump" aria-label="On this project page">
+      <span class="case-label">Explore</span>
+      <a href="#case-overview">Overview</a><a href="#case-evidence">Evidence & results</a>
+      {galleries.length > 0 && <a href={`#${explorerId}-gallery-title`}>Gallery <span>{galleries.length}</span></a>}
+      {videos.length > 0 && <a href={`#${explorerId}-videos-title`}>Video demos <span>{videos.length}</span></a>}
+      {system.length > 0 && <a href={`#${explorerId}-system-title`}>System walkthrough</a>}
+      {sections.length > 0 && <a href={`#${explorerId}-details-title`}>Technical details</a>}
+      {hasToolkit && <a href="#case-toolkit">Tools & hardware</a>}
+      {(collaborators.length > 0 || p.credit) && <a href="#case-collaborators">Contributors</a>}
+    </nav>
+
+    <section class="case-highlights" id="case-highlights" aria-labelledby="case-highlights-title"><header><span class="eyebrow">ENGINEERING HIGHLIGHTS</span><h2 id="case-highlights-title">What stands out.</h2></header><ul>{p.highlights.map((_, j) => <li><span aria-hidden="true">0{j+1}</span><Text field={`${basePath}.highlights.${j}`} /></li>)}</ul></section>
+
+    <section class="case-overview" id="case-overview" aria-labelledby="case-overview-title">
+      <div class="case-section-heading">
+        <span class="case-label">Project overview</span>
+        <h2 id="case-overview-title">From the problem to the implementation.</h2>
+      </div>
+      <div class="case-overview-grid">
+        {p.problem && <div><span class="case-step" aria-hidden="true">01</span><h3>The problem</h3><p><Text field={`${basePath}.problem`} /></p></div>}
+        {approach.length > 0 && <div><span class="case-step" aria-hidden="true">02</span><h3>The approach</h3><ul>{approach.map((_, index) => <li><Text field={`${basePath}.approach.${index}`} /></li>)}</ul></div>}
+        {p.outcome && <div><span class="case-step" aria-hidden="true">03</span><h3>Result & scope</h3><p><Text field={`${basePath}.outcome`} /></p></div>}
+      </div>
+    </section>
+
+    <section class="case-evidence" id="case-evidence" aria-labelledby="case-evidence-title"><div class="case-section-heading"><span class="case-label">Design & evidence</span><h2 id="case-evidence-title">Implementation choices and demonstrated scope.</h2></div><div class="case-evidence-grid"><div data-cv-visible={`${basePath}.decisionNotes`}><h3>Engineering decisions</h3><p><Text field={`${basePath}.decisionNotes`} /></p></div><div><h3>Validation & evidence</h3><div data-cv-visible={`${basePath}.measuredOutcome`}><h4>Measured outcome</h4><p><Text field={`${basePath}.measuredOutcome`} /></p></div><p data-cv-visible={`${basePath}.validationNotes`}><Text field={`${basePath}.validationNotes`} /></p><p>Explore {galleries.length} project images{videos.length ? ` and ${videos.length} archival recordings` : ''}, with captions identifying the hardware, interface or prototype shown.</p></div></div><div class="case-evidence-links"><span data-cv-visible={`${basePath}.referenceUrl`}><a href={p.referenceUrl} data-cv-url={`${basePath}.referenceUrl`} rel="noopener noreferrer">Project source / reference ↗</a></span>{galleries.length > 0 && <a href={`#${explorerId}-gallery-title`}>Project images ↗</a>}{videos.length > 0 && <a href={`#${explorerId}-videos-title`}>Demonstrations ↗</a>}{system.length > 0 && <a href={`#${explorerId}-system-title`}>System architecture ↗</a>}{p.slug === 'zynq-object-detection' && <><a href="https://github.com/sinashiry/Object-Detection-And-Tracking/blob/main/Document%20(persian)/Final_Document.pdf" rel="noopener noreferrer">Persian research report ↗</a></>}</div></section>
+
+    <ProjectExplorer slug={p.slug} title={p.title} galleries={galleries} videos={videos} sections={sections} system={system} basePath={basePath} />
+
+    {hasToolkit && (
+      <section class="case-toolkit" id="case-toolkit" aria-labelledby="case-toolkit-title" data-reveal>
+        <div class="case-section-heading">
+          <span class="case-label">Implementation</span>
+          <h2 id="case-toolkit-title">Software, hardware & tools.</h2>
+        </div>
+        <div class="case-toolkit-grid">
+          {hasContent(p.software) && (
+            <div class="case-toolkit-group">
+              <h3>Software</h3>
+              {Array.isArray(p.software) ? <ul>{p.software.map((_, index) => <li><Text field={`${basePath}.software.${index}`} /></li>)}</ul> : <p><Text field={`${basePath}.software`} /></p>}
+            </div>
+          )}
+          {hasContent(p.hardware) && (
+            <div class="case-toolkit-group">
+              <h3>Hardware</h3>
+              {Array.isArray(p.hardware) ? <ul>{p.hardware.map((_, index) => <li><Text field={`${basePath}.hardware.${index}`} /></li>)}</ul> : <p><Text field={`${basePath}.hardware`} /></p>}
+            </div>
+          )}
+          {technologies.length > 0 && (
+            <div class="case-toolkit-group case-technologies">
+              <h3>Technology stack</h3>
+              <ul>{technologies.map((_, index) => <li><Text field={`${basePath}.technologies.${index}`} /></li>)}</ul>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    {(collaborators.length > 0 || p.credit) && (
+      <section class="case-collaborators" id="case-collaborators" aria-labelledby="case-collaborators-title" data-reveal>
+        <div class="case-section-heading">
+          <span class="case-label">Shared work</span>
+          <h2 id="case-collaborators-title">Project contributions.</h2>
+        </div>
+        {collaborators.length > 0 && <dl class="case-people">{collaborators.map((person, index) => <div><dt><Text field={`${basePath}.collaborators.${index}.name`} /></dt>{person.role && <dd><Text field={`${basePath}.collaborators.${index}.role`} /></dd>}</div>)}</dl>}
+        {p.credit && collaborators.length === 0 && <p class="case-credit"><Text field={`${basePath}.credit`} /></p>}
+      </section>
+    )}
+
+    <section class="case-discuss" aria-labelledby="case-discuss-title">
+      <div><span class="case-label">Continue the conversation</span><h2 id="case-discuss-title">Working on a related challenge?</h2><p>Get in touch about Python, embedded systems or a research opportunity.</p></div>
+      <div class="case-discuss-links"><a class="button" href="/contact/#write-to-sina">Get in touch <span class="arrow" aria-hidden="true">↗</span></a><a class="case-text-link" href="/downloads/Sina_Shiri_Engineering_CV.pdf" download>Engineering CV ↓</a></div>
+    </section>
+
+    {next && (
+      <a class="case-next" href={`/projects/${next.slug}/`} data-reveal>
+        <div><span class="case-label">Next project</span><h2><Text field={`projects.${nextIndex}.title`} /></h2><p><Text field={`projects.${nextIndex}.category`} /></p></div>
+        <span class="case-next-arrow" aria-hidden="true">↗</span>
+      </a>
+    )}
+  </article>
+</Base>

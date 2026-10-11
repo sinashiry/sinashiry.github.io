@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "role": "Freelance hardware security research",
+      "organization": "Independent",
+      "period": "Current",
+      "summary": "Working as a freelancer in hardware security research, with a focus on Python and embedded systems."
+    },
+    {
+      "role": "Python development & embedded engineering",
+      "organization": "IstaSanat",
+      "period": "2017–present",
+      "summary": "Built software and hardware for industrial monitoring, control and operator-facing applications.",
+      "highlights": [
+        "Python interfaces for industrial monitoring and device control",
+        "Integration of embedded computers, electronics and networked applications"
+      ]
+    },
+    {
+      "role": "Freelance developer & hardware designer",
+      "organization": "Independent projects",
+      "period": "2016–2017",
+      "summary": "Developed caller-ID and attendance applications and co-authored Persian-language Raspberry Pi reference books.",
+      "highlights": [
+        "Python applications combining interfaces, serial communication and embedded hardware",
+        "Technical writing for Raspberry Pi learners and practitioners"
+      ]
+    }
+  ]
+}

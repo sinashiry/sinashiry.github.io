@@ -1,0 +1,19 @@
+---
+import data from '../data/content.json';
+import Text from './Text.astro';
+import '../styles/academic-profile.css';
+
+interface Props { id?: string; heading?: string | false; }
+const { id = 'academic-profiles', heading = 'Academic profiles' } = Astro.props;
+const ready = (entry: { label: string; url: string }) => Boolean(entry.label.trim() && /^https:\/\//i.test(entry.url));
+const populated = data.academic.profiles.some(ready);
+---
+<section data-cv-group="academic-profiles" data-cv-group-state={populated ? 'ready' : 'empty'} class="academic-section" id={id} aria-labelledby={heading ? `${id}-title` : undefined} aria-label={!heading ? 'Academic profiles' : undefined}>
+  {heading && <header class="academic-section-heading"><span class="eyebrow">RESEARCH & SCHOLARLY IDENTITY</span><h2 id={`${id}-title`}>{heading}</h2></header>}
+  <div class="academic-profile-grid">
+    {data.academic.profiles.map((entry, index) => <article class="academic-profile-card" data-academic-entry="profile" data-academic-path={`academic.profiles.${index}`} data-academic-state={ready(entry) ? 'ready' : 'empty'}>
+      <a href={entry.url} data-cv-url={`academic.profiles.${index}.url`} rel="me noopener noreferrer"><span class="academic-link-label"><Text field={`academic.profiles.${index}.label`} /></span><span aria-hidden="true">↗</span></a>
+    </article>)}
+  </div>
+
+</section>

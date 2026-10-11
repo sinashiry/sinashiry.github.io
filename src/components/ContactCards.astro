@@ -1,0 +1,37 @@
+---
+import data from '../data/content.json';
+import Text from './Text.astro';
+import '../styles/profile-sections.css';
+
+interface Props {
+  id?: string;
+  heading?: string | false;
+  eyebrow?: string;
+  showIntro?: boolean;
+}
+const { id, showIntro = true, heading = 'Let’s connect', eyebrow = 'A GOOD CONVERSATION STARTS HERE' } = Astro.props;
+const cards = [
+  { label: 'Email', href: `mailto:${data.profile.email}`, field: 'profile.email', description: '', icon: 'M3 5h18v14H3zM3 6l9 7 9-7', action: 'Write to Sina', download: false },
+  { label: 'GitHub', href: data.profile.github, description: 'Code & engineering projects', field: '', icon: 'M7 7v10m10-10v3a5 5 0 0 1-5 5H7M4 4h6v6H4zM14 4h6v6h-6zM4 16h6v5H4z', action: 'Explore GitHub', download: false },
+  { label: 'LinkedIn', href: data.profile.linkedin, description: 'Professional background', field: '', icon: 'M4 4h16v16H4zM8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4', action: 'View LinkedIn', download: false },
+  { label: 'Based in', href: '', description: '', field: 'profile.location', icon: 'M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0zm-10 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0', action: 'Location', download: false },
+  { label: 'Engineering CV', href: '/downloads/Sina_Shiri_Engineering_CV.pdf', description: 'Experience, skills & selected projects', field: '', icon: 'M6 2h8l4 4v16H6zM14 2v5h4M9 11h6m-6 4h6m-6 4h4', action: 'Download PDF', download: true },
+  { label: 'Academic CV', href: '/downloads/Sina_Shiri_Masters_CV.pdf', description: 'Education, research interests & books', field: '', icon: 'm2 8 10-5 10 5-10 5L2 8zm4 2v7c4 3 8 3 12 0v-7m4-2v9', action: 'Download PDF', download: true },
+];
+---
+
+<section class="profile-section contact-cards-section" id={id} aria-labelledby={heading && id ? `${id}-title` : undefined} aria-label={!id || !heading ? 'Contact and CV downloads' : undefined}>
+  {heading && <header class="profile-section-heading"><div><span class="eyebrow">{eyebrow}</span><h2 id={id ? `${id}-title` : undefined}>{heading}</h2></div></header>}
+  {showIntro && <p class="profile-contact-intro"><Text field="contact.summary" /></p>}
+  <div class="profile-contact-grid">
+    {cards.map(card => {
+      const Tag = card.href ? 'a' : 'article';
+      return <Tag class:list={['profile-contact-card', { 'profile-contact-static': !card.href }]} href={card.href || undefined} download={card.download || undefined} data-cv-href={card.field === 'profile.email' ? card.field : undefined} data-cv-url={card.label === 'GitHub' ? 'profile.github' : card.label === 'LinkedIn' ? 'profile.linkedin' : undefined} rel={card.label === 'GitHub' || card.label === 'LinkedIn' ? 'me noreferrer' : undefined}>
+        <span class="profile-line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d={card.icon} /></svg></span>
+        <div class="profile-contact-copy"><h3>{card.label}</h3><p>{card.field ? <Text field={card.field} /> : card.description}</p></div>
+        <span class="profile-contact-action">{card.action}{card.href && <span aria-hidden="true">{card.download ? '↓' : '↗'}</span>}</span>
+      </Tag>;
+    })}
+  </div>
+  <div class="contact-copy-row"><button type="button" class="copy-email" data-copy-email hidden>Copy email address <span aria-hidden="true">⧉</span></button><span class="contact-copy-status" data-copy-status role="status" aria-live="polite"></span></div>
+</section>

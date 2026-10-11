@@ -1,0 +1,244 @@
+{
+  "slug": "industrial-alarm-monitoring",
+  "title": "Industrial Alarm Monitoring",
+  "year": "2020",
+  "summary": "A Raspberry Pi monitoring system bringing 40 alarm inputs, a local operator interface and network access into one application.",
+  "problem": "Industrial operators need to see input states, understand alarm events and retain a useful history across local and networked workflows.",
+  "approach": [
+    "Connected configurable AC/DC alarm inputs to a Raspberry Pi-based application.",
+    "Built a PyQt interface for input status and operator interaction.",
+    "Combined local event storage with network and web components for monitoring."
+  ],
+  "outcome": "A monitoring-system implementation spanning hardware inputs, the operator interface and database-backed event records.",
+  "technologies": [
+    "Python",
+    "System integration",
+    "Industrial monitoring"
+  ],
+  "role": "Software development and system integration",
+  "collaborators": [
+    {
+      "name": "Mohammad Khodadadeh",
+      "role": "Hardware design"
+    },
+    {
+      "name": "Hossein Aalamshahi",
+      "role": "Project management"
+    }
+  ],
+  "software": [
+    "Python application & operator interface",
+    "Local event storage & SQL Server integration"
+  ],
+  "hardware": [
+    "Raspberry Pi",
+    "Custom 40-channel AC/DC input board",
+    "Optocouplers",
+    "Buffer circuitry",
+    "HDMI display",
+    "Physical acknowledge/reset inputs"
+  ],
+  "sections": [
+    {
+      "title": "Preserving the history behind an alarm",
+      "body": [
+        "An indicator alone cannot explain what happened while an operator was away. This system combines live alarm visibility with stored records so events remain available for review after the initial indication."
+      ]
+    },
+    {
+      "title": "Standalone and networked operation",
+      "body": [
+        "In standalone mode, the device monitors alarms and shutdowns, stores events locally and accepts physical operator commands. In networked mode, it connects to SQL Server and makes the event workflow available across the local network.",
+        "Local event storage",
+        "Central database connection",
+        "Network visibility and control"
+      ]
+    },
+    {
+      "title": "Three ways to operate the system",
+      "body": [
+        "The same alarm workflow is accessible through physical inputs, an HDMI interface and a browser. Operators can acknowledge and reset alarms, change channel titles and input modes, and configure the displayed alarms.",
+        "Hardware acknowledge/reset controls",
+        "PyQt interface on HDMI",
+        "Local-network web interface"
+      ]
+    },
+    {
+      "title": "Forty channels, one interface",
+      "body": [
+        "The custom board provides 40 AC/DC input channels with optocoupler isolation and buffer circuitry. Configurable jumpers adapt the input arrangement. I developed the software and system integration; Mohammad Khodadadeh designed the hardware and Hossein Aalamshahi managed the project."
+      ]
+    },
+    {
+      "title": "Configuration and service tools",
+      "body": [
+        "The browser interface brings together general settings, USB-device information, network status, saved events and live alarm controls. Local event lists and export functions support maintenance and review."
+      ]
+    }
+  ],
+  "system": [
+    {
+      "label": "Industrial alarm inputs",
+      "description": "Forty configurable AC/DC input channels feed the custom board."
+    },
+    {
+      "label": "Isolation and acquisition",
+      "description": "The board uses optocouplers and buffer circuitry; Raspberry Pi GPIO acquires the input states."
+    },
+    {
+      "label": "Event handling",
+      "description": "Python processes alarm events and operator acknowledge/reset commands."
+    },
+    {
+      "label": "Local persistence",
+      "description": "SQLite supports local records when operating standalone."
+    },
+    {
+      "label": "Operator interfaces",
+      "description": "PyQt/HDMI and the local HTTP interface expose state, events and settings."
+    },
+    {
+      "label": "Network records",
+      "description": "The networked mode connects to SQL Server for central access."
+    }
+  ],
+  "galleries": [
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-3.jpg",
+      "alt": "Early enclosure and hardware integration work.",
+      "caption": "Early enclosure and hardware integration work."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-5.jpg",
+      "alt": "Alarm-monitoring prototype on the bench, with breadboard wiring and the channel-status interface on an HDMI display.",
+      "caption": "Alarm-monitoring prototype on the bench, with breadboard wiring and the channel-status interface on an HDMI display."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-1.jpg",
+      "alt": "Bench setup with highlighted alarm states and operator controls on the monitoring interface.",
+      "caption": "Bench setup with highlighted alarm states and operator controls on the monitoring interface."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-6.jpg",
+      "alt": "Close-up of the alarm-input PCB layout, showing repeated channel circuits and routed traces.",
+      "caption": "Close-up of the alarm-input PCB layout, showing repeated channel circuits and routed traces."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-1.jpg",
+      "alt": "Three-dimensional PCB design view showing the repeated input-channel components.",
+      "caption": "Three-dimensional PCB design view showing the repeated input-channel components."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-7.jpg",
+      "alt": "Alarm-input PCB routing view with repeated channel sections and component labels.",
+      "caption": "Alarm-input PCB routing view with repeated channel sections and component labels."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-5.jpg",
+      "alt": "Custom input board and terminal connections; hardware design by Mohammad Khodadadeh.",
+      "caption": "Custom input board and terminal connections; hardware design by Mohammad Khodadadeh."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-3.jpg",
+      "alt": "Three-dimensional board design view showing the rows of input terminals and board connections.",
+      "caption": "Three-dimensional board design view showing the rows of input terminals and board connections."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Hardware-2.jpg",
+      "alt": "Assembled alarm-monitoring hardware.",
+      "caption": "Assembled alarm-monitoring hardware."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-2.jpg",
+      "alt": "Alarm system running 2.",
+      "caption": "Alarm system running 2."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-1.jpg",
+      "alt": "Alarm-monitoring system operating with its local display.",
+      "caption": "Alarm-monitoring system operating with its local display."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/standalone-and-network-based-alarm-monitoring.png",
+      "alt": "Original Industrial Alarm Monitoring project banner.",
+      "caption": "Original Industrial Alarm Monitoring project banner."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/input-panel.webp",
+      "alt": "Alarm input panel with AC/DC configuration jumpers and reset/acknowledge controls.",
+      "caption": "Alarm input panel with AC/DC configuration jumpers and reset/acknowledge controls."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/status-screen.webp",
+      "alt": "Alarm status display showing the operator interface and colour-coded states.",
+      "caption": "Alarm status display showing the operator interface and colour-coded states."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/control-room.webp",
+      "alt": "Control-room view with open equipment cabinets and an operator workstation.",
+      "caption": "Control-room view with open equipment cabinets and an operator workstation."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-overview.webp",
+      "alt": "Open control cabinets showing the installed equipment and wiring.",
+      "caption": "Open control cabinets showing the installed equipment and wiring."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-wiring.webp",
+      "alt": "Closer view of the control-cabinet wiring and installed modules.",
+      "caption": "Closer view of the control-cabinet wiring and installed modules."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-modules.webp",
+      "alt": "Control-cabinet modules and cable connections during system integration.",
+      "caption": "Control-cabinet modules and cable connections during system integration."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/operator-workstation.webp",
+      "alt": "Alarm-monitoring application running at the operator workstation.",
+      "caption": "Alarm-monitoring application running at the operator workstation."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-display.webp",
+      "alt": "Operator display showing the alarm-monitoring dashboard.",
+      "caption": "Operator display showing the alarm-monitoring dashboard."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-side.webp",
+      "alt": "Side view of the workstation and colour-coded monitoring interface.",
+      "caption": "Side view of the workstation and colour-coded monitoring interface."
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/1.mp4",
+      "title": "Alarm monitoring · 01",
+      "caption": "Alarm-monitoring walkthrough — part 1. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/2.mp4",
+      "title": "Alarm monitoring · 02",
+      "caption": "Alarm-monitoring walkthrough — part 2. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/3.mp4",
+      "title": "Alarm monitoring · 03",
+      "caption": "Alarm-monitoring walkthrough — part 3. Silent demonstration."
+    },
+    {
+      "src": "/assets/projects/industrial-alarm-monitoring/4.mp4",
+      "title": "Alarm monitoring · 04",
+      "caption": "Alarm-system walkthrough. Silent demonstration."
+    }
+  ],
+  "strength": "40 alarm channels. Three ways to operate.",
+  "highlights": [
+    "40 configurable AC/DC inputs",
+    "Physical, HDMI & browser controls",
+    "Standalone records & networked monitoring"
+  ],
+  "contribution": "I developed the Python monitoring software, PyQt operator interface and integration of hardware input states, local event records and networked access. The custom input-board hardware was designed by Mohammad Khodadadeh; Hossein Aalamshahi managed the project.",
+  "result": "A monitoring-system implementation spanning hardware inputs, the operator interface and database-backed event records.",
+  "decisionNotes": "The implementation supports standalone records alongside networked SQL Server access. Physical acknowledge/reset inputs, PyQt on HDMI and a local browser interface provide three operator paths.",
+  "validationNotes": "Original hardware photographs, interface views and archival recordings document the monitoring implementation. They show the device and operator workflow; the archive does not provide a measured reliability or deployment study."
+}

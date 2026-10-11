@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/collections.css';
+import { publishedPosts } from '../../lib/collections';
+import { blogRobots, postRoute } from '../../lib/collection-rules';
+const posts = await publishedPosts();
+---
+<Base title="Writing — Sina Shiri" description="Engineering notes and articles by Sina Shiri, covering software, embedded systems and practical project work." active="blog" robots={blogRobots(posts.length)}>
+  <div class="wrap collections-page">
+    <header class="collection-intro"><span class="eyebrow">NOTES FROM THE WORKBENCH</span><h1>Writing<span>.</span></h1><p>Ideas, implementation details and lessons from building software and hardware.</p></header>
+    <div class="collection-list">
+      {posts.length ? posts.map(post => (
+        <article class="collection-card">{post.heroImage && <a href={postRoute(post)} tabindex="-1" aria-hidden="true"><img class="collection-hero-image" src={post.heroImage} alt={post.heroAlt} width={post.heroWidth} height={post.heroHeight} loading="lazy" decoding="async" /></a>}<time datetime={post.date}>{post.date}</time><h2><a href={postRoute(post)}>{post.title}</a></h2><p>{post.summary}</p>{post.relatedProject && <a class="collection-related" href={`/projects/${post.relatedProject}/`}>Related engineering case ↗</a>}<a class="collection-read" href={postRoute(post)}>Read article <span aria-hidden="true">↗</span></a></article>
+      )) : <div class="collection-empty"><h2>Engineering in practice</h2><p>Explore detailed project decisions, implementation notes and original demonstrations in the engineering portfolio.</p><a href="/projects/">Explore the engineering projects ↗</a></div>}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,11 @@
+---
+import data from '../data/content.json';
+// Each topic opens the visitor's own mail client; only a fixed subject line is added to the address.
+const routes = [
+  {subject:'Engineering opportunity',title:'Engineering role',copy:'Python, embedded systems and industrial software.',action:'Discuss an engineering role'},
+  {subject:'Research collaboration',title:'Research collaboration',copy:'Hardware security, embedded computing or intelligent sensing.',action:'Discuss research'},
+  {subject:'Master’s / academic opportunity',title:'Master’s / postgraduate study',copy:'Programmes connected to electrical engineering and embedded research.',action:'Discuss a programme'},
+  {subject:'Freelance / consulting project',title:'Freelance / consulting project',copy:'Share the device, workflow and technical constraints.',action:'Discuss a project'},
+];
+---
+<div class="enquiry-grid" aria-label="Choose an enquiry topic">{routes.map(route=><a class="enquiry-card" href={`mailto:${data.profile.email}?subject=${encodeURIComponent(route.subject)}`}><h3>{route.title}</h3><p>{route.copy}</p><span>{route.action} ↗</span></a>)}</div>

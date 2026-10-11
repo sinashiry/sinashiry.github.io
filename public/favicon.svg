@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <title>Sina Shiri — circuit-trace S</title>
+  <rect width="96" height="96" rx="24" fill="#c3e3a8"/>
+  <g fill="none" stroke="#142024" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 16H33.515L20 29.515v10.97L33.515 54h24L64 60.485v1.03L57.515 68H32"/>
+    <path d="M68 22H36L26 32v6l10 10h24l10 10v6L60 74H28"/>
+    <path d="M64 28H38.485L32 34.485v1.03L38.485 42h24L76 55.515v10.97L62.485 80H24"/>
+  </g>
+  <g fill="#c3e3a8" stroke="#142024" stroke-width="1.8">
+    <circle cx="72" cy="16" r="2.4"/><circle cx="68" cy="22" r="2.4"/><circle cx="64" cy="28" r="2.4"/>
+    <circle cx="32" cy="68" r="2.4"/><circle cx="28" cy="74" r="2.4"/><circle cx="24" cy="80" r="2.4"/>
+  </g>
+</svg>

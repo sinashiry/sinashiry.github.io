@@ -1,0 +1,2020 @@
+{
+  "profile": {
+    "name": null,
+    "title": "Python Developer & Embedded Systems Engineer",
+    "eyebrow": null,
+    "summary": null,
+    "shortSummary": "Connecting hardware, software and research through Python and embedded systems.",
+    "email": null,
+    "location": null,
+    "availability": null,
+    "researchInterests": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "headlineStart": null,
+    "headlineMiddle": null,
+    "headlineEnd": null,
+    "heroIntro": null,
+    "currentFocus": null,
+    "github": null,
+    "linkedin": null
+  },
+  "experience": [
+    {
+      "role": null,
+      "organization": null,
+      "period": null,
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "role": null,
+      "organization": null,
+      "period": null,
+      "summary": null,
+      "highlights": [
+        null,
+        null
+      ]
+    },
+    {
+      "role": null,
+      "organization": null,
+      "period": null,
+      "summary": null,
+      "highlights": [
+        null,
+        null
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": null,
+      "institution": null,
+      "location": "Isfahan, Iran",
+      "period": null,
+      "gpa": null,
+      "thesis": null
+    },
+    {
+      "degree": null,
+      "institution": null,
+      "location": "Tabriz, Iran",
+      "period": null,
+      "gpa": null,
+      "thesis": null
+    }
+  ],
+  "publications": [
+    {
+      "title": null,
+      "type": "Technical book",
+      "year": null,
+      "authors": null,
+      "publisher": null,
+      "language": null,
+      "description": null
+    },
+    {
+      "title": null,
+      "type": "Technical books",
+      "year": null,
+      "authors": null,
+      "publisher": null,
+      "language": null,
+      "description": null
+    }
+  ],
+  "skillGroups": [
+    {
+      "name": null,
+      "skills": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": null,
+      "skills": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": null,
+      "skills": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": null,
+      "skills": [
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    }
+  ],
+  "projects": [
+    {
+      "slug": "industrial-alarm-monitoring",
+      "title": null,
+      "category": "Embedded systems",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": true,
+      "image": "alarm-hardware",
+      "role": null,
+      "credit": "Hardware design: Mohammad Khodadadeh. Project management: Hossein Aalamshahi.",
+      "collaborators": [
+        {
+          "name": null,
+          "role": null
+        },
+        {
+          "name": null,
+          "role": null
+        }
+      ],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-5.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Design-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-6.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-7.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-5.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-PCB-Desgin-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Hardware-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/Alarm-System-Running-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/standalone-and-network-based-alarm-monitoring.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/input-panel.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/status-screen.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/control-room.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-overview.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-wiring.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/cabinet-modules.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/operator-workstation.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-display.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/archive-20261007/workstation-side.webp",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/1.mp4",
+          "poster": "/assets/projects/industrial-alarm-monitoring/1-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/2.mp4",
+          "poster": "/assets/projects/industrial-alarm-monitoring/2-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/3.mp4",
+          "poster": "/assets/projects/industrial-alarm-monitoring/3-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-alarm-monitoring/4.mp4",
+          "poster": "/assets/projects/industrial-alarm-monitoring/4-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "fire-smoke-vision",
+      "title": null,
+      "category": "Computer vision",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": true,
+      "image": "fire-hardware",
+      "role": null,
+      "credit": "",
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/fire-smoke-vision/v1-hardware-inside.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Schematic-Ver.1.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/windows-test-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/windows-test-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/windows-test-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.1-Front-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.1-Front.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.1-Side.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-4.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-5.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-6.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside-7.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver1-Inside.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Bottom.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Front.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-4.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-5.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-6.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-7.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-8.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-9.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside-10.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/Ver.2-Inside.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/software-1.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-9.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-10.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-11.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-12.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/http-Control-Panel-13.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/fire-and-smoke-detector-using-image-processing.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-cabling.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/archive-20261007/enclosure-connectors.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/archive-20261007/connected-enclosure.webp",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-2.mp4",
+          "poster": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-2-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-1.mp4",
+          "poster": "/assets/projects/fire-smoke-vision/OpenCV-Real-Test-1-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/fire-detection-test.mp4",
+          "poster": "/assets/projects/fire-smoke-vision/fire-detection-test-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/fire-smoke-vision/video_2022-10-24_12-45-58.mp4",
+          "poster": "/assets/projects/fire-smoke-vision/video_2022-10-24_12-45-58-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/fire-smoke-vision/software-1.png",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "embedded-qr-scanner",
+      "title": null,
+      "category": "Embedded systems",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": true,
+      "image": "qr-device",
+      "role": null,
+      "credit": "System design: Hosein AlamShahi.",
+      "collaborators": [
+        {
+          "name": null,
+          "role": null
+        }
+      ],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/embedded-qr-scanner/All-Qr-Code-Systems.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/Repair-of-system.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/Repair-of-system-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/Repair-of-system-4.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/qr-code-reader-and-production-monitoring.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/qr-device.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/terminal-workstation.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/scan-screen.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/system-status.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/scan-demonstration.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/enclosure-assembly.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/connection-diagnostics.webp",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/archive-20261007/wall-mounted-terminal.webp",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/embedded-qr-scanner/designing.mp4",
+          "poster": "/assets/projects/embedded-qr-scanner/designing-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/embedded-qr-scanner/status-of-device.mp4",
+          "poster": "/assets/projects/embedded-qr-scanner/status-of-device-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "rfid-attendance",
+      "title": null,
+      "category": "Embedded systems",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": false,
+      "image": "",
+      "role": null,
+      "credit": "",
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [],
+      "videos": [
+        {
+          "src": "/assets/projects/rfid-attendance/rollcall-shirin-asal.mp4",
+          "poster": "/assets/projects/rfid-attendance/rollcall-shirin-asal-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/rfid-attendance/rollcall-shirin-asal-poster.jpg",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "networked-polling",
+      "title": null,
+      "category": "Python applications",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": false,
+      "image": "voting-device",
+      "role": null,
+      "credit": "System design: Hosein AlamShahi.",
+      "collaborators": [
+        {
+          "name": null,
+          "role": null
+        }
+      ],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/networked-polling/1st.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/2nd.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/hardware.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-1.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-2.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-3.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-4.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-5.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/Online-Voting-System-Device-6.jpg",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/networked-polling/test-voting-system-.mp4",
+          "poster": "/assets/projects/networked-polling/test-voting-system--poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/real-test-system.mp4",
+          "poster": "/assets/projects/networked-polling/real-test-system-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/networked-polling/software-of-voting-system.mp4",
+          "poster": "/assets/projects/networked-polling/software-of-voting-system-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "zynq-object-detection",
+      "title": null,
+      "category": "FPGA & embedded vision",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "image": "",
+      "featured": true,
+      "credit": "",
+      "role": null,
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/zynq-object-detection/main-concept.png",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/zynq-object-detection/detection-and-tracking-of-moving-objects.png",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/zynq-object-detection/Test-Sobel-Filter_.mp4",
+          "poster": "/assets/projects/zynq-object-detection/Test-Sobel-Filter_-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/zynq-object-detection/frame-search.mp4",
+          "poster": "/assets/projects/zynq-object-detection/frame-search-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/zynq-object-detection/timing.mp4",
+          "poster": "/assets/projects/zynq-object-detection/timing-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/zynq-object-detection/main-concept.png",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "aerial-object-tracking",
+      "title": null,
+      "category": "Computer vision",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "featured": false,
+      "image": "",
+      "role": null,
+      "credit": "",
+      "collaborators": [
+        {
+          "name": null,
+          "role": null
+        }
+      ],
+      "software": [
+        null
+      ],
+      "hardware": [],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/aerial-object-tracking/concept-cover.webp",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/terrain-vehicle-tracking.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/terrain-vehicle-tracking-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-detection-and-tracking.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/highway-detection-and-tracking-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/single-vehicle-selection.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/single-vehicle-selection-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/traffic-region-detection.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/traffic-region-detection-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-region-controls.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/highway-region-controls-poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/aerial-object-tracking/archive-20261007/highway-selected-vehicle.mp4",
+          "poster": "/assets/projects/aerial-object-tracking/archive-20261007/highway-selected-vehicle-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/aerial-object-tracking/concept-cover.webp",
+      "visualKind": "concept",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "industrial-data-graph",
+      "title": null,
+      "category": "Embedded systems",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "image": "",
+      "featured": false,
+      "credit": "",
+      "role": null,
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/industrial-data-graph/schematic.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-08.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-21.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-35.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-24-rotated.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-32.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-23-58.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/datagraph-pcb.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/industrial-data-graph/industrial-data-graph.png",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [],
+      "cover": "/assets/projects/industrial-data-graph/photo_2022-10-18_10-24-35.jpg",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "food-reservation-system",
+      "title": null,
+      "category": "Embedded systems",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "image": "",
+      "featured": false,
+      "credit": "",
+      "role": null,
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/food-reservation-system/main-window.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/food-reservation-system/circuit-and-card.jpg",
+          "alt": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/food-reservation-system/Completion-of-food-distribution.jpg",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/food-reservation-system/Food-Reservation-System-.mp4",
+          "poster": "/assets/projects/food-reservation-system/Food-Reservation-System--poster.jpg",
+          "title": null,
+          "caption": null
+        },
+        {
+          "src": "/assets/projects/food-reservation-system/archive-20261007/rfid-terminal-workflow.mp4",
+          "poster": "/assets/projects/food-reservation-system/archive-20261007/rfid-terminal-workflow-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/food-reservation-system/circuit-and-card.jpg",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    },
+    {
+      "slug": "two-line-caller-id",
+      "title": null,
+      "category": "Python applications",
+      "year": null,
+      "summary": null,
+      "problem": null,
+      "approach": [
+        null,
+        null,
+        null
+      ],
+      "outcome": null,
+      "technologies": [
+        null,
+        null,
+        null
+      ],
+      "image": "",
+      "featured": false,
+      "credit": "",
+      "role": null,
+      "collaborators": [],
+      "software": [
+        null,
+        null
+      ],
+      "hardware": [
+        null,
+        null
+      ],
+      "sections": [
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        },
+        {
+          "title": null,
+          "body": [
+            null
+          ]
+        }
+      ],
+      "system": [
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        },
+        {
+          "label": null,
+          "description": null
+        }
+      ],
+      "galleries": [
+        {
+          "src": "/assets/projects/two-line-caller-id/callerid_device.png",
+          "alt": null,
+          "caption": null
+        }
+      ],
+      "videos": [
+        {
+          "src": "/assets/projects/two-line-caller-id/Getir-Market_.mp4",
+          "poster": "/assets/projects/two-line-caller-id/Getir-Market_-poster.jpg",
+          "title": null,
+          "caption": null
+        }
+      ],
+      "cover": "/assets/projects/two-line-caller-id/callerid_device.png",
+      "strength": null,
+      "highlights": [
+        null,
+        null,
+        null
+      ],
+      "contribution": null,
+      "result": null,
+      "decisionNotes": null,
+      "validationNotes": null,
+      "measuredOutcome": null,
+      "referenceUrl": null
+    }
+  ],
+  "research": {
+    "title": "From practical systems to deeper research",
+    "summary": null,
+    "points": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "contactLabel": "Discuss a master's opportunity"
+  },
+  "contact": {
+    "heading": null,
+    "summary": null,
+    "email": "info@sina-shiri.com",
+    "referencesNote": null
+  },
+  "honors": [
+    {
+      "year": null,
+      "title": null,
+      "description": null
+    },
+    {
+      "year": null,
+      "title": null,
+      "description": null
+    },
+    {
+      "year": null,
+      "title": null,
+      "description": null
+    }
+  ],
+  "recommendations": {
+    "title": null,
+    "intro": null,
+    "invitation": null,
+    "action": null,
+    "entries": [
+      {
+        "quote": null,
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "approved": null,
+        "context": null,
+        "organization": null,
+        "date": null,
+        "url": null
+      },
+      {
+        "quote": null,
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "approved": null,
+        "context": null,
+        "organization": null,
+        "date": null,
+        "url": null
+      },
+      {
+        "quote": null,
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "approved": null,
+        "context": null,
+        "organization": null,
+        "date": null,
+        "url": null
+      },
+      {
+        "quote": null,
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "approved": null,
+        "context": null,
+        "organization": null,
+        "date": null,
+        "url": null
+      }
+    ]
+  },
+  "academic": {
+    "profiles": [
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      },
+      {
+        "label": null,
+        "url": null
+      }
+    ],
+    "references": [
+      {
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "email": null,
+        "url": null,
+        "approved": null
+      },
+      {
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "email": null,
+        "url": null,
+        "approved": null
+      },
+      {
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "email": null,
+        "url": null,
+        "approved": null
+      },
+      {
+        "name": null,
+        "status": null,
+        "relationship": null,
+        "email": null,
+        "url": null,
+        "approved": null
+      }
+    ]
+  },
+  "currentWork": {
+    "researchDetails": {
+      "question": null,
+      "motivation": null,
+      "contribution": null,
+      "method": null,
+      "platforms": null,
+      "results": null,
+      "status": null,
+      "artifactUrl": null,
+      "collaborators": null
+    }
+  }
+}

@@ -1,0 +1,43 @@
+---
+import snapshot from '../data/github-repositories.json';
+import { reviewedRepository } from '../scripts/repository-overrides';
+import '../styles/github-projects.css';
+interface Props { id?: string; heading?: 'h1' | 'h2' }
+const { id = 'github-projects', heading = 'h2' } = Astro.props;
+const Heading = heading;
+const repositories = snapshot.repositories.map(repository => ({ ...repository, review: reviewedRepository(repository) }));
+const CardHeading = heading === 'h1' ? 'h2' : 'h3';
+const formatDate = (value: string) => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(value));
+const languagesFor = (repository: typeof snapshot.repositories[number]) => repository.languages.length ? repository.languages.map(language => language.name) : repository.primary_language ? [repository.primary_language] : [];
+---
+
+<section class="section github-projects" id={id} data-github-projects data-github-card-heading={CardHeading} aria-labelledby={`${id}-title`}>
+  <header class="github-projects-heading">
+    <div><span class="eyebrow">PUBLIC GITHUB REPOSITORIES</span><Heading id={`${id}-title`}>Code you can explore.</Heading></div>
+    <div class="github-projects-intro"><p>All public repositories from my GitHub account, including forks and historical work. Reviewed summaries explain their purpose; languages and repository activity are synced from GitHub.</p><a href="https://github.com/sinashiry" target="_blank" rel="noopener noreferrer">Visit @sinashiry <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="github-projects-toolbar" data-github-toolbar hidden>
+    <label class="github-projects-search">Find a repository<input data-github-search type="search" placeholder="Name, description or language" autocomplete="off" maxlength="200" /></label>
+    <label>Show<select data-github-kind><option value="all">All repositories</option><option value="source">Source repositories</option><option value="fork">Forks</option><option value="archived">Archived</option></select></label>
+    <label>Sort by<select data-github-sort><option value="updated">Recently updated</option><option value="name">Repository name</option><option value="stars">Most stars</option></select></label>
+  </div>
+  <!-- GITHUB_REPOSITORIES_START -->
+  <div class="github-projects-status" data-github-fetched={snapshot.fetched_at}><p data-github-status role="status" aria-live="polite">{snapshot.repository_count} public repositories</p><p>Last synced <time data-github-synced datetime={snapshot.fetched_at}>{formatDate(snapshot.fetched_at)}</time></p></div>
+  <ul class="github-projects-grid" data-github-list>
+    {repositories.map(repository => <li class="github-repository" data-github-repository data-repo-name={repository.name} data-repo-fork={String(repository.fork)} data-repo-archived={String(repository.archived)} data-repo-stars={repository.stars} data-repo-updated={repository.updated_at}>
+      <article>
+        <div class="github-repository-top"><span class="github-repository-icon" aria-hidden="true">{'{ }'}</span><div class="github-repository-badges"><span>Public</span>{repository.fork && <span>Fork</span>}{repository.archived && <span>Archived</span>}{repository.disabled && <span>Disabled</span>}</div></div>
+        <CardHeading><a href={repository.url} target="_blank" rel="noopener noreferrer">{repository.name}<span class="github-repository-arrow" aria-hidden="true">↗</span></a></CardHeading>
+        <p class="github-repository-description">{repository.review.description}</p>
+        <dl class="github-repository-details"><div><dt>Main purpose</dt><dd>{repository.review.purpose}</dd></div><div><dt>{repository.languages_complete ? 'Languages' : 'Primary language'}</dt><dd data-repo-languages>{languagesFor(repository).join(' · ') || 'Not specified'}</dd></div>{repository.license && repository.license !== 'NOASSERTION' && <div><dt>License</dt><dd>{repository.license}</dd></div>}{repository.review.relatedProject && <div><dt>Case study</dt><dd><a href={repository.review.relatedProject!.path}>{repository.review.relatedProject!.label}</a></dd></div>}</dl>
+        {repository.topics.length > 0 && <ul class="github-repository-topics" aria-label="Repository topics">{repository.topics.map(topic => <li>{topic}</li>)}</ul>}
+        <footer class="github-repository-footer"><div><span aria-label={`${repository.stars} stars`}>★ {repository.stars}</span><span>{repository.forks} {repository.forks === 1 ? 'fork' : 'forks'}</span></div><span>Updated <time datetime={repository.updated_at}>{formatDate(repository.updated_at)}</time></span></footer>
+      </article>
+    </li>)}
+  </ul>
+  <!-- GITHUB_REPOSITORIES_END -->
+  <p class="github-projects-empty" data-github-empty hidden>No repositories match. Try a different search or show all repositories.</p>
+  <p class="github-projects-note">Summaries are reviewed against repository documentation and portfolio records. Newly added repositories receive a neutral summary until reviewed. For project context and supporting demonstrations, explore the <a href="/projects/">case studies</a>.</p>
+</section>
+
+<script>import '../scripts/github-projects';</script>

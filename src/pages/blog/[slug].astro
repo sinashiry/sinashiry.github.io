@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/collections.css';
+import { publishedPosts } from '../../lib/collections';
+import { renderMarkdown } from '../../lib/collection-markdown';
+import { PUBLIC_ROOT, SITE, jsonLd, postRoute, postSchema, rasterImage, rawurlencode } from '../../lib/collection-rules';
+import type { Post } from '../../lib/collection-rules';
+
+/** Published posts only: drafts and archived files produce no page and fall through to 404. */
+export async function getStaticPaths() {
+  return (await publishedPosts()).map(post => ({ params: { slug: post.slug }, props: { post } }));
+}
+const { post } = Astro.props as { post: Post };
+const url = SITE + postRoute(post);
+const prose = renderMarkdown(post.body, src => rasterImage(PUBLIC_ROOT, src) !== null);
+const hero = post.heroImage ? { src: post.heroImage, alt: post.heroAlt, width: post.heroWidth, height: post.heroHeight } : undefined;
+---
+<Base title={`${post.title} — Sina Shiri`} description={post.summary} active="blog" ogType="article" socialImage={hero?.src} socialAlt={hero?.alt} socialWidth={hero?.width} socialHeight={hero?.height}>
+  <script slot="head" type="application/ld+json" set:html={jsonLd(postSchema(post))}></script>
+  <div class="wrap collections-page">
+    <article class="collection-article"><header><a class="collection-back" href="/blog/">← All writing</a><p class="eyebrow">NOTES / SINA SHIRI</p><h1>{post.title}</h1><time datetime={post.date}>{post.date}</time><p class="collection-lead">{post.summary}</p>{post.relatedProject && <a class="collection-related" href={`/projects/${post.relatedProject}/`}>Related engineering case ↗</a>}{hero && <figure class="collection-hero"><img class="collection-hero-image" src={hero.src} alt={hero.alt} width={hero.width} height={hero.height} loading="lazy" decoding="async" /></figure>}</header><div class="collection-prose" set:html={prose}></div><footer class="collection-share"><button type="button" data-copy-article>Copy article link</button><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${rawurlencode(url)}`} target="_blank" rel="noopener noreferrer">Share on LinkedIn ↗</a><p role="status" aria-live="polite"></p></footer></article>
+  </div>
+  <script>import '../../scripts/collection-share';</script>
+</Base>
