@@ -9,7 +9,7 @@ The site features four homepage cases with labelled AI cover illustrations, ten 
 - [AGENTS.md](AGENTS.md): working rules for maintainers and coding agents.
 - [Knowledge index](knowledge/index.md): architecture, decisions, operations and current status in Open Knowledge Format v0.2.
 - [Editing guide](docs/EDITOR.md): how the owner edits text, CVs, posts and papers in Pages CMS.
-- [Current status](knowledge/status.md): what has been verified and what is still pending.
+- [Current status](knowledge/status.md): live state, production readback and remaining steps.
 
 ## Commands
 

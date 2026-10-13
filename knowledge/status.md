@@ -1,12 +1,12 @@
 ---
 type: Project Status
 title: Current state and remaining work
-description: GitHub Pages build verified locally on 11 October 2026; not yet deployed; DNS cutover pending.
+description: Live on GitHub Pages at sina-shiri.com since 13 October 2026, verified by production readback.
 tags: [status, validation, next-steps]
 status: stable
 generated:
   by: claude-code/claude-opus-5.5
-  at: "2026-10-11T21:45:00Z"
+  at: "2026-10-13T15:50:00Z"
 sources:
   - id: scripts
     resource: ../package.json
@@ -19,32 +19,31 @@ sources:
     title: Browser smoke test
   - id: deploy
     resource: ../.github/workflows/pages.yml
-    title: Deploy workflow, not yet run on GitHub
+    title: Deploy workflow
+  - id: sync
+    resource: ../.github/workflows/github-repositories.yml
+    title: Scheduled GitHub directory refresh
 ---
 
-# State on 11 October 2026
+# State on 13 October 2026
 
-**Built and verified locally only. Not yet deployed.** This source has not run on GitHub, and `sina-shiri.com` is still served by the previous host. The DNS cutover is pending. Do not describe the site as live on GitHub Pages until a production readback has been recorded here.
+**Live on GitHub Pages.** `https://sina-shiri.com/` is served from this repository's `main` branch by the deploy workflow.[^deploy] The previous host no longer serves the website; it still hosts the domain's mail.
 
-# Local verification (11 October 2026)
+- **DNS:** managed in Cloudflare with every record set to DNS only (no proxy). The apex has the four GitHub Pages A and AAAA records, `www` is a CNAME to `sinashiry.github.io`, and the `_github-pages-challenge-sinashiry` TXT record keeps the domain verified on the owner account. Mail records (MX, SPF, DMARC and the mail host names) still point to the mail host and must stay unchanged.
+- **HTTPS:** GitHub issued the Pages certificate for `sina-shiri.com` and `www.sina-shiri.com` (renewed automatically) and Enforce HTTPS is on. HTTP and `www` redirect to `https://sina-shiri.com/` with 301.
+- **Workflows:** the deploy workflow and the scheduled GitHub directory refresh have both run successfully on GitHub. The refresh commits only when repository data changes or weekly as a heartbeat, then dispatches a redeploy.[^sync]
 
-- `npm run compose` and `npm run check` pass with 933 editable fields, and `.pages.yml` is current.[^scripts]
-- `npm test` passes all 103 Node tests.
-- `npm run build` produces 38 HTML pages (21 routes, `404.html`, the `/admin/` entrance page and 15 legacy stubs) and 369 files (216.3 MiB), with a per-page CSP over 15 distinct inline-script hashes.[^prepare]
-- `npm run smoke` passes in headless Chromium: 37 HTML routes including the 15 stubs, legacy query links, a retired ID, the 404 page, the interactive features and three no-JavaScript pages, with no console errors, CSP violations or failed requests.[^smoke]
-- **Parity.** The build was compared with a production-equivalent build of the previous site (8 October 2026) and a public readback of the live site (11 October 2026). After normalisation there were no unexpected differences. The expected ones are:
-  - contact by email and the rewritten privacy page;
-  - the removed footer statistics note;
-  - contact links retargeted to `/contact/#write-to-sina`;
-  - CSP and referrer metas;
-  - the `/admin/` page and the 15 stubs;
-  - `/code/` listing 10 repositories;
-  - `twitter:title` keeping its " — Sina Shiri" suffix;
-  - Blog and Publications empty states worded as on the live site;
-  - one unreferenced old photograph removed from the public assets.
-- `sitemap.xml` (19 URLs) is identical to the previous site, and `sitemap-collections.xml` matches live. Every other carried-over asset, media file and LaTeX source is byte-identical, and both CV PDFs keep their hashes.
+# Production readback (13 October 2026)
 
-**Not yet verified:** the two workflows on GitHub, Pages CMS against the real repository, the custom domain and HTTPS, and live behaviour on Pages.[^deploy]
+- Every one of the 369 built files was requested from GitHub Pages over HTTPS for `sina-shiri.com` with certificate validation. All returned 200: text files matched the local build of the same commit byte for byte (SHA-256), and media files matched by size.[^prepare]
+- `www` → apex 301, HTTP → HTTPS 301, a missing page → 404 with the custom page, legacy project links and `?p=` query links reach their targets, and the legacy CV address serves the Engineering CV.
+- A browser check of the `github.io` preview showed no console errors and a working `?p=41` → `/resume/` redirect.
+- Mail service answered on its TLS ports after the move.
+
+# Local verification
+
+- `npm run check`, `npm test` (103 tests), `npm run build` and `npm run smoke` pass.[^scripts][^smoke]
+- Before release the build was compared with a production-equivalent build of the previous site and a public readback of it: no unexpected differences. Expected differences are email-only contact, the rewritten privacy page, the removed statistics note, CSP and referrer metas, the `/admin/` entrance page, 15 legacy stubs, `/code/` listing every public repository, `twitter:title` keeping its suffix, live empty-state wording for Blog and Publications, and one unreferenced old photograph removed.
 
 # Known limitations
 
@@ -54,14 +53,14 @@ sources:
 
 # Next steps
 
-1. Publish this tree as the first commit of `sinashiry/sinashiry.github.io`.
-2. Apply the repository settings in [operations](./operations.md#repository-settings-owner-account), then confirm the first deploy and a Pages CMS save on the `github.io` address.
-3. Freeze edits on the previous site and confirm its content still matches this repository.
-4. Run the [DNS cutover checklist](./operations.md#dns-cutover-checklist), keeping every mail record.
-5. Read back the live site and record the result here.
-6. Optional: add a CI check that published blog and paper URLs never disappear.
+1. Owner: install Pages CMS for this repository only and confirm one real save deploys (see [the editing guide](../docs/EDITOR.md)).
+2. Reissue the mail host's certificate for the mail names only, since it also covered the apex and `www`, so its next renewal does not fail.
+3. Retire the previous host's web content, scheduled jobs and backups, keeping mail service as long as it is needed.
+4. Verify the domain in Search Console by DNS TXT and resubmit `sitemap.xml`.
+5. Optional: add a CI check that published blog and paper URLs never disappear.
 
 [^scripts]: Commands as defined in `package.json`.
 [^prepare]: Build summary printed by the post-build step.
-[^smoke]: Local stand-in for Pages serving; not evidence about the production host.
-[^deploy]: The deploy workflow has not run yet.
+[^smoke]: Local stand-in for Pages serving.
+[^deploy]: Deploy workflow on push to `main`.
+[^sync]: Six-hourly refresh with a weekly heartbeat.
